@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">B60ATS</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="sport">运动</string>
+    <string name="eco">经济</string>
+    <string name="shushi">舒适</string>
+    <string name="xuedi">雪地</string>
+    <string name="chuanyue">穿越</string>
+    <string name="shadi">沙地</string>
+    <string name="nidi">泥地</string>
+    <string name="yanshi">岩石</string>
+    <string name="sheshui">涉水</string>
+
+    <string name="textmode">文字模式</string>
+    <string name="picturemode">图片模式</string>
+
+    <string name="sportmod">运动模式</string>
+    <string name="ecomod">经济模式</string>
+    <string name="shushimod">舒适模式</string>
+    <string name="xuedimod">雪地模式</string>
+    <string name="chuanyuemod">穿越模式</string>
+    <string name="shadimod">沙地模式</string>
+    <string name="nidimod">泥地模式</string>
+    <string name="yanshimod">岩石模式</string>
+    <string name="sheshuimod">涉水模式</string>
+
+    <string name="target">正在准备进入</string>
+    <string name="confirm">已开启</string>
+    <string name="setupfailed">开启失败</string>
+
+
+    <string name="sportModTips">适用于山路和激烈驾驶，有助于提供更加动态的驾驶体验，偏向动力性能。</string>
+    <string name="ecoModTips">适用于高速公路，城市拥堵路况以及雨天温滑路面，偏向经济性能。</string>
+    <string name="shushiModTips">适用于在公路或类似硬路面的路面上行驶，兼顾动力性和经济性。</string>
+    <string name="xuediModTips">适用于冰雪、草地、砂砾等车轮容易打滑的环境，建议降低胎压到70%。</string>
+    <string name="chuanyueModTips">适用于越野长途穿越、颠簸土路等环境，建议降低胎压到70%。</string>
+    <string name="shadiModTips">适用于松软千燥的沙漠、沙丘、沙土地、海滩等环境，建议降低胎压到30%。</string>
+    <string name="nidiModTips">适用于泥泞、车辙、深沟以及表面凹凸的非铺装路面等环境，建议降低胎压到50%。</string>
+    <string name="yanshiModTips">适用于石头山/干涸的河道/圆木等崎岖不平环境，极低速攀爬工况使用，建议降低胎压到70%。</string>
+    <string name="sheshuiModTips">适用于流速较缓的深水行驶，建议降低胎压到70%。</string>
+
+</resources>

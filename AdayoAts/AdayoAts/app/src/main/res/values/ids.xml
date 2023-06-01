@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="id_circle_menu_item_image" type="id"/>
+<!--    <item name="id_circle_menu_text_item_image_normal_white" type="id"/>-->
+<!--    <item name="id_circle_menu_text_item_image_big_white" type="id"/>-->
+<!--    <item name="id_circle_menu_text_item_image_normal_green" type="id"/>-->
+<!--    <item name="id_circle_menu_text_item_image_big_green" type="id"/>-->
+    <item name="id_circle_menu_item_text" type="id"/>
+    <item name="rl_center_content" type="id"/>
+
+</resources>

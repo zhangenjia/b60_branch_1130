@@ -1,0 +1,3 @@
+include ':app'
+include ':skin'
+rootProject.name='B60ATS'
