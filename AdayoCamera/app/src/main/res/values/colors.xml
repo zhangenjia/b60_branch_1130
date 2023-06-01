@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="white_60">#99ffffff</color>
+    <color name="blue">#5B7BD6</color>
+    <color name="transparent">#00000000</color>
+    <color name="green">#d7730b</color>
+    <color name="apa_green">#d7730b</color>
+    <color name="apa_btn_dis">#61FFFFFF</color>
+    <color name="red">#d4443c</color>
+
+    <color name="bg_more_angle">#E0000000</color>
+    <color name="bg_hint">#4D000000</color>
+    <color name="bg_error">#323333</color>
+
+    <color name="bg_update_dialog">#CC000000</color>
+    <color name="bg_update">#000000</color>
+
+    <color name="text_speed">#cefefefe</color>
+    <color name="text_setting">#cefefefe</color>
+    <color name="text_dialog_title">#fefefe</color>
+    <color name="text_dialog_content">#CCFFFFFF</color>
+    <color name="text_dialog_button">#ffffff</color>
+    <color name="text_dialog_button_p">#ABFFFFFF</color>
+    <color name="text_dialog_button_dis">#61FFFFFF</color>
+
+    <color name="text_button_custom_parking_n">#000000</color>
+    <color name="text_button_custom_parking_p">#AB000000</color>
+
+    <color name="text_btn_apa_berth_type_n">#000000</color>
+    <color name="text_btn_apa_berth_type_p">#AB000000</color>
+
+    <color name="text_rvc_camera_error">#ffc200</color>
+
+    <color name="dialog_apa_setting_hint">#80FFFFFF</color>
+
+    <color name="bg_rvc_hint">#47000000</color>
+
+</resources>

@@ -1,0 +1,1467 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="104px"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="860px"
+        android:background="@color/black">
+
+        <com.adayo.proxy.aaop_camera.view.AAOP_CameraView
+            android:id="@+id/m_camera_view"
+            android:layout_width="1920px"
+            android:layout_height="1080px"
+            android:layout_marginTop="12px"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="2px"
+            android:background="@drawable/line_horizontal"
+            app:layout_constraintLeft_toLeftOf="@id/iv_berth_in"
+            app:layout_constraintRight_toRightOf="@id/iv_berth_in"
+            app:layout_constraintTop_toTopOf="@id/iv_berth_in" />
+
+        <ImageView
+            android:id="@+id/iv_berth_in"
+            android:layout_width="180px"
+            android:layout_height="144px"
+            android:background="@color/black"
+            android:src="@drawable/img_auto_park_in"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_berth_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10px"
+            android:text="@string/apa_btn_berth_in"
+            android:textColor="@color/apa_btn_sel"
+            android:textSize="24px"
+            app:layout_constraintBottom_toBottomOf="@id/iv_berth_in"
+            app:layout_constraintLeft_toLeftOf="@id/iv_berth_in"
+            app:layout_constraintRight_toRightOf="@id/iv_berth_in" />
+
+        <View
+            android:id="@+id/line_berth_in"
+            android:layout_width="0dp"
+            android:layout_height="2px"
+            android:background="@drawable/line_horizontal"
+            app:layout_constraintBottom_toBottomOf="@id/iv_berth_in"
+            app:layout_constraintLeft_toLeftOf="@id/iv_berth_in"
+            app:layout_constraintRight_toRightOf="@id/iv_berth_in"
+            app:layout_constraintTop_toBottomOf="@id/iv_berth_in" />
+
+        <ImageView
+            android:id="@+id/iv_berth_out"
+            android:layout_width="0px"
+            android:layout_height="144px"
+            android:background="@color/black"
+            android:src="@drawable/img_auto_park_out"
+            app:layout_constraintLeft_toLeftOf="@id/iv_berth_in"
+            app:layout_constraintRight_toRightOf="@id/iv_berth_in"
+            app:layout_constraintTop_toBottomOf="@id/iv_berth_in" />
+
+        <TextView
+            android:id="@+id/tv_berth_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10px"
+            android:text="@string/apa_btn_berth_out"
+            android:textColor="@color/apa_btn_sel"
+            android:textSize="24px"
+            app:layout_constraintBottom_toBottomOf="@id/iv_berth_out"
+            app:layout_constraintLeft_toLeftOf="@id/iv_berth_out"
+            app:layout_constraintRight_toRightOf="@id/iv_berth_out" />
+
+        <View
+            android:id="@+id/line_berth_out"
+            android:layout_width="0dp"
+            android:layout_height="2px"
+            android:background="@drawable/line_horizontal"
+            app:layout_constraintBottom_toBottomOf="@id/iv_berth_out"
+            app:layout_constraintLeft_toLeftOf="@id/iv_berth_out"
+            app:layout_constraintRight_toRightOf="@id/iv_berth_out"
+            app:layout_constraintTop_toBottomOf="@id/iv_berth_out" />
+
+        <ImageView
+            android:id="@+id/iv_select_space"
+            android:layout_width="0px"
+            android:layout_height="144px"
+            android:background="@color/black"
+            android:src="@drawable/img_optional_parking_space"
+            app:layout_constraintLeft_toLeftOf="@id/iv_berth_out"
+            app:layout_constraintRight_toRightOf="@id/iv_berth_out"
+            app:layout_constraintTop_toBottomOf="@id/iv_berth_out" />
+
+        <TextView
+            android:id="@+id/tv_select_space"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10px"
+            android:text="@string/apa_btn_custom_space"
+            android:textColor="@color/apa_btn_sel"
+            android:textSize="24px"
+            app:layout_constraintBottom_toBottomOf="@id/iv_select_space"
+            app:layout_constraintLeft_toLeftOf="@id/iv_select_space"
+            app:layout_constraintRight_toRightOf="@id/iv_select_space" />
+
+        <View
+            android:id="@+id/line_select_space"
+            android:layout_width="0dp"
+            android:layout_height="2px"
+            android:background="@drawable/line_horizontal"
+            app:layout_constraintBottom_toBottomOf="@id/iv_select_space"
+            app:layout_constraintLeft_toLeftOf="@id/iv_select_space"
+            app:layout_constraintRight_toRightOf="@id/iv_select_space"
+            app:layout_constraintTop_toBottomOf="@id/iv_select_space" />
+
+        <ImageView
+            android:id="@+id/iv_setting"
+            android:layout_width="0px"
+            android:layout_height="144px"
+            android:background="@color/black"
+            android:src="@drawable/img_setting"
+            app:layout_constraintLeft_toLeftOf="@id/iv_select_space"
+            app:layout_constraintRight_toRightOf="@id/iv_select_space"
+            app:layout_constraintTop_toBottomOf="@id/iv_select_space" />
+
+        <TextView
+            android:id="@+id/tv_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10px"
+            android:text="@string/apa_btn_setting"
+            android:textColor="@color/apa_btn_sel"
+            android:textSize="24px"
+            app:layout_constraintBottom_toBottomOf="@id/iv_setting"
+            app:layout_constraintLeft_toLeftOf="@id/iv_setting"
+            app:layout_constraintRight_toRightOf="@id/iv_setting" />
+
+        <View
+            android:id="@+id/line_setting"
+            android:layout_width="0dp"
+            android:layout_height="2px"
+            android:background="@drawable/line_horizontal"
+            app:layout_constraintBottom_toBottomOf="@id/iv_setting"
+            app:layout_constraintLeft_toLeftOf="@id/iv_setting"
+            app:layout_constraintRight_toRightOf="@id/iv_setting"
+            app:layout_constraintTop_toBottomOf="@id/iv_setting" />
+
+        <ImageView
+            android:layout_width="0px"
+            android:layout_height="288px"
+            android:background="@color/black"
+            app:layout_constraintLeft_toLeftOf="@id/iv_setting"
+            app:layout_constraintRight_toRightOf="@id/iv_setting"
+            app:layout_constraintTop_toBottomOf="@id/iv_setting" />
+
+
+        <ImageView
+            android:id="@+id/iv_berth_hint"
+            android:layout_width="910px"
+            android:layout_height="860px"
+            android:background="@mipmap/bg_area_b"
+            android:scaleType="centerInside"
+            android:visibility="gone"
+            app:layout_constraintLeft_toRightOf="@id/iv_berth_in"
+            app:layout_constraintTop_toTopOf="@id/iv_berth_in" />
+        <ImageView
+            android:id="@+id/iv_berth_hint2"
+            android:layout_width="910px"
+            android:layout_height="860px"
+            android:background="@mipmap/bg_area_b"
+            android:scaleType="centerInside"
+            android:visibility="gone"
+            app:layout_constraintLeft_toRightOf="@id/iv_berth_in"
+            app:layout_constraintTop_toTopOf="@id/iv_berth_in" />
+
+        <TextView
+            android:id="@+id/tv_berth_hint"
+            android:layout_width="900px"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="38px"
+            android:gravity="center"
+            android:paddingLeft="16px"
+            android:paddingRight="16px"
+            android:textColor="@color/white"
+            android:textSize="40px"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/iv_berth_hint"
+            app:layout_constraintLeft_toLeftOf="@id/iv_berth_hint"
+            app:layout_constraintRight_toRightOf="@id/iv_berth_hint" />
+
+        <TextView
+            android:id="@+id/tv_berth_type_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="41px"
+            android:text="@string/apa_select_berth_in_type"
+            android:textColor="@color/white"
+            android:textSize="40px"
+            android:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="@id/iv_berth_hint"
+            app:layout_constraintRight_toRightOf="@id/iv_berth_hint"
+            app:layout_constraintTop_toTopOf="@id/iv_berth_hint" />
+
+        <TextView
+            android:id="@+id/tv_berth_in_key"
+            android:layout_width="192px"
+            android:layout_height="74px"
+            android:layout_marginLeft="225px"
+            android:layout_marginBottom="55px"
+            android:background="@drawable/btn_apa_berth_type"
+            android:gravity="center"
+            android:text="@string/apa_berth_in_type_key"
+            android:textColor="@color/btn_apa_berth_type"
+            android:textSize="32px"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/iv_berth_hint"
+            app:layout_constraintLeft_toLeftOf="@id/iv_berth_hint" />
+
+        <TextView
+            android:id="@+id/tv_berth_in_remote"
+            android:layout_width="192px"
+            android:layout_height="74px"
+            android:layout_marginRight="215px"
+            android:background="@drawable/btn_apa_berth_type"
+            android:gravity="center"
+            android:text="@string/apa_berth_in_type_remote"
+            android:textColor="@color/btn_apa_berth_type"
+            android:textSize="32px"
+            android:visibility="gone"
+            app:layout_constraintRight_toRightOf="@id/iv_berth_hint"
+            app:layout_constraintTop_toTopOf="@id/tv_berth_in_key" />
+
+        <TextView
+            android:id="@+id/tv_berth_type_vertical_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="41px"
+            android:text="@string/apa_select_berth_in_type_vertical"
+            android:textColor="@color/white"
+            android:textSize="40px"
+            android:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="@id/iv_berth_hint"
+            app:layout_constraintRight_toRightOf="@id/iv_berth_hint"
+            app:layout_constraintTop_toTopOf="@id/iv_berth_hint" />
+        <ImageView
+            android:id="@+id/tv_berth_type_vertical_front_parking"
+            android:layout_width="130px"
+            android:layout_height="262px"
+            android:layout_marginTop="160px"
+            android:layout_marginLeft="241px"
+            android:visibility="gone"
+            android:src="@drawable/bg_apa_front_parking"
+            app:layout_constraintLeft_toLeftOf="@id/iv_berth_hint"
+            app:layout_constraintTop_toTopOf="@id/iv_berth_hint" />
+
+        <ImageView
+            android:id="@+id/tv_berth_type_vertical_rear_parking"
+            android:layout_width="130px"
+            android:layout_height="262px"
+            android:layout_marginTop="160px"
+            android:layout_marginRight="241px"
+            android:visibility="gone"
+            android:src="@drawable/bg_apa_rear_parking"
+            app:layout_constraintRight_toRightOf="@id/iv_berth_hint"
+            app:layout_constraintTop_toTopOf="@id/iv_berth_hint" />
+        <TextView
+            android:id="@+id/tv_berth_type_vertical_front_parking_tilte"
+            android:layout_width="131px"
+            android:layout_height="31px"
+            android:layout_marginTop="454px"
+            android:layout_marginLeft="240px"
+            android:text="@string/apa_select_berth_in_type_vertical_front_parking"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="32px"
+            android:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="@id/iv_berth_hint"
+            app:layout_constraintTop_toTopOf="@id/iv_berth_hint"/>
+
+        <TextView
+            android:id="@+id/tv_berth_type_vertical_rear_parking_tilte"
+            android:layout_width="131px"
+            android:layout_height="31px"
+            android:layout_marginTop="454px"
+            android:layout_marginRight="240px"
+            android:text="@string/apa_select_berth_in_type_vertical_rear_parking"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="32px"
+            android:visibility="gone"
+            app:layout_constraintRight_toRightOf="@id/iv_berth_hint"
+            app:layout_constraintTop_toTopOf="@id/iv_berth_hint"/>
+
+        <TextView
+            android:id="@+id/tv_berth_in_vertical_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="614px"
+            android:text="@string/apa_select_berth_in_type_vertical_title"
+            android:textColor="@color/white"
+            android:textSize="40px"
+            android:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="@id/iv_berth_hint"
+            app:layout_constraintRight_toRightOf="@id/iv_berth_hint"
+            app:layout_constraintTop_toTopOf="@id/iv_berth_hint" />
+
+        <TextView
+            android:id="@+id/tv_berth_in_vertical_key"
+            android:layout_width="192px"
+            android:layout_height="74px"
+            android:layout_marginLeft="225px"
+            android:layout_marginBottom="46px"
+            android:background="@drawable/btn_apa_berth_type"
+            android:gravity="center"
+            android:text="@string/apa_berth_in_type_key"
+            android:textColor="@color/btn_apa_berth_type"
+            android:textSize="32px"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/iv_berth_hint"
+            app:layout_constraintLeft_toLeftOf="@id/iv_berth_hint" />
+
+        <TextView
+            android:id="@+id/tv_berth_in_vertical_remote"
+            android:layout_width="192px"
+            android:layout_height="74px"
+            android:layout_marginRight="215px"
+            android:background="@drawable/btn_apa_berth_type"
+            android:gravity="center"
+            android:text="@string/apa_berth_in_type_remote"
+            android:textColor="@color/btn_apa_berth_type"
+            android:textSize="32px"
+            android:visibility="gone"
+            app:layout_constraintRight_toRightOf="@id/iv_berth_hint"
+            app:layout_constraintTop_toTopOf="@id/tv_berth_in_vertical_key" />
+
+        <ImageView
+            android:id="@+id/iv_berth_car"
+            android:layout_width="154px"
+            android:layout_height="335px"
+            android:layout_marginTop="199px"
+            android:layout_marginLeft="376px"
+            android:visibility="gone"
+            android:src="@mipmap/c_car"
+            app:layout_constraintLeft_toRightOf="@id/iv_berth_in"
+            app:layout_constraintTop_toTopOf="@id/iv_berth_in" />
+
+        <FrameLayout
+            android:id="@+id/container_button_out_vertical_left"
+            android:layout_width="214px"
+            android:layout_height="174px"
+            android:layout_marginLeft="41px"
+            android:layout_marginTop="70px"
+            android:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="@id/iv_berth_hint"
+            app:layout_constraintTop_toTopOf="@id/iv_berth_hint">
+            <ImageView
+                android:id="@+id/iv_title_out_vertical_left"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="7px"
+                android:layout_marginLeft="7px"
+                android:background="@drawable/btn_apa_vertical_left" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15px"
+                android:layout_marginRight="15px"
+                android:layout_marginTop="113px"
+                android:gravity="center"
+                android:text="@string/apa_berth_park_out_vertical_left"
+                android:textColor="@color/text_dialog_button"
+                android:textSize="24px" />
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/container_button_out_vertical_right"
+            android:layout_width="214px"
+            android:layout_height="174px"
+            android:layout_marginRight="56px"
+            android:layout_marginTop="70px"
+            android:visibility="gone"
+            app:layout_constraintRight_toRightOf="@id/iv_berth_hint"
+            app:layout_constraintTop_toTopOf="@id/iv_berth_hint">
+            <ImageView
+                android:id="@+id/iv_title_out_vertical_right"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_apa_vertical_right"
+                android:layout_marginRight="7px"
+                android:layout_marginLeft="7px"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15px"
+                android:layout_marginRight="15px"
+                android:layout_marginTop="113px"
+                android:gravity="center"
+                android:text="@string/apa_berth_park_out_vertical_right"
+                android:textColor="@color/text_dialog_button"
+                android:textSize="24px"
+                />
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/container_button_out_middle_left"
+            android:layout_width="214px"
+            android:layout_height="174px"
+            android:layout_marginLeft="41px"
+            android:layout_marginTop="286px"
+            android:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="@id/iv_berth_hint"
+            app:layout_constraintTop_toTopOf="@id/iv_berth_hint">
+            <ImageView
+                android:id="@+id/iv_title_out_middle_left"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="7px"
+                android:layout_marginLeft="7px"
+                android:background="@drawable/btn_apa_middle_left"
+               />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15px"
+                android:layout_marginRight="15px"
+                android:layout_marginTop="113px"
+                android:gravity="center"
+                android:text="@string/apa_berth_park_out_left"
+                android:textColor="@color/text_dialog_button"
+                android:textSize="24px"
+                />
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/container_button_out_middle_right"
+            android:layout_width="214px"
+            android:layout_height="174px"
+            android:layout_marginRight="56px"
+            android:layout_marginTop="286px"
+            android:visibility="gone"
+            app:layout_constraintRight_toRightOf="@id/iv_berth_hint"
+            app:layout_constraintTop_toTopOf="@id/iv_berth_hint">
+            <ImageView
+                android:id="@+id/iv_title_out_middle_right"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="7px"
+                android:layout_marginLeft="7px"
+                android:background="@drawable/btn_apa_middle_right"
+                 />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15px"
+                android:layout_marginRight="15px"
+                android:layout_marginTop="113px"
+                android:gravity="center"
+                android:text="@string/apa_berth_park_out_right"
+                android:textColor="@color/text_dialog_button"
+                android:textSize="24px"
+                />
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/container_button_out_down_left"
+            android:layout_width="214px"
+            android:layout_height="174px"
+            android:layout_marginLeft="41px"
+            android:layout_marginTop="501px"
+            android:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="@id/iv_berth_hint"
+            app:layout_constraintTop_toTopOf="@id/iv_berth_hint">
+
+            <ImageView
+                android:id="@+id/iv_title_out_down_left"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="7px"
+                android:layout_marginLeft="7px"
+                android:background="@drawable/btn_apa_down_left"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15px"
+                android:layout_marginRight="15px"
+                android:layout_marginTop="113px"
+                android:gravity="center"
+                android:text="@string/apa_berth_park_out_down_left"
+                android:textColor="@color/text_dialog_button"
+                android:textSize="24px"
+
+                />
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/container_button_out_down_right"
+            android:layout_width="214px"
+            android:layout_height="174px"
+            android:layout_marginRight="56px"
+            android:layout_marginTop="501px"
+            android:visibility="gone"
+            app:layout_constraintRight_toRightOf="@id/iv_berth_hint"
+            app:layout_constraintTop_toTopOf="@id/iv_berth_hint">
+            <ImageView
+                android:id="@+id/iv_title_out_down_right"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="7px"
+                android:layout_marginLeft="7px"
+                android:background="@drawable/btn_apa_down_right"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15px"
+                android:layout_marginRight="15px"
+                android:layout_marginTop="113px"
+                android:gravity="center"
+                android:text="@string/apa_berth_park_out_down_right"
+                android:textColor="@color/text_dialog_button"
+                android:textSize="24px"
+                />
+        </FrameLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/container_custom_hint"
+            android:layout_width="910px"
+            android:layout_height="860px"
+            android:background="@mipmap/bg_area_b"
+            android:visibility="gone"
+            app:layout_constraintLeft_toRightOf="@id/iv_berth_in"
+            app:layout_constraintTop_toTopOf="@id/iv_berth_in">
+
+            <TextView
+                android:id="@+id/tv_custom_title"
+                android:layout_width="751px"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="134px"
+                android:gravity="center"
+                android:text="@string/apa_custom_parking_start_hint_title"
+                android:textColor="@color/white"
+                android:textSize="40px"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80px"
+                android:text="@string/apa_custom_parking_start_hint_double_click"
+                android:textColor="@color/white"
+                android:textSize="32px"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/iv_1"
+                app:layout_constraintTop_toBottomOf="@id/tv_custom_title" />
+
+            <ImageView
+                android:id="@+id/iv_1"
+                android:layout_width="94px"
+                android:layout_height="48px"
+                android:layout_marginLeft="18px"
+                android:layout_marginRight="18px"
+                android:src="@mipmap/img_parking_space_click"
+                app:layout_constraintBottom_toBottomOf="@id/tv_1"
+                app:layout_constraintLeft_toRightOf="@id/tv_1"
+                app:layout_constraintRight_toLeftOf="@id/tv_1_1"
+                app:layout_constraintTop_toTopOf="@id/tv_1" />
+
+            <TextView
+                android:id="@+id/tv_1_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/apa_custom_parking_start_hint_double_click_content"
+                android:textColor="@color/white"
+                android:textSize="32px"
+                app:layout_constraintLeft_toRightOf="@+id/iv_1"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tv_1" />
+
+            <TextView
+                android:id="@+id/tv_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="164px"
+                android:text="@string/apa_custom_parking_start_hint_drag"
+                android:textColor="@color/white"
+                android:textSize="32px"
+                app:layout_constraintLeft_toLeftOf="@id/tv_1"
+                app:layout_constraintTop_toBottomOf="@id/tv_custom_title" />
+
+            <ImageView
+                android:id="@+id/iv_2"
+                android:layout_width="94px"
+                android:layout_height="48px"
+                android:layout_marginLeft="18px"
+                android:src="@mipmap/img_parking_space_click"
+                app:layout_constraintBottom_toBottomOf="@id/tv_2"
+                app:layout_constraintLeft_toRightOf="@id/tv_2"
+                app:layout_constraintTop_toTopOf="@id/tv_2" />
+
+            <TextView
+                android:id="@+id/tv_2_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18px"
+                android:text="@string/apa_custom_parking_start_hint_drag_content"
+                android:textColor="@color/white"
+                android:textSize="32px"
+                app:layout_constraintLeft_toRightOf="@+id/iv_2"
+                app:layout_constraintTop_toTopOf="@id/tv_2" />
+
+            <TextView
+                android:id="@+id/tv_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="240px"
+                android:text="@string/apa_custom_parking_start_hint_control"
+                android:textColor="@color/white"
+                android:textSize="32px"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintLeft_toLeftOf="@id/tv_1"
+                app:layout_constraintTop_toBottomOf="@id/tv_custom_title" />
+
+            <ImageView
+                android:id="@+id/iv_3"
+                android:layout_width="94px"
+                android:layout_height="48px"
+                android:layout_marginLeft="18px"
+                android:scaleType="centerInside"
+                android:src="@mipmap/button_rotate"
+                app:layout_constraintBottom_toBottomOf="@id/tv_3"
+                app:layout_constraintLeft_toRightOf="@id/tv_3"
+                app:layout_constraintTop_toTopOf="@id/tv_3" />
+
+            <TextView
+                android:id="@+id/tv_3_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18px"
+                android:text="@string/apa_custom_parking_start_hint_control_content"
+                android:textColor="@color/white"
+                android:textSize="32px"
+                app:layout_constraintLeft_toRightOf="@+id/iv_3"
+                app:layout_constraintTop_toTopOf="@id/tv_3" />
+
+            <TextView
+                android:id="@+id/tv_custom_btn"
+                android:layout_width="190px"
+                android:layout_height="74px"
+                android:layout_marginTop="80px"
+                android:background="@drawable/btn_apa"
+                android:clickable="true"
+                android:gravity="center_horizontal"
+                android:paddingTop="18px"
+                android:text="@string/apa_custom_parking_start_hint_btn"
+                android:textColor="@color/btn_custom_parking"
+                android:textSize="32px"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_3" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.adayo.app.camera.view.ParkingView
+            android:id="@+id/m_parking_view"
+            android:layout_width="830px"
+            android:layout_height="860px"
+            android:visibility="gone"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/iv_berth_in" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/dialog_setting"
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:background="@color/bg_update_dialog"
+            android:clickable="true"
+            android:focusable="true"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <View
+                android:id="@+id/v_dialog_setting"
+                android:layout_width="838px"
+                android:layout_height="518px"
+                android:background="@mipmap/bg_parking_sel"
+                android:clickable="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_dialog_setting_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="69px"
+                android:gravity="center"
+                android:text="@string/apa_setting_title"
+                android:textColor="@color/white"
+                android:textSize="40px"
+                app:layout_constraintLeft_toLeftOf="@id/v_dialog_setting"
+                app:layout_constraintRight_toRightOf="@id/v_dialog_setting"
+                app:layout_constraintTop_toTopOf="@id/v_dialog_setting" />
+
+            <ImageView
+                android:id="@+id/iv_dialog_setting_center"
+                android:layout_width="94px"
+                android:layout_height="182px"
+                android:layout_marginLeft="242px"
+                android:layout_marginTop="142px"
+                android:src="@mipmap/img_center"
+                app:layout_constraintLeft_toLeftOf="@id/v_dialog_setting"
+                app:layout_constraintTop_toTopOf="@+id/v_dialog_setting" />
+
+            <ImageView
+                android:id="@+id/iv_dialog_setting_right"
+                android:layout_width="94px"
+                android:layout_height="182px"
+                android:layout_marginTop="142px"
+                android:layout_marginRight="242px"
+                android:src="@mipmap/img_keep_right"
+                app:layout_constraintRight_toRightOf="@id/v_dialog_setting"
+                app:layout_constraintTop_toTopOf="@+id/v_dialog_setting" />
+
+            <TextView
+                android:layout_width="192px"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8px"
+                android:layout_marginTop="20px"
+                android:text="@string/apa_setting_right_hint"
+                android:textColor="@color/dialog_apa_setting_hint"
+                android:textSize="24px"
+                app:layout_constraintLeft_toRightOf="@id/iv_dialog_setting_right"
+                app:layout_constraintTop_toTopOf="@id/iv_dialog_setting_right" />
+
+            <TextView
+                android:id="@+id/tv_dialog_setting_center"
+                android:layout_width="352px"
+                android:layout_height="80px"
+                android:layout_marginLeft="51px"
+                android:layout_marginBottom="51px"
+                android:background="@drawable/bg_apa_parking_btn_sel"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/apa_setting_center"
+                android:textColor="@color/white"
+                android:textSize="40px"
+                app:layout_constraintBottom_toBottomOf="@id/v_dialog_setting"
+                app:layout_constraintLeft_toLeftOf="@id/v_dialog_setting" />
+
+            <TextView
+                android:id="@+id/tv_dialog_setting_right"
+                android:layout_width="352px"
+                android:layout_height="80px"
+                android:layout_marginRight="51px"
+                android:background="@drawable/bg_apa_parking_btn_sel"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/apa_setting_right"
+                android:textColor="@color/white"
+                android:textSize="40px"
+                app:layout_constraintRight_toRightOf="@id/v_dialog_setting"
+                app:layout_constraintTop_toTopOf="@id/tv_dialog_setting_center" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ll_berth_success"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@mipmap/pic_avm_background"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/iv_berth_in"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="880px"
+                android:layout_height="800px"
+                android:layout_marginTop="29px"
+                android:layout_marginLeft="401px"
+                android:src="@mipmap/img_search_finish"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="38px"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
+                <ImageView
+                    android:layout_width="68px"
+                    android:layout_height="68px"
+                    android:src="@mipmap/icon_success" />
+
+                <TextView
+                    android:id="@+id/tv_berth_success"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13px"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/apa_berth_in_success"
+                    android:textColor="@color/white"
+                    android:textSize="40px" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/container_dialog_hint"
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:background="@color/bg_update_dialog"
+            android:clickable="true"
+            android:focusable="true"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/dialog_hint"
+                android:layout_width="838px"
+                android:layout_height="359px"
+                android:background="@mipmap/img_popup_background"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:id="@+id/dialog_hint_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="88px"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    >
+                    <ImageView
+                        android:id="@+id/tv_dialog_hint_img"
+                        android:layout_width="66px"
+                        android:layout_height="66px"
+                        android:src="@mipmap/icon_singlerow_pause"
+                        />
+                    <TextView
+                        android:id="@+id/tv_dialog_hint_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="24px"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/apa_dialog_title_pause"
+                        android:textColor="@color/text_dialog_title"
+                        android:textSize="40px" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv_dialog_hint_content"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="16px"
+                    android:paddingRight="16px"
+                    android:paddingBottom="20px"
+                    android:text="@string/apa_dialog_content_pause_1"
+                    android:textColor="@color/text_dialog_content"
+                    android:textSize="36px"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/dialog_hint_title" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/container_dialog_hint_door"
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:background="@color/bg_update_dialog"
+            android:clickable="true"
+            android:focusable="true"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/dialog_hint_door"
+                android:layout_width="838px"
+                android:layout_height="418px"
+                android:background="@mipmap/img_popup_background3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="88px"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+                    <ImageView
+                        android:id="@+id/tv_dialog_hint_content_door_img"
+                        android:layout_width="66px"
+                        android:layout_height="66px"
+                        android:src="@mipmap/icon_singlerow_cardoor_open" />
+                    <TextView
+                        android:id="@+id/tv_dialog_hint_title_door"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15px"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:text="@string/apa_dialog_title_door_open"
+                        android:textColor="@color/text_dialog_title"
+                        android:textSize="40px" />
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv_dialog_hint_content_door"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="112px"
+                    android:gravity="center"
+                    android:paddingLeft="16px"
+                    android:paddingRight="16px"
+                    android:text="@string/apa_dialog_content_door_open"
+                    android:textColor="@color/text_dialog_content"
+                    android:textSize="36px"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/container_dialog_stop"
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:background="@color/bg_update_dialog"
+            android:clickable="true"
+            android:focusable="true"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/dialog_stop"
+                android:layout_width="838px"
+                android:layout_height="408px"
+                android:background="@mipmap/img_popup_background7"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:id="@+id/dialog_stop_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="88px"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    >
+                    <ImageView
+                        android:id="@+id/tv_dialog_stop_img"
+                        android:layout_width="66px"
+                        android:layout_height="66px"
+                        android:src="@mipmap/icon_singlerow_end" />
+                    <TextView
+                        android:id="@+id/tv_dialog_stop_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="24px"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:text="@string/apa_dialog_title_stop"
+                        android:textColor="@color/text_dialog_title"
+                        android:textSize="40px" />
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv_dialog_stop_content"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="16px"
+                    android:paddingRight="16px"
+                    android:paddingBottom="20px"
+                    android:text="@string/apa_dialog_content_pause_1"
+                    android:textColor="@color/text_dialog_content"
+                    android:textSize="36px"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/dialog_stop_title" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/container_dialog_control"
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:background="@color/bg_update_dialog"
+            android:clickable="true"
+            android:focusable="true"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/dialog_control"
+                android:layout_width="838px"
+                android:layout_height="470px"
+                android:background="@mipmap/img_popup_background2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="88px"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/tv_dialog_control_img"
+                        android:layout_width="66px"
+                        android:layout_height="66px" />
+
+                    <TextView
+                        android:id="@+id/tv_dialog_control_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16px"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/apa_dialog_exit_title"
+                        android:textColor="@color/text_dialog_title"
+                        android:textSize="40px"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_dialog_control_content"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="223px"
+                    android:gravity="center"
+                    android:paddingLeft="16px"
+                    android:paddingRight="16px"
+                    android:text="@string/apa_dialog_exit_content"
+                    android:textColor="@color/text_dialog_content"
+                    android:textSize="36px"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_dialog_positive"
+                    android:layout_width="352px"
+                    android:layout_height="80px"
+                    android:layout_marginLeft="51px"
+                    android:layout_marginBottom="51px"
+                    android:background="@drawable/btn_dialog"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="@string/apa_dialog_exit_positive"
+                    android:textColor="@color/btn_dialog"
+                    android:textSize="40px"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_dialog_negative"
+                    android:layout_width="352px"
+                    android:layout_height="80px"
+                    android:layout_marginRight="51px"
+                    android:layout_marginBottom="51px"
+                    android:background="@drawable/btn_dialog"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textColor="@color/btn_dialog"
+                    android:textSize="40px"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/container_dialog_control_exit"
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:background="@color/bg_update_dialog"
+            android:clickable="true"
+            android:focusable="true"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/dialog_control_exit"
+                android:layout_width="838px"
+                android:layout_height="470px"
+                android:background="@mipmap/img_popup_background2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tv_dialog_control_title_exit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="89px"
+                    android:gravity="center"
+                    android:text="@string/apa_dialog_exit_title"
+                    android:textColor="@color/text_dialog_title"
+                    android:textSize="40px"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_dialog_control_content_exit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="223px"
+                    android:gravity="center"
+                    android:paddingLeft="16px"
+                    android:paddingRight="16px"
+                    android:text="@string/apa_dialog_exit_content"
+                    android:textColor="@color/text_dialog_content"
+                    android:textSize="36px"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_dialog_positive_exit"
+                    android:layout_width="352px"
+                    android:layout_height="80px"
+                    android:layout_marginLeft="51px"
+                    android:layout_marginBottom="51px"
+                    android:background="@drawable/btn_dialog"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="@string/apa_dialog_exit_positive"
+                    android:textColor="@color/btn_dialog"
+                    android:textSize="40px"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_dialog_negative_exit"
+                    android:layout_width="352px"
+                    android:layout_height="80px"
+                    android:layout_marginRight="51px"
+                    android:layout_marginBottom="51px"
+                    android:background="@drawable/btn_dialog"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textColor="@color/btn_dialog"
+                    android:textSize="40px"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/container_dialog_signal_error"
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:background="@color/bg_update_dialog"
+            android:clickable="true"
+            android:focusable="true"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/dialog_signal_error"
+                android:layout_width="838px"
+                android:layout_height="470px"
+                android:background="@mipmap/img_popup_background2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tv_dialog_signal_error_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="89px"
+                    android:gravity="center"
+                    android:text="@string/avm_box_error"
+                    android:textColor="@color/text_dialog_title"
+                    android:textSize="40px"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_dialog_signal_error_content"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="223px"
+                    android:gravity="center"
+                    android:paddingLeft="16px"
+                    android:paddingRight="16px"
+                    android:text="@string/apa_box_no_respond"
+                    android:textColor="@color/text_dialog_content"
+                    android:textSize="36px"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_dialog_signal_error_positive"
+                    android:layout_width="352px"
+                    android:layout_height="80px"
+                    android:layout_marginLeft="15px"
+                    android:layout_marginBottom="51px"
+                    android:background="@drawable/btn_dialog"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="@string/road_calibration_speed_hint_btn"
+                    android:textColor="@color/btn_dialog"
+                    android:textSize="40px"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/tv_dialog_signal_error_negative" />
+
+                <TextView
+                    android:id="@+id/tv_dialog_signal_error_negative"
+                    android:layout_width="352px"
+                    android:layout_height="80px"
+                    android:layout_marginEnd="15px"
+                    android:layout_marginBottom="51px"
+                    android:background="@drawable/btn_dialog"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="@string/text_cancel"
+                    android:textColor="@color/btn_dialog"
+                    android:textSize="40px"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/tv_dialog_signal_error_positive"
+                    app:layout_constraintRight_toRightOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/tv_hint_error_evs"
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:background="@color/bg_error"
+            android:drawableLeft="@mipmap/icon_warning_small"
+            android:drawablePadding="24px"
+            android:gravity="center_vertical"
+            android:paddingLeft="757px"
+            android:text="@string/apa_camera_error"
+            android:textColor="@color/white"
+            android:textSize="40px"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_hint_error_signal"
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:background="@color/bg_error"
+            android:drawableLeft="@mipmap/icon_warning_small"
+            android:drawablePadding="24px"
+            android:gravity="center_vertical"
+            android:paddingLeft="757px"
+            android:text="@string/apa_signal_error"
+            android:textColor="@color/white"
+            android:textSize="40px"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/dialog_tv_brake_tips"
+            android:layout_width="838px"
+            android:layout_height="188px"
+            android:layout_marginLeft="542px"
+            android:layout_marginRight="540px"
+            android:layout_marginBottom="26px"
+            android:visibility="gone"
+            android:background="@mipmap/apa_popup_background_last"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="66px"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:layout_width="66px"
+                    android:layout_height="66px"
+                    android:src="@mipmap/icon_avm_failure"
+                    />
+                <TextView
+                    android:id="@+id/tv_brake_tips"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="23px"
+                    android:gravity="center"
+                    android:text="@string/apa_view_brake_tips"
+                    android:textColor="@color/white"
+                    android:textSize="40px"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/dialog_tv_home_tips"
+        android:layout_width="838px"
+        android:layout_height="188px"
+        android:layout_marginLeft="542px"
+        android:layout_marginRight="540px"
+        android:layout_marginBottom="26px"
+        android:visibility="gone"
+        android:background="@mipmap/apa_popup_background_last"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="66px"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="66px"
+                android:layout_height="66px"
+                android:src="@mipmap/icon_avm_failure"
+                />
+            <TextView
+                android:id="@+id/tv_home_tips"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="23px"
+                android:gravity="center"
+                android:text="@string/apa_view_home_tips"
+                android:textColor="@color/white"
+                android:textSize="40px"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/dialog_tv_stop_di"
+            android:layout_width="410px"
+            android:layout_height="86px"
+            android:layout_marginRight="690px"
+            android:layout_marginTop="145px"
+            android:layout_marginBottom="629px"
+            android:visibility="gone"
+            android:background="@color/transparent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:layout_width="66px"
+                    android:layout_height="66px"
+                    android:src="@mipmap/icon_singlerow_parking"
+                    />
+                <TextView
+                    android:id="@+id/tv_stop_di"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10px"
+                    android:gravity="center"
+                    android:text="@string/apa_view_stop_di"
+                    android:textColor="@color/white"
+                    android:textSize="40px" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="116px"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/btn_apa"
+            android:layout_width="160px"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <View
+            android:id="@+id/btn_home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true" />
+    </LinearLayout>
+    <View
+        android:id="@+id/dialog_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

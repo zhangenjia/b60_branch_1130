@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+<!--    <View-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="104px"-->
+<!--        android:clickable="true"-->
+<!--        android:focusable="true" />-->
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_update"
+        android:clickable="true"
+        android:focusable="true">
+
+
+        <ProgressBar
+            android:id="@+id/m_progress_bar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="1191px"
+            android:layout_height="8px"
+            android:layout_marginBottom="174px"
+            android:progress="0"
+            android:progressDrawable="@drawable/progress_upgrade"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <ImageView
+            android:id="@+id/tv_update_image"
+            android:layout_width="44px"
+            android:layout_height="44px"
+            android:layout_marginRight="15px"
+            android:layout_marginBottom="93px"
+            app:layout_constraintBottom_toTopOf="@id/m_progress_bar"
+            app:layout_constraintRight_toLeftOf="@id/tv_update_hint"/>
+
+        <TextView
+            android:id="@+id/tv_update_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="92px"
+            android:text="@string/avm_view_progress_0"
+            android:textColor="@color/white"
+            android:textSize="30px"
+            app:layout_constraintBottom_toTopOf="@id/m_progress_bar"
+            app:layout_constraintLeft_toLeftOf="@id/m_progress_bar"
+            app:layout_constraintRight_toRightOf="@id/m_progress_bar" />
+
+        <TextView
+            android:id="@+id/tv_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="26px"
+            android:text="@string/avm_view_progress_0"
+            android:textColor="@color/green"
+            android:textSize="30px"
+            app:layout_constraintBottom_toTopOf="@id/m_progress_bar"
+            app:layout_constraintRight_toRightOf="@id/m_progress_bar" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="216px"
+            android:text="@string/avm_view_update_title"
+            android:textColor="@color/white"
+            android:textSize="48px"
+            app:layout_constraintLeft_toLeftOf="@id/m_progress_bar"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_update_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="38px"
+            android:gravity="center"
+            android:text="@string/avm_dialog_update_version"
+            android:textColor="@color/text_dialog_title"
+            android:textSize="30px"
+            app:layout_constraintLeft_toLeftOf="@+id/tv_title"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+        <TextView
+            android:id="@+id/tv_update_version_curr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45px"
+            android:gravity="center"
+            android:text="@string/avm_dialog_update_current_version"
+            android:textColor="@color/white_60"
+            android:textSize="30px"
+            app:layout_constraintLeft_toLeftOf="@+id/tv_title"
+            app:layout_constraintTop_toBottomOf="@+id/tv_update_version" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/container_dialog_update_confirm"
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:background="@color/bg_update"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/dialog_update_confirm"
+                android:layout_width="838px"
+                android:layout_height="518px"
+                android:background="@mipmap/img_popup_background5"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="87px"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+                    <ImageView
+                        android:layout_width="66px"
+                        android:layout_height="66px"
+                        android:src="@mipmap/icon_avm_upgrading"/>
+                    <TextView
+                        android:id="@+id/tv_dialog_update_confirm_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_marginLeft="23px"
+                        android:text="@string/avm_dialog_update_confirm_title"
+                        android:textColor="@color/text_dialog_title"
+                        android:textSize="40px" />
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:id="@+id/tv_dialog_update_confirm_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/avm_dialog_update_confirm_content"
+                    android:textColor="@color/text_dialog_content"
+                    android:textSize="36px"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/tv_dialog_confirm_button"
+                    android:layout_width="352px"
+                    android:layout_height="80px"
+                    android:layout_marginLeft="51px"
+                    android:layout_marginBottom="51px"
+                    android:background="@drawable/btn_dialog"
+                    android:gravity="center"
+                    android:text="@string/avm_dialog_update_confirm_button"
+                    android:textColor="@color/btn_dialog"
+                    android:textSize="40px"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_dialog_confirm_cancel"
+                    android:layout_width="352px"
+                    android:layout_height="80px"
+                    android:layout_marginRight="51px"
+                    android:background="@drawable/btn_dialog"
+                    android:gravity="center"
+                    android:text="@string/avm_dialog_update_confirm_cancel"
+                    android:textColor="@color/btn_dialog"
+                    android:textSize="40px"
+                    app:layout_constraintBottom_toBottomOf="@id/tv_dialog_confirm_button"
+                    app:layout_constraintRight_toRightOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/container_dialog_update"
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:background="@color/bg_update"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/dialog_update"
+                android:layout_width="838px"
+                android:layout_height="518px"
+                android:background="@mipmap/img_popup_background5"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="87px"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" >
+                    <ImageView
+                        android:layout_width="66px"
+                        android:layout_height="66px"
+                        android:src="@mipmap/icon_avm_upgrading"/>
+                    <TextView
+                        android:id="@+id/tv_dialog_update_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="26px"
+                        android:gravity="center"
+                        android:text="@string/avm_dialog_update_title"
+                        android:textColor="@color/text_dialog_title"
+                        android:textSize="40px" />
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv_dialog_update_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="200px"
+                    android:gravity="center"
+                    android:text="@string/avm_dialog_update_version"
+                    android:textColor="@color/text_dialog_title"
+                    android:textSize="36px"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_dialog_update_version_curr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="222px"
+                    android:gravity="center"
+                    android:text="@string/avm_dialog_update_current_version"
+                    android:textColor="@color/white_60"
+                    android:textSize="30px"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_dialog_button"
+                    android:layout_width="352px"
+                    android:layout_height="80px"
+                    android:layout_marginLeft="51px"
+                    android:layout_marginBottom="51px"
+                    android:background="@drawable/btn_dialog"
+                    android:gravity="center"
+                    android:text="@string/avm_dialog_update_button"
+                    android:textColor="@color/btn_dialog"
+                    android:textSize="40px"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_dialog_cancel"
+                    android:layout_width="352px"
+                    android:layout_height="80px"
+                    android:layout_marginRight="51px"
+                    android:background="@drawable/btn_dialog"
+                    android:gravity="center"
+                    android:text="@string/avm_dialog_update_cancel"
+                    android:textColor="@color/btn_dialog"
+                    android:textSize="40px"
+                    app:layout_constraintBottom_toBottomOf="@id/tv_dialog_button"
+                    app:layout_constraintRight_toRightOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/container_dialog_update_failed"
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:background="@color/bg_update"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/dialog_update_failed"
+                android:layout_width="838px"
+                android:layout_height="470px"
+                android:background="@mipmap/img_popup_background2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tv_dialog_update_failed_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="89px"
+                    android:gravity="center"
+                    android:text="@string/avm_dialog_update_failed_title"
+                    android:textColor="@color/text_dialog_title"
+                    android:textSize="40px"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_dialog_update_failed_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="223px"
+                    android:gravity="center"
+                    android:text="@string/avm_box_no_respond"
+                    android:textColor="@color/text_dialog_content"
+                    android:textSize="36px"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/tv_dialog_failed_button"
+                    android:layout_width="352px"
+                    android:layout_height="80px"
+                    android:layout_marginBottom="51px"
+                    android:background="@drawable/btn_dialog"
+                    android:gravity="center"
+                    android:text="@string/upgrade_exit"
+                    android:textColor="@color/btn_dialog"
+                    android:textSize="40px"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--    <View-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="116px"-->
+<!--        android:clickable="true"-->
+<!--        android:focusable="true" />-->
+</LinearLayout>
