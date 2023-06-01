@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/syncing_iv"
+        android:layout_width="160px"
+        android:layout_height="160px"
+        android:layout_marginTop="173px"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/anim_loading"
+        app:skinEnable="false">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/syncing_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/syncing_iv"
+        android:layout_marginTop="53px"
+        android:text="@string/syncing"
+        android:textSize="40px"
+        android:gravity="center"
+        android:textColor="#fefefe" />
+
+    <RelativeLayout
+        android:layout_width="268px"
+        android:layout_height="82px"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/syncing_tv"
+        android:layout_marginTop="52px">
+        <ImageView
+            android:layout_width="258px"
+            android:layout_height="82px"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/selector_sync">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/cancle_sync_tv"
+            android:layout_width="match_parent"
+            android:layout_height="76px"
+            android:text="@string/cancel"
+            android:textColor="@color/colorBlack"
+            android:textSize="36px"
+            android:gravity="center">
+        </TextView>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+

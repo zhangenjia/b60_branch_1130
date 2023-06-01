@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">BtPhone</string>
+    <string name="bt_not_connect">蓝牙未连接</string>
+    <string name="to_setting_page">请前往系统设置-蓝牙界面，进行设置</string>
+    <string name="go">前往</string>
+    <string name="contact">联系人</string>
+    <string name="calllog">通话记录</string>
+    <string name="current_device">当前设备</string>
+    <string name="bt_phone_not_connect">蓝牙电话未连接</string>
+    <string name="open_phone_switch">请打开手机端-已连接设备的“通话”开关</string>
+    <string name="search">搜索</string>
+    <string name="sync">同步</string>
+    <string name="syncing">正在同步...</string>
+    <string name="cancel">取消</string>
+    <string name="no_number_list">当前无号码列表</string>
+    <string name="sync_failed">同步失败，请确认手机是
+        \n否已经授权，并重新同步</string>
+    <string name="yesterday">昨天</string>
+    <string name="dialing">拨号中...</string>
+    <string name="end_call">通话结束</string>
+    <string name="incomming">来电</string>
+    <string name="wechat">网络电话</string>
+
+</resources>

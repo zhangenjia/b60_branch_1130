@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/search_et"
+        android:layout_width="978px"
+        android:layout_height="72px"
+        android:textColorHint="#4cffffff"
+        android:hint="@string/search"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textSize="30px"
+        android:textColor="#ccffffff"
+        android:background="@drawable/bg_lookup"
+        android:paddingLeft="65px"
+        android:paddingRight="10px">
+
+    </EditText>
+
+    <ImageView
+        android:layout_width="42px"
+        android:layout_height="42px"
+        android:background="@drawable/icon_search"
+        android:layout_alignLeft="@+id/search_et"
+        android:layout_marginLeft="17px"
+        android:layout_marginTop="15px"/>
+
+    <ImageView
+        android:layout_width="219px"
+        android:layout_height="84px"
+        android:layout_toRightOf="@id/search_et"
+        android:layout_marginLeft="19px"
+        android:background="@drawable/selector_search_sync">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/sync_tv"
+        android:layout_width="209px"
+        android:layout_height="76px"
+        android:layout_toRightOf="@id/search_et"
+        android:layout_marginLeft="19px"
+        android:text="@string/sync"
+        android:textSize="36px"
+        android:gravity="center"
+        android:textColor="@color/colorBlack">
+    </TextView>
+
+</RelativeLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="1069px"
+    android:layout_height="611px">
+
+    <EditText
+        android:id="@+id/keyborad_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50px"
+        android:enabled="false"
+        android:gravity="center"
+        android:textColor="@color/colorWhite"
+        android:inputType="phone"
+        android:maxLength="32"
+        android:textSize="40px"
+        android:background="@null"/>
+
+    <RelativeLayout
+        android:layout_width="380px"
+        android:layout_height="520px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="128px">
+
+        <RelativeLayout
+            android:id="@+id/keyboard_1_rl"
+            android:layout_width="match_parent"
+            android:layout_height="102px">
+
+            <ImageView
+                android:id="@+id/key_1_iv"
+                android:layout_width="102px"
+                android:layout_height="102px"
+                android:background="@drawable/selector_keyboard_1" />
+
+            <ImageView
+                android:id="@+id/key_2_iv"
+                android:layout_width="102px"
+                android:layout_height="102px"
+                android:layout_centerInParent="true"
+                android:background="@drawable/selector_keyboard_2" />
+
+            <ImageView
+                android:id="@+id/key_3_iv"
+                android:layout_width="102px"
+                android:layout_height="102px"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/selector_keyboard_3" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/keyboard_2_rl"
+            android:layout_width="match_parent"
+            android:layout_height="102px"
+            android:layout_below="@+id/keyboard_1_rl"
+            android:layout_marginTop="24px">
+
+            <ImageView
+                android:id="@+id/key_4_iv"
+                android:layout_width="102px"
+                android:layout_height="102px"
+                android:background="@drawable/selector_keyboard_4" />
+
+            <ImageView
+                android:id="@+id/key_5_iv"
+                android:layout_width="102px"
+                android:layout_height="102px"
+                android:layout_centerInParent="true"
+                android:background="@drawable/selector_keyboard_5" />
+
+            <ImageView
+                android:id="@+id/key_6_iv"
+                android:layout_width="102px"
+                android:layout_height="102px"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/selector_keyboard_6" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/keyboard_3_rl"
+            android:layout_width="match_parent"
+            android:layout_height="102px"
+            android:layout_below="@+id/keyboard_2_rl"
+            android:layout_marginTop="24px">
+
+            <ImageView
+                android:id="@+id/key_7_iv"
+                android:layout_width="102px"
+                android:layout_height="102px"
+                android:background="@drawable/selector_keyboard_7" />
+
+            <ImageView
+                android:id="@+id/key_8_iv"
+                android:layout_width="102px"
+                android:layout_height="102px"
+                android:layout_centerInParent="true"
+                android:background="@drawable/selector_keyboard_8" />
+
+            <ImageView
+                android:id="@+id/key_9_iv"
+                android:layout_width="102px"
+                android:layout_height="102px"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/selector_keyboard_9" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/keyboard_4_rl"
+            android:layout_width="match_parent"
+            android:layout_height="102px"
+            android:layout_below="@+id/keyboard_3_rl"
+            android:layout_marginTop="24px">
+
+            <ImageView
+                android:id="@+id/key_star_iv"
+                android:layout_width="102px"
+                android:layout_height="102px"
+                android:background="@drawable/selector_keyboard_star" />
+
+            <ImageView
+                android:id="@+id/key_0_iv"
+                android:layout_width="102px"
+                android:layout_height="102px"
+                android:layout_centerInParent="true"
+                android:background="@drawable/selector_keyboard_0" />
+
+            <ImageView
+                android:id="@+id/key_pound_iv"
+                android:layout_width="102px"
+                android:layout_height="102px"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/selector_keyboard_pound" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

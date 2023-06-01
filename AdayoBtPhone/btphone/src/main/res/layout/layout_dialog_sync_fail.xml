@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="838px"
+    android:layout_height="188px"
+    android:background="@drawable/popup_background">
+
+    <ImageView
+        android:id="@+id/icon_failure"
+        android:layout_width="66px"
+        android:layout_height="66px"
+        android:layout_marginLeft="155px"
+        android:layout_centerVertical="true"
+        android:background="@drawable/icon_failure">
+    </ImageView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="left|center_vertical"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/icon_failure"
+        android:layout_marginLeft="23px"
+        android:text="@string/sync_failed"
+        android:textColor="@color/colorWhite"
+        android:textSize="40px"
+        tools:ignore="RelativeOverlap">
+
+    </TextView>
+</RelativeLayout>
