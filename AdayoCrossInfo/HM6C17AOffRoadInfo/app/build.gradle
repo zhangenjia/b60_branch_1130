@@ -1,0 +1,54 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion "28.0.0"
+    defaultConfig {
+        applicationId "com.adayo.app.crossinf"
+        minSdkVersion 26
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    signingConfigs {
+        release {
+            storeFile file('C:\\Users\\ADAYO-02\\Desktop\\sign_6c\\platform.keystore')
+            storePassword 'android'
+            keyAlias 'platform'
+            keyPassword 'android'
+        }
+    }
+    buildTypes {
+        debug {
+            minifyEnabled false
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation files('libs/mcucomm-proxy.jar')
+    implementation files('libs/aaop_hskin_helper.jar')
+    implementation files('libs/aaop_hskin.aar')
+    implementation files('libs\\confiiguration.jar')
+    implementation files('libs\\car.jar')
+//
+//    implementation files('libs/appcompat-1.0.2.aar')
+//    implementation files('libs/fragment-1.0.0.aar')
+//    implementation files('libs/material-1.0.0.aar')
+//    implementation files('libs/core-1.0.0.aar')
+}

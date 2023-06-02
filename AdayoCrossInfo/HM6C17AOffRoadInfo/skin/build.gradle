@@ -1,0 +1,71 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion "28.0.3"
+    defaultConfig {
+        applicationId "com.adayo.app.crossinf"
+        minSdkVersion 26
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    signingConfigs {
+        release {
+            storeFile file('F:\\dxf\\sign\\sign-6c\\platform.keystore')
+            storePassword 'android'
+            keyAlias 'platform'
+            keyPassword 'android'
+
+            v1SigningEnabled true
+            v2SigningEnabled true
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    buildTypes {
+        debug {
+            minifyEnabled false
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            if (variant.buildType.name == 'release') {
+                def fileName = "2.skin"
+                outputFileName = fileName
+            }
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
+    compileOnly fileTree(dir: 'jars', include: ['*.jar', '*.aar'])
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'com.github.mmin18:realtimeblurview:1.2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+}

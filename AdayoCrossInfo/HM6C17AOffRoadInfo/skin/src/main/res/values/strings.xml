@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">HM6C17AOffRoadInfo</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="weather">Weather</string>
+    <string name="waringtext">Important note: pay attention to driving safety, do not exceed the maximum wading depth</string>
+    <string name ="north">North</string>
+    <string name ="northeast">Northeast</string>
+    <string name ="east">East</string>
+    <string name ="southeast">Southeast</string>
+    <string name ="south">South</string>
+    <string name ="southwest">Southwest</string>
+    <string name ="west">West</string>
+    <string name ="northwest">Northwest</string>
+    <string name ="max">Max 0.75m</string>
+    <string name ="tab1">V I</string>
+    <string name ="tab2">E I</string>
+    <string name ="tab3">W D</string>
+
+</resources>

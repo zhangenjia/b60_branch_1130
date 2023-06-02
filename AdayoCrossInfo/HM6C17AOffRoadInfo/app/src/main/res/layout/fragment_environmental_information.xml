@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.EnvirFragment">
+
+    <!--水平角车辆图标-->
+    <ImageView
+        android:id="@+id/iv_horizontalangle"
+        android:layout_width="466px"
+        android:layout_height="290px"
+        android:layout_marginLeft="136px"
+        android:layout_marginTop="441px"
+        android:background="@drawable/spin_left_0"/>
+
+    <!-- 水平线-->
+    <ImageView
+        android:id="@+id/iv_horizontalangle_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="368px"
+        android:layout_marginTop="621px"
+        android:background="@drawable/line_left"
+        android:visibility="invisible"/>
+
+    <!--水平角弧度-->
+    <com.adayo.app.crossinf.ui.customview.HorizontalArcView
+        android:id="@+id/cv_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="138px"
+        android:layout_marginTop="393px"
+        android:alpha="0.5" />
+
+    <!--指南针轮盘背景-->
+    <RelativeLayout
+        android:layout_width="444px"
+        android:layout_height="441px"
+        android:layout_marginLeft="739px"
+        android:layout_marginTop="344px"
+        android:background="@drawable/compass_bg">
+
+        <TextView
+            android:id="@+id/tv_compassdirection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="160px"
+            android:paddingLeft="20px"
+            android:text="-"
+            android:textSize="39px" />
+
+        <TextView
+            android:id="@+id/tv_compassangle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="235px"
+            android:paddingLeft="60px"
+            android:layout_centerHorizontal="true"
+            android:textSize="50px" />
+    </RelativeLayout>
+
+
+    <!--    指南针指针-->
+    <RelativeLayout
+        android:id="@+id/iv_compass_pointer"
+        android:layout_width="355px"
+        android:layout_height="345px"
+        android:layout_marginLeft="790px"
+        android:layout_marginTop="390px">
+
+        <ImageView
+            android:id="@+id/compass_pointer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="171px"
+            android:background="@drawable/compass_pointer" />
+    </RelativeLayout>
+
+
+    <!--俯仰角车辆图标-->
+    <ImageView
+        android:id="@+id/iv_pitchangle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="1251px"
+        android:layout_marginTop="441px"
+        android:background="@drawable/spin_right_0" />
+
+    <!--俯仰线-->
+    <ImageView
+        android:id="@+id/iv_pitchangle_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1533px"
+        android:layout_marginTop="621px"
+        android:background="@drawable/line_right"
+        android:visibility="invisible" />
+
+    <com.adayo.app.crossinf.ui.customview.PitchArcView
+        android:id="@+id/cv_pichangle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="1251px"
+        android:layout_marginTop="341px"
+        android:alpha="0.5" />
+
+    <!--    android:text="水平角"-->
+    <TextView
+        android:id="@+id/tv_horizontalangle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="347px"
+        android:layout_marginTop="323px"
+        android:textColor="@color/skinText"
+        android:text="-"
+        android:textSize="@dimen/text_30_sp" />
+
+    <ImageView
+        android:id="@+id/icon_altitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="287px"
+        android:layout_marginTop="733px"
+        android:background="@drawable/icon_altitude" />
+
+    <!--    android:text="海拔"-->
+    <TextView
+        android:id="@+id/tv_altitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="374px"
+        android:layout_marginTop="737px"
+        android:textSize="@dimen/text_30_sp" />
+
+    <!--    android:text="俯仰角"-->
+    <TextView
+        android:id="@+id/tv_pitchangle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1541px"
+        android:layout_marginTop="323px"
+        android:textColor="@color/skinText"
+        android:text="-"
+        android:textSize="@dimen/text_30_sp" />
+
+    <ImageView
+        android:id="@+id/icon_air_pressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1433px"
+        android:layout_marginTop="727px"
+        android:background="@drawable/icon_air_pressure" />
+
+
+    <!--    android:text="大气压"-->
+    <TextView
+        android:id="@+id/tv_atmosphericpressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1495px"
+        android:layout_marginTop="737px"
+        android:textSize="@dimen/text_30_sp" />
+
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/tv_compassdirection"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="512px"-->
+<!--        android:text="-"-->
+<!--        android:textSize="39px" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/tv_compassangle"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="917px"-->
+<!--        android:layout_marginTop="568px"-->
+<!--        android:text="-"-->
+<!--        android:textSize="50px" />-->
+
+
+
+</RelativeLayout>
