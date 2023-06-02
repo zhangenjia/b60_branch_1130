@@ -1,0 +1,101 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdk
+    buildToolsVersion rootProject.ext.android.buildTools
+    defaultConfig {
+        applicationId "com.adayo.app.video"
+        minSdkVersion rootProject.ext.android.minSdk
+        targetSdkVersion rootProject.ext.android.targetSdk
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+    }
+    signingConfigs {
+        release {
+            storeFile file(rootProject.ext.android.storeFile)
+            storePassword rootProject.ext.android.storePassword
+            keyAlias rootProject.ext.android.keyAlias
+            keyPassword rootProject.ext.android.keyPassword
+        }
+    }
+    buildTypes {
+        debug {
+            minifyEnabled false
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+    buildFeatures {
+        viewBinding = true
+    }
+    android.applicationVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = "AdayoVideo.apk"
+        }
+    }//配置生成产物的文件名
+}
+
+dependencies {
+    /**
+     * Module Lib
+     */
+    implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
+
+    /**
+     * Project Lib
+     */
+    //noinspection GradlePath
+
+    /**
+     * Android Lib
+     */
+    implementation 'com.google.android.material:material:' + rootProject.ext.dependencies['material']
+    implementation 'androidx.appcompat:appcompat:' + rootProject.ext.dependencies['appcompat']
+    implementation 'androidx.recyclerview:recyclerview:' + rootProject.ext.dependencies['recyclerview']
+    implementation 'androidx.constraintlayout:constraintlayout:' + rootProject.ext.dependencies['constraintlayout']
+    implementation 'androidx.lifecycle:lifecycle-common-java8:' + rootProject.ext.dependencies['lifecycle']
+
+    /**
+     * CPY Maven Lib
+     */
+    compileOnly 'com.adayo.source:car:' + rootProject.ext.dependencies['car']
+    implementation group: 'com.adayo.util', name: 'h-skin', version: rootProject.ext.dependencies['h-skin'], ext: 'aar'
+    implementation 'com.adayo.util:h-skin-helper.hm6c17a:' + rootProject.ext.dependencies['h-skin-helper.hm6c17a']
+    implementation 'com.adayo.proxy:media:' + rootProject.ext.dependencies['media']
+
+    /**
+     * Third Party Lib
+     */
+    implementation 'com.tencent:mmkv:' + rootProject.ext.dependencies['mmkv']
+    implementation 'com.github.zuilintan:lt-base:' + rootProject.ext.dependencies['lt-base']
+    implementation 'com.kunminx.arch:unpeek-livedata:7.2.0-beta1'
+}
+
+/*preBuild {
+    doLast {
+        String imlPath = "${rootDir}\\.idea\\modules\\${project.name}\\${rootProject.name}.${project.name}.iml"
+        def imlFile = file(imlPath)
+        println 'Change ' + rootProject.name + "." + project.name + '.iml order'
+        try {
+            def parsedXml = (new XmlParser()).parse(imlFile)
+            def jdkNode = parsedXml.component[1].orderEntry.find { it.'@type' == 'jdk' }
+            parsedXml.component[1].remove(jdkNode)
+            def sdkString = "Android API " + android.compileSdkVersion.substring("android-".length()) + " Platform"
+            new groovy.util.Node(parsedXml.component[1], 'orderEntry', ['type': 'jdk', 'jdkName': sdkString, 'jdkType': 'Android SDK'])
+            groovy.xml.XmlUtil.serialize(parsedXml, new FileOutputStream(imlFile))
+        } catch (FileNotFoundException e) {
+            e.printStackTrace()
+        }
+    }
+}//解决系统API标红的问题*/

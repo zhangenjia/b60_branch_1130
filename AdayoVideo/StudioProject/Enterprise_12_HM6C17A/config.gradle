@@ -1,0 +1,51 @@
+ext {
+    android = [
+            compileSdk   : 28,
+            buildTools   : '28.0.3',
+
+            minSdk       : 28,
+            targetSdk    : 28,
+            versionCode  : 1,
+            versionName  : "1.0.0",
+
+            storeFile    : 'C:\\Users\\LinTan\\IdeaCfg\\KeyStore\\CPY\\6C\\platform.keystore',
+            storePassword: 'android',
+            keyAlias     : 'platform',
+            keyPassword  : 'android'
+    ]
+
+    //noinspection GroovyConstructorNamedArguments
+    dependencies = [
+            /**
+             * Android Lib
+             */
+            support                       : '28.0.0',
+            'legacy-support-v4'           : '1.0.0',
+            'material'                    : '1.4.0',
+            'appcompat'                   : '1.3.1',
+            'recyclerview'                : '1.2.1',
+            'constraintlayout'            : '2.1.1',
+            'lifecycle'                   : '2.3.1',
+
+            /**
+             * CPY Maven Lib
+             */
+            'car'                         : '2021.11.29',
+            'h-skin'                      : '1.1.0',
+            'h-skin-helper.hm6c17a'       : '1.0.5',
+            'media'                       : '1.3.7.0002',
+
+            /**
+             * Third Party Lib
+             */
+            'guava'                       : '31.0.1-android',
+            'okhttp3'                     : '3.12.1',
+            'mmkv'                        : '1.2.10',
+            'gson'                        : '2.8.8',
+            'fastjson'                    : '1.2.76',
+            'glide'                       : '4.12.0',
+            'unpeek-livedata'             : '7.2.0-beta1',
+            'FFmpegMediaMetadataRetriever': '1.0.16',
+            'lt-base'                     : '1.5.6'
+    ]
+}
