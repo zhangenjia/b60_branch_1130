@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/photo_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:fadeScrollbars="true"
+            android:layout_marginEnd="26px"
+            android:scrollbarSize="6px"
+            android:scrollbarStyle="outsideInset"
+            android:scrollbars="vertical"
+            android:verticalScrollbarPosition="right"
+            android:scrollbarThumbVertical="@drawable/com_bar_sel"
+            android:scrollbarTrackVertical="@drawable/com_bar_last"
+            android:visibility="visible" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/mask_gradient" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/picture_no"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="179px"
+                android:layout_height="138px"
+                android:layout_gravity="center"
+                android:src="@drawable/com_icon_big_no_file" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="51px"
+                android:text="无图片文件"
+                android:textColor="@android:color/white"
+                android:textSize="42px" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

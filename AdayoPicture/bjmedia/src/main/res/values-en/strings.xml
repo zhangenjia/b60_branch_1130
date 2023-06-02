@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Picture</string>
+
+    <string name="loading">Device loading</string>
+    <string name="music_loading" translatable="false">Loading···</string>
+    <string name="picture">Picture</string>
+    <string name="unplug_device">USB device unplugged</string>
+    <string name="picture_no_file">No picture file</string>
+    <string name="picture_no_device">Please insert a valid USB device</string>
+    <string name="picture_error_file">Picture file error</string>
+
+</resources>
