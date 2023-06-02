@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:source="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="36px"
+    android:layout_alignParentRight="true">
+
+    <com.adayo.app.systemui.windows.views.HvacBlowingModeView
+        android:id="@+id/rear_blowing_mode"
+        android:layout_width="1074px"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="490px"
+        source:area="area_seat_rear"
+        source:receiveVehicleIndex="hvac_fan_direction"
+        source:sendVehicleIndex="hvac_fan_direction" />
+
+    <LinearLayout
+        android:id="@+id/top_layout"
+        android:layout_width="371px"
+        android:layout_height="124px"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/img_tab_frame_short"
+        android:orientation="horizontal">
+
+        <com.adayo.app.systemui.bases.BaseHvacSwitch
+            android:layout_width="116px"
+            android:layout_height="116px"
+            android:layout_marginLeft="35px"
+            android:background="@drawable/selector_hvac_auto"
+            source:area="area_seat_rear"
+            source:receiveVehicleIndex="hvac_auto_on"
+            source:sendOffset="1"
+            source:sendVehicleIndex="hvac_auto_on" />
+
+        <com.adayo.app.systemui.bases.BaseHvacSwitch
+            android:layout_width="116px"
+            android:layout_height="116px"
+            android:layout_marginLeft="69px"
+            android:background="@drawable/selector_hvac_off"
+            source:area="area_seat_rear"
+            source:receiveVehicleIndex="hvac_power_on"
+            source:sendOffset="1"
+            source:sendVehicleIndex="hvac_power_on" />
+
+    </LinearLayout>
+
+    <com.adayo.app.systemui.windows.views.HvacTemperatureView
+        android:layout_width="128px"
+        android:layout_height="512px"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="71px"
+        android:fadingEdge="vertical"
+        android:fadingEdgeLength="50px"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        source:area="area_seat_rear_left"
+        source:receiveVehicleIndex="hvac_temperature_set"
+        source:sendVehicleIndex="hvac_temperature_set"/>
+
+    <com.adayo.app.systemui.windows.views.HvacTemperatureView
+        android:layout_width="128px"
+        android:layout_height="512px"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="71px"
+        android:layout_marginRight="30px"
+        android:fadingEdge="vertical"
+        android:fadingEdgeLength="50px"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        source:area="area_seat_rear_left"
+        source:receiveVehicleIndex="hvac_temperature_set"
+        source:sendVehicleIndex="hvac_temperature_set"/>
+
+    <com.adayo.app.systemui.windows.views.HvacBlowingVolumeView
+        android:layout_width="956px"
+        android:layout_height="108px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="628px"
+        source:area="area_seat_rear"
+        source:receiveVehicleIndex="hvac_fan_speed"
+        source:sendVehicleIndex="hvac_fan_speed"/>
+</RelativeLayout>

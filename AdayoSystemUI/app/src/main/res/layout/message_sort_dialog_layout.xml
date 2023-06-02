@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="838px"
+        android:layout_height="518px"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/popup_background_n">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="74px"
+        android:drawableLeft="@drawable/icon_failure"
+        android:drawablePadding="19px"
+        android:gravity="center_vertical"
+        android:text="@string/message_traffic_renewal_reminder"
+        android:textSize="40px"
+        android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="217px"
+            android:layout_marginLeft="42px"
+            android:layout_marginRight="42px"
+            android:lines="2"
+            android:gravity="center_horizontal"
+            android:textSize="36px"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/btn_confirm"
+            android:layout_width="260px"
+            android:layout_height="70px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="387px"
+            android:background="@drawable/selector_button_simple"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="@string/confirm"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="28px" />
+
+    </RelativeLayout>

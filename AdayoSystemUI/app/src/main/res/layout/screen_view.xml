@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="1920px"
+    android:layout_height="1080px"
+    android:background="@color/black"
+    android:fitsSystemWindows="false">
+
+    <ImageView
+        android:id="@+id/logo_icon"
+        android:layout_width="838px"
+        android:layout_height="174px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="431px"
+        android:background="@drawable/com_logo"
+        android:visibility="gone" />
+
+    <com.adayo.app.systemui.windows.views.ScreenClockView
+        android:id="@+id/clock_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="422px"
+        android:visibility="visible" />
+</RelativeLayout>

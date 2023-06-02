@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">SystemUI</string>
+    <string name="air_quality" translatable="false">PM</string>
+    <string name="air_quality_unit">%1$dμg/m³</string>
+
+    <string name="unconnected">未连接</string>
+    <string name="bluetooth">蓝牙</string>
+    <string name="wifi" translatable="false">WiFi</string>
+    <string name="hotspot">热点</string>
+    <string name="message_center">消息中心</string>
+    <string name="message_empty">无消息内容</string>
+    <string name="message_traffic_renewal">流量续费</string>
+    <string name="message_traffic_renewal_reminder">流量续费提醒</string>
+    <string name="message_tsp">TSP消息</string>
+    <string name="message_ota">OTA升级</string>
+    <string name="message_unread">未读</string>
+    <string name="am">上午</string>
+    <string name="pm">下午</string>
+    <string name="hvac_front">前排空调</string>
+    <string name="hvac_rear">后排空调</string>
+    <string name="hvac_seat">座椅温控</string>
+    <string name="confirm">确定</string>
+    <string name="hvac_seat_massage">座椅按摩</string>
+    <string name="need_start_engine">该功能需启动发动机后使用</string>
+    <string name="massage_is_off">座椅按摩按摩功能暂时关闭，\n发动机启动完成后恢复</string>
+    <string name="voltage_low">当前电压过低，座椅按摩功能关闭</string>
+    <string name="voltage_high">当前电压过高，座椅按摩功能关闭</string>
+    <string name="close">关闭</string>
+    <string name="low">低</string>
+    <string name="middle">中</string>
+    <string name="high">高</string>
+    <string name="pulse">脉冲</string>
+    <string name="wave">波浪</string>
+    <string name="catwalk">猫步</string>
+    <string name="single">单排</string>
+    <string name="cross">交叉</string>
+    <string name="butterfly">蝶形</string>
+    <string name="loin">腰部</string>
+    <string name="serpentine">蛇形</string>
+</resources>

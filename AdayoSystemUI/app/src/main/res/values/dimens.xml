@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="list_select_text_size_1">48px</dimen>
+    <dimen name="list_select_text_size_2">48px</dimen>
+    <dimen name="list_select_text_size_3">48px</dimen>
+</resources>

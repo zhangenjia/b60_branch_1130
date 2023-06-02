@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/message_bg"
+    android:layout_width="838px"
+    android:layout_height="397px"
+    android:background="@drawable/massage_bg"
+    android:stretchColumns="*">
+        <TextView
+            android:id="@+id/pulse"
+            android:layout_height="90px"
+            android:layout_width="140px"
+            android:layout_marginLeft="94px"
+            android:layout_marginTop="44px"
+            android:text="@string/pulse"
+            android:textColor="@color/selector_massage_text"
+            android:background="@drawable/selector_massage_bg"
+            android:gravity="center"
+            android:textSize="28px" />
+        <TextView
+            android:id="@+id/wave"
+            android:layout_height="90px"
+            android:layout_width="140px"
+            android:layout_marginLeft="264px"
+            android:layout_marginTop="44px"
+            android:text="@string/wave"
+            android:textColor="@color/selector_massage_text"
+            android:background="@drawable/selector_massage_bg"
+            android:gravity="center"
+            android:textSize="28px" />
+        <TextView
+            android:id="@+id/catwalk"
+            android:layout_height="90px"
+            android:layout_width="140px"
+            android:layout_marginLeft="434px"
+            android:layout_marginTop="44px"
+            android:text="@string/catwalk"
+            android:textColor="@color/selector_massage_text"
+            android:background="@drawable/selector_massage_bg"
+            android:gravity="center"
+            android:textSize="28px" />
+        <TextView
+            android:id="@+id/single"
+            android:layout_height="90px"
+            android:layout_width="140px"
+            android:layout_marginLeft="604px"
+            android:layout_marginTop="44px"
+            android:text="@string/single"
+            android:textColor="@color/selector_massage_text"
+            android:background="@drawable/selector_massage_bg"
+            android:gravity="center"
+            android:textSize="28px" />
+
+        <TextView
+            android:id="@+id/cross"
+            android:layout_height="90px"
+            android:layout_width="140px"
+            android:layout_marginLeft="94px"
+            android:layout_marginTop="153px"
+            android:text="@string/cross"
+            android:textColor="@color/selector_massage_text"
+            android:background="@drawable/selector_massage_bg"
+            android:gravity="center"
+            android:textSize="28px" />
+        <TextView
+            android:id="@+id/butterfly"
+            android:layout_height="90px"
+            android:layout_width="140px"
+            android:layout_marginLeft="264px"
+            android:layout_marginTop="153px"
+            android:text="@string/butterfly"
+            android:textColor="@color/selector_massage_text"
+            android:background="@drawable/selector_massage_bg"
+            android:gravity="center"
+            android:textSize="28px" />
+        <TextView
+            android:id="@+id/loin"
+            android:layout_height="90px"
+            android:layout_width="140px"
+            android:layout_marginLeft="434px"
+            android:layout_marginTop="153px"
+            android:text="@string/loin"
+            android:textColor="@color/selector_massage_text"
+            android:background="@drawable/selector_massage_bg"
+            android:gravity="center"
+            android:textSize="28px" />
+        <TextView
+            android:id="@+id/serpentine"
+            android:layout_height="90px"
+            android:layout_width="140px"
+            android:layout_marginLeft="604px"
+            android:layout_marginTop="153px"
+            android:text="@string/serpentine"
+            android:textColor="@color/selector_massage_text"
+            android:background="@drawable/selector_massage_bg"
+            android:gravity="center"
+            android:textSize="28px" />
+
+        <TextView
+            android:id="@+id/close"
+            android:layout_height="90px"
+            android:layout_width="140px"
+            android:layout_marginLeft="94px"
+            android:layout_marginTop="276px"
+            android:text="@string/close"
+            android:textColor="@color/selector_massage_text"
+            android:background="@drawable/selector_massage_bg"
+            android:gravity="center"
+            android:textSize="28px" />
+        <TextView
+            android:id="@+id/low"
+            android:layout_height="90px"
+            android:layout_width="140px"
+            android:layout_marginLeft="264px"
+            android:layout_marginTop="276px"
+            android:text="@string/low"
+            android:textColor="@color/selector_massage_text"
+            android:background="@drawable/selector_massage_bg"
+            android:gravity="center"
+            android:textSize="28px" />
+        <TextView
+            android:id="@+id/middle"
+            android:layout_height="90px"
+            android:layout_width="140px"
+            android:layout_marginLeft="434px"
+            android:layout_marginTop="276px"
+            android:text="@string/middle"
+            android:textColor="@color/selector_massage_text"
+            android:background="@drawable/selector_massage_bg"
+            android:gravity="center"
+            android:textSize="28px" />
+        <TextView
+            android:id="@+id/high"
+            android:layout_height="90px"
+            android:layout_width="140px"
+            android:layout_marginLeft="604px"
+            android:layout_marginTop="276px"
+            android:text="@string/high"
+            android:textColor="@color/selector_massage_text"
+            android:background="@drawable/selector_massage_bg"
+            android:gravity="center"
+            android:textSize="28px" />
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    coreApp="true"
+    package="com.adayo.app.systemui"
+    android:sharedUserId="android.uid.system">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.adayo.permission.Recv_App_Launched" />
+    <uses-permission android:name="android.Manifest.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:name=".SystemUIApplication"
+        android:allowBackup="false"
+        android:allowClearUserData="false"
+        android:defaultToDeviceProtectedStorage="true"
+        android:configChanges="orientation|screenSize"
+        android:directBootAware="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:label="@string/app_name"
+        android:persistent="true"
+        android:process="com.android.systemui"
+        android:roundIcon="@drawable/ic_launcher_foreground"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <service
+            android:name=".SystemUIService"
+            android:directBootAware="true"
+            android:enabled="true"
+            android:exported="true" />
+    </application>
+
+</manifest>

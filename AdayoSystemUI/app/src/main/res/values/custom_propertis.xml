@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="subtract_tag" translatable="false">SUBTRACT</string>
+    <string name="seek_bar_tag" translatable="false">SEEK_BAR</string>
+    <string name="plus_tag" translatable="false">PLUS</string>
+    <string name="text_tag" translatable="false">TEXT</string>
+</resources>

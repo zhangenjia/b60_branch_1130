@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="56px"
+    android:layout_height="56px"
+    android:layout_marginLeft="18px">
+
+    <ImageView
+        android:id="@+id/background_icon"
+        android:layout_width="56px"
+        android:layout_height="56px"
+        android:src="@drawable/com_icon_message"/>
+
+    <TextView
+        android:id="@+id/foreground_number"
+        android:layout_width="wrap_content"
+        android:layout_height="20px"
+        android:layout_alignParentRight="true"
+        android:includeFontPadding="false"
+        android:minWidth="20px"
+        android:gravity="center"
+        android:layout_marginTop="9px"
+        android:layout_marginRight="4px"
+        android:background="@drawable/com_icon_message_red_one_digits"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="15px"
+        android:visibility="gone"/>
+</RelativeLayout>
