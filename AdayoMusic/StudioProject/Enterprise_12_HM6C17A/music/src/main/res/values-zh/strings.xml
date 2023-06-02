@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">音乐</string>
+    <string name="main_tab_title_lo_music">USB音乐</string>
+    <string name="main_tab_title_bt_music">蓝牙音乐</string>
+    <string name="lo_music_browse_info_no_device">请插入有效的USB设备</string>
+    <string name="lo_music_browse_info_no_file">无音乐文件</string>
+    <string name="lo_music_browse_info_loading">加载中…</string>
+    <string name="lo_music_browse_component_tab_title_all">全部</string>
+    <string name="lo_music_browse_component_tab_title_folder">文件夹</string>
+    <string name="lo_music_browse_component_tab_title_album">专辑</string>
+    <string name="lo_music_browse_component_list_album_unk">未知</string>
+    <string name="lo_music_browse_component_tab_title_artist">艺人</string>
+    <string name="lo_music_browse_component_list_artist_unk">未知</string>
+    <string name="lo_music_detail_title_unk">未知</string>
+    <string name="lo_music_detail_artist_unk">未知歌手</string>
+    <string name="lo_music_detail_album_unk">未知专辑</string>
+    <string name="lo_music_detail_not_support">当前歌曲播放错误</string>
+</resources>

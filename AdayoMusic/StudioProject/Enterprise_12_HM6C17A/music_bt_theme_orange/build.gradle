@@ -1,0 +1,56 @@
+plugins {
+    id 'com.android.library'
+}
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdk
+    buildToolsVersion rootProject.ext.android.buildTools
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdk
+        targetSdkVersion rootProject.ext.android.targetSdk
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+        consumerProguardFiles "consumer-rules.pro"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+}
+
+dependencies {
+    /**
+     * Module Lib
+     */
+    implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
+
+    /**
+     * Project Lib
+     */
+    implementation project(path: ':music-common-res_theme_orange')
+
+    /**
+     * Android Lib
+     */
+    implementation 'com.google.android.material:material:' + rootProject.ext.dependencies['material']
+    implementation 'androidx.appcompat:appcompat:' + rootProject.ext.dependencies['appcompat']
+    implementation 'androidx.constraintlayout:constraintlayout:' + rootProject.ext.dependencies['constraintlayout']
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    /**
+     * CPY Maven Lib
+     */
+    compileOnly 'com.adayo.source:car:' + rootProject.ext.dependencies['car']
+    implementation group: 'com.adayo.util', name: 'h-skin', version: rootProject.ext.dependencies['h-skin'], ext: 'aar'
+    implementation 'com.adayo.util:h-skin-helper.hm6c17a:' + rootProject.ext.dependencies['h-skin-helper.hm6c17a']
+}

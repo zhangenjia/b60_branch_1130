@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="main_tab_text_sel">#FFFFFF</color>
+    <color name="detail_progress">#D7730B</color>
+    <color name="detail_progress_bg">#817B79</color>
+    <color name="browse_tab_indicator">#D7730B</color>
+</resources>
