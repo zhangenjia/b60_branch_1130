@@ -75,6 +75,7 @@ public class MainActivity extends AppCompatActivity implements ISkinActivity, Vi
     @Override
 
     protected void onCreate(Bundle savedInstanceState) {
+        Log.d(TAG, "onCreate: for test ...");
         initSkinChange();
         super.onCreate(savedInstanceState);
         this.savedInstanceState = savedInstanceState;
