@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--length size-->
+    <dimen name="dp1920">1920dp</dimen>
+    <dimen name="dp1650">1650dp</dimen>
+    <dimen name="dp1080">1080dp</dimen>
+    <dimen name="dp964">964dp</dimen>
+    <dimen name="dp860">860dp</dimen>
+    <dimen name="dp536">536dp</dimen>
+    <dimen name="dp285">285dp</dimen>
+    <dimen name="dp270">270dp</dimen>
+    <dimen name="dp273">273dp</dimen>
+    <dimen name="dp123">123dp</dimen>
+    <dimen name="dp104">104dp</dimen>
+    <dimen name="dp73">73dp</dimen>
+    <dimen name="dp54">54dp</dimen>
+    <dimen name="dp52">52dp</dimen>
+    <dimen name="dp11">11dp</dimen>
+
+    <!--setting length size-->
+    <dimen name="setting_dp1148">1148dp</dimen>
+    <dimen name="setting_dp616">616dp</dimen>
+    <dimen name="setting_dp552">552dp</dimen>
+    <dimen name="setting_dp388">388dp</dimen>
+    <dimen name="setting_dp383">383dp</dimen>
+    <dimen name="setting_dp194">194dp</dimen>
+    <dimen name="setting_dp129">129dp</dimen>
+    <dimen name="setting_dp120">120dp</dimen>
+    <dimen name="setting_dp56">56dp</dimen>
+    <dimen name="setting_dp52">52dp</dimen>
+    <dimen name="setting_dp47">47dp</dimen>
+    <dimen name="setting_dp36">36dp</dimen>
+    <dimen name="setting_dp24">24dp</dimen>
+    <dimen name="setting_dp21">21dp</dimen>
+    <dimen name="setting_dp20">20dp</dimen>
+
+    <!--text size-->
+    <dimen name="setting_text_dp36">36dp</dimen>
+    <dimen name="setting_text_dp30">30dp</dimen>
+    <dimen name="text_dp24">24dp</dimen>
+
+</resources>

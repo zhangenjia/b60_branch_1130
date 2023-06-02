@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_setting"
+    android:layout_width="@dimen/dp1920"
+    android:layout_height="@dimen/dp860"
+    android:background="@mipmap/com_offroad_bg">
+
+    <ImageView
+        android:layout_width="@dimen/dp270"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/line"
+        android:layout_marginTop="1px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/ll_setting_back"
+        android:layout_width="@dimen/dp270"
+        android:layout_height="@dimen/dp123"
+        android:clickable="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="24px"
+            android:src="@drawable/btn_return" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16px"
+            android:text="@string/text_setting_back"
+            android:textColor="@drawable/btn_text_color"
+            android:textSize="35px" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="@dimen/dp270"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/line"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_setting_back" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_setting_resolution"
+        android:layout_width="@dimen/setting_dp1148"
+        android:layout_height="@dimen/setting_dp120"
+        android:layout_marginLeft="@dimen/setting_dp52"
+        android:layout_marginTop="@dimen/setting_dp36"
+        android:background="@mipmap/frame_site_left_last"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_setting_back">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/setting_dp21"
+            android:text="@string/text_setting_resolution"
+            android:textColor="@color/white"
+            android:textSize="36px"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+        <com.flyco.customtablayout.SegmentTabLayout
+            android:id="@+id/common1"
+            android:layout_width="@dimen/setting_dp388"
+            android:layout_height="@dimen/setting_dp56"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/setting_dp20"
+            android:background="@drawable/frame_last_cruise_mode"
+            app:tl_thumb_drawable="@drawable/frame_thumb_segment"
+            app:tl_textSelectColor="#000"
+            app:tl_textUnselectColor="#fff"
+            app:tl_indicator_anim_enable="true"
+            app:tl_tab_space_equal="true"
+            app:tl_tab_width="194px"
+            app:tl_textsize="30px"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints"/>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_setting_duration"
+        android:layout_width="@dimen/setting_dp1148"
+        android:layout_height="@dimen/setting_dp120"
+        android:layout_marginLeft="@dimen/setting_dp52"
+        android:layout_marginTop="@dimen/setting_dp24"
+        android:background="@mipmap/frame_site_left_last"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cl_setting_resolution">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/setting_dp21"
+            android:text="@string/text_setting_time"
+            android:textColor="@color/white"
+            android:textSize="36px"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.flyco.customtablayout.SegmentTabLayout
+            android:id="@+id/common2"
+            android:layout_width="@dimen/setting_dp388"
+            android:layout_height="@dimen/setting_dp56"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/setting_dp20"
+            android:background="@drawable/frame_last_cruise_mode"
+            app:tl_thumb_drawable="@drawable/frame_thumb_segment"
+            app:tl_textSelectColor="#000"
+            app:tl_textUnselectColor="#fff"
+            app:tl_indicator_anim_enable="true"
+            app:tl_tab_space_equal="true"
+            app:tl_tab_width="129px"
+            app:tl_textsize="30px"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_setting_moving_sensitivity"
+        android:layout_width="@dimen/setting_dp1148"
+        android:layout_height="@dimen/setting_dp120"
+        android:layout_marginLeft="@dimen/setting_dp52"
+        android:layout_marginTop="@dimen/setting_dp24"
+        android:background="@mipmap/frame_site_left_last"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cl_setting_duration">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/setting_dp21"
+            android:text="@string/text_setting_driving_monitor_sensitivity"
+            android:textColor="@color/white"
+            android:textSize="36px"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.flyco.customtablayout.SegmentTabLayout
+            android:id="@+id/common3"
+            android:layout_width="@dimen/setting_dp388"
+            android:layout_height="@dimen/setting_dp56"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/setting_dp20"
+            android:background="@drawable/frame_last_cruise_mode"
+            app:tl_thumb_drawable="@drawable/frame_thumb_segment"
+            app:tl_textSelectColor="#000"
+            app:tl_textUnselectColor="#fff"
+            app:tl_indicator_anim_enable="true"
+            app:tl_tab_space_equal="true"
+            app:tl_tab_width="129px"
+            app:tl_textsize="30px"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_setting_stopping_sensitivity"
+        android:layout_width="@dimen/setting_dp1148"
+        android:layout_height="@dimen/setting_dp120"
+        android:layout_marginLeft="@dimen/setting_dp52"
+        android:layout_marginTop="@dimen/setting_dp24"
+        android:background="@mipmap/frame_site_left_last"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cl_setting_moving_sensitivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/setting_dp21"
+            android:text="@string/text_setting_parking_monitor_sensitivity"
+            android:textColor="@color/white"
+            android:textSize="36px"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.flyco.customtablayout.SegmentTabLayout
+            android:id="@+id/common4"
+            android:layout_width="@dimen/setting_dp388"
+            android:layout_height="@dimen/setting_dp56"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/setting_dp20"
+            android:background="@drawable/frame_last_cruise_mode"
+            app:tl_thumb_drawable="@drawable/frame_thumb_segment"
+            app:tl_textSelectColor="#000"
+            app:tl_textUnselectColor="#fff"
+            app:tl_indicator_anim_enable="true"
+            app:tl_tab_space_equal="true"
+            app:tl_tab_width="129px"
+            app:tl_textsize="30px"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="@dimen/setting_dp616"
+        android:layout_height="@dimen/setting_dp552"
+        android:layout_marginTop="@dimen/setting_dp36"
+        android:layout_marginRight="@dimen/setting_dp52"
+        android:background="@mipmap/frame_site_right_last"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_setting_back">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/setting_dp21"
+            android:layout_marginTop="43px"
+            android:text="@string/text_setting_sdcard_memory"
+            android:textColor="@color/white"
+            android:textSize="@dimen/setting_text_dp36"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/setting_dp47"
+            android:layout_marginTop="110px"
+            android:text="@string/text_setting_sdcard_memory_ordinary_video"
+            android:textColor="@color/white"
+            android:textSize="@dimen/setting_text_dp30"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/setting_dp47"
+            android:layout_marginTop="163px"
+            android:text="@string/text_setting_sdcard_memory_emergency_video"
+            android:textColor="@color/white"
+            android:textSize="@dimen/setting_text_dp30"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/setting_dp47"
+            android:layout_marginTop="216px"
+            android:text="@string/text_setting_sdcard_memory_photo"
+            android:textColor="@color/white"
+            android:textSize="@dimen/setting_text_dp30"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/setting_dp47"
+            android:layout_marginTop="269px"
+            android:text="@string/text_setting_sdcard_memory_at_will_photo"
+            android:textColor="@color/white"
+            android:textSize="@dimen/setting_text_dp30"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/setting_dp21"
+            android:layout_marginTop="330px"
+            android:text="@string/text_setting_sdcard_format"
+            android:textColor="@color/white"
+            android:textSize="@dimen/setting_text_dp36"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_sd_size_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="43px"
+            android:layout_marginRight="@dimen/setting_dp21"
+            android:text="4.2GB/32GB"
+            android:textColor="@color/white"
+            android:textSize="@dimen/setting_text_dp30"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_sd_size_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="110px"
+            android:layout_marginRight="@dimen/setting_dp21"
+            android:text="1.0GB"
+            android:textColor="@color/white"
+            android:textSize="@dimen/setting_text_dp30"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_sd_size_emergency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="164px"
+            android:layout_marginRight="@dimen/setting_dp21"
+            android:text="0.6GB"
+            android:textColor="@color/white"
+            android:textSize="@dimen/setting_text_dp30"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_sd_size_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="217px"
+            android:layout_marginRight="@dimen/setting_dp21"
+            android:text="1.4GB"
+            android:textColor="@color/white"
+            android:textSize="@dimen/setting_text_dp30"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_sd_size_at_will"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="270px"
+            android:layout_marginRight="@dimen/setting_dp21"
+            android:text="0.0GB"
+            android:textColor="@color/white"
+            android:textSize="@dimen/setting_text_dp30"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_sd_format"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="323px"
+            android:layout_marginRight="@dimen/setting_dp21"
+            android:clickable="true"
+            android:src="@mipmap/icon_right_arrow"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/setting_dp383"
+            android:src="@mipmap/line_site"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/setting_dp21"
+            android:layout_marginTop="402px"
+            android:text="@string/text_setting_sdcard_system_version"
+            android:textColor="@color/white"
+            android:textSize="@dimen/setting_text_dp36"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/setting_dp21"
+            android:layout_marginTop="474px"
+            android:text="@string/text_setting_sdcard_restore_settings"
+            android:textColor="@color/white"
+            android:textSize="@dimen/setting_text_dp36"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_setting_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="406px"
+            android:layout_marginRight="@dimen/setting_dp21"
+            android:text="VA.BB.CC"
+            android:textColor="@color/white"
+            android:textSize="@dimen/setting_text_dp30"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_dvr_format"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="467px"
+            android:layout_marginRight="@dimen/setting_dp21"
+            android:clickable="true"
+            android:src="@mipmap/icon_right_arrow"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

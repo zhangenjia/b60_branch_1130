@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/dp1920"
+    android:layout_height="@dimen/dp860"
+    android:id="@+id/cl_open"
+    android:background="@color/black">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/iv_camera_open_on_container"
+        android:layout_width="@dimen/dp1650"
+        android:layout_height="@dimen/dp860"
+        android:background="@color/error_color"
+        android:clickable="true"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <ImageView
+            android:id="@+id/iv_open_on_img"
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:layout_marginTop="248px"
+            android:src="@mipmap/icon_driving_recorder_turned_off"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+        <TextView
+            android:id="@+id/iv_open_on_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12px"
+            android:text="@string/text_open_on"
+            android:gravity="center"
+            android:textSize="40px"
+            app:layout_constraintTop_toBottomOf="@+id/iv_open_on_img"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/iv_botuon"
+        android:layout_width="@dimen/dp1920"
+        android:layout_height="@dimen/dp860"
+        tools:ignore="MissingConstraints">
+        <ImageView
+            android:layout_width="@dimen/dp270"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/line"
+            android:layout_marginTop="1px"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/ll_record_ordinary_open_on_video"
+            android:layout_width="@dimen/dp270"
+            android:layout_height="@dimen/dp123"
+            android:clickable="true"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/iv_ordinary_open_on_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="24px"
+                android:src="@mipmap/icon_ordinary_video_dis" />
+
+            <TextView
+                android:id="@+id/tv_ordinary_open_on_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16px"
+                android:text="@string/text_record_ordinary_video"
+                android:textColor="@color/color_white_38"
+                android:textSize="35px" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="@dimen/dp270"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/line"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ll_record_ordinary_open_on_video" />
+
+        <LinearLayout
+            android:id="@+id/ll_record_emergency_open_on_video"
+            android:layout_width="@dimen/dp270"
+            android:layout_height="@dimen/dp123"
+            android:clickable="true"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ll_record_ordinary_open_on_video">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="24px"
+                android:src="@mipmap/icon_emergency_video_dis" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16px"
+                android:text="@string/text_record_emergency_video"
+                android:textColor="@color/color_white_38"
+                android:textSize="35px" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="@dimen/dp270"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/line"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ll_record_emergency_open_on_video" />
+
+        <LinearLayout
+            android:id="@+id/ll_record_open_on_shot"
+            android:layout_width="@dimen/dp270"
+            android:layout_height="@dimen/dp123"
+            android:clickable="true"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ll_record_emergency_open_on_video">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="24px"
+                android:src="@mipmap/icon_take_pictures_dis" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16px"
+                android:text="@string/text_record_ordinary_shot"
+                android:textColor="@color/color_white_38"
+                android:textSize="35px" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="@dimen/dp270"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/line"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ll_record_open_on_shot" />
+
+        <LinearLayout
+            android:id="@+id/ll_record_open_on_mic"
+            android:layout_width="@dimen/dp270"
+            android:layout_height="@dimen/dp123"
+            android:clickable="true"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ll_record_open_on_shot">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="24px"
+                android:src="@mipmap/icon_mic_dis" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16px"
+                android:text="@string/text_record_mic"
+                android:textColor="@color/color_white_38"
+                android:textSize="35px" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="@dimen/dp270"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/line"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ll_record_open_on_mic" />
+
+        <LinearLayout
+            android:id="@+id/ll_record_open_on_playback"
+            android:layout_width="@dimen/dp270"
+            android:layout_height="@dimen/dp123"
+            android:clickable="true"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ll_record_open_on_mic">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="24px"
+                android:src="@mipmap/icon_replay_dis" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16px"
+                android:text="@string/text_record_replay"
+                android:textColor="@color/color_white_38"
+                android:textSize="35px" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="@dimen/dp270"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/line"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ll_record_open_on_playback" />
+
+        <LinearLayout
+            android:id="@+id/ll_record_open_on_setting"
+            android:layout_width="@dimen/dp270"
+            android:layout_height="@dimen/dp123"
+            android:clickable="true"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ll_record_open_on_playback">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="24px"
+                android:src="@mipmap/icon_site_dis" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16px"
+                android:text="@string/text_record_setting"
+                android:textColor="@color/color_white_38"
+                android:textSize="35px" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="@dimen/dp270"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/line"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ll_record_open_on_setting" />
+
+        <LinearLayout
+            android:id="@+id/ll_record_open_on_close"
+            android:layout_width="@dimen/dp270"
+            android:layout_height="@dimen/dp123"
+            android:clickable="true"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ll_record_open_on_setting">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="24px"
+                android:src="@mipmap/icon_close_dis" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16px"
+                android:text="@string/text_record_close"
+                android:textColor="@color/color_white_38"
+                android:textSize="35px" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="@dimen/dp270"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/line"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
