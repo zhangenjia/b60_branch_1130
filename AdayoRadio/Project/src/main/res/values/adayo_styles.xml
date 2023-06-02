@@ -1,0 +1,94 @@
+<resources>
+
+    <!-- 分页栏（tab）样式 -->
+    <style name="radio_tab_btn">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- 预存台item样式 -->
+    <style name="radio_list">
+        <item name="android:layout_width">280px</item>
+        <item name="android:layout_height">72px</item>
+    </style>
+
+<!--    &lt;!&ndash; 预存台样式 &ndash;&gt;-->
+<!--    <style name="radio_channel_freq">-->
+<!--        <item name="android:layout_width">match_parent</item>-->
+<!--        <item name="android:layout_height">match_parent</item>-->
+<!--        <item name="android:background">@drawable/selector_radio_list_item</item>-->
+<!--        <item name="android:textSize">22sp</item>-->
+<!--        <item name="android:gravity">left|center_vertical</item>-->
+<!--        <item name="android:layout_centerVertical">true</item>-->
+<!--        <item name="android:paddingLeft">40sp</item>-->
+<!--        <item name="android:textColor">@android:color/white</item>-->
+<!--    </style>-->
+
+    <style name="radio_channel_no">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">5px</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="radio_channel_unit">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">10px</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:text">@string/tv_fm</item>
+    </style>
+
+    <!-- 标尺频点数字样式 -->
+    <style name="radio_ruler_text_layout">
+        <item name="android:layout_width">70px</item>
+        <item name="android:layout_height">20px</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="radio_ruler_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/color_white</item>
+    </style>
+
+    <!-- st/loc/af/ta样式 -->
+    <style name="radio_status_space">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">10px</item>
+        <item name="android:layout_marginRight">10px</item>
+    </style>
+
+    <!-- 功能栏样式 -->
+    <style name="radio_ctrlbar_btn">
+        <item name="android:layout_width">69px</item>
+        <item name="android:layout_height">69px</item>
+        <item name="android:layout_marginLeft">0px</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:textColor">@color/radio_ctrlbar_text</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <!-- 功能栏上下台样式 -->
+    <style name="radio_ctrlbar_seach_btn">
+        <item name="android:layout_width">83px</item>
+        <item name="android:layout_height">55px</item>
+        <item name="android:layout_marginLeft">15px</item>
+    </style>
+
+<!--    <style name="radio_area_checkbox_style">-->
+<!--        <item name="android:layout_width">wrap_content</item>-->
+<!--        <item name="android:layout_height">wrap_content</item>-->
+<!--        <item name="android:textColor">#ffffffff</item>-->
+<!--        <item name="android:textSize">20sp</item>-->
+<!--        <item name="android:paddingLeft">10px</item>-->
+<!--        <item name="android:button">@drawable/selector_radio_area_checkbox</item>-->
+<!--    </style>-->
+</resources>

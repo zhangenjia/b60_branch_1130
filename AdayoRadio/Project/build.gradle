@@ -1,0 +1,122 @@
+apply plugin: 'com.android.application'
+//apply plugin: 'kotlin-android'
+/**
+ * 从工程根目录下读取签名配置文件"keystore.properties"，获取签名信息；
+ */
+//def keystorePropertiesFile = rootProject.file("keystore.properties");
+//def keystoreProperties = new Properties()
+//keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+android {
+
+    /**
+     * 指定编译所使用的SDK版本
+     */
+    compileSdkVersion 28
+    /**
+     * 指定编译所有的编译工具版本
+     */
+    defaultConfig {
+        applicationId "com.adayo.app.radio"
+        minSdkVersion 28
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+    }
+    sourceSets {
+        main {
+            manifest.srcFile 'src/main/AndroidManifest.xml'
+            java.srcDirs = ['src/main/java']
+            aidl.srcDirs = ['src/main/java']
+            renderscript.srcDirs = ['src/main/java']
+            res.srcDirs = ['src/main/res']
+            assets.srcDirs = ['assets']
+        }
+        //instrumentTest.setRoot('tests')
+    }
+
+    signingConfigs {
+        /*config {
+            keyAlias keystoreProperties['keyAlias']
+            keyPassword keystoreProperties['keyPassword']
+            storeFile file(keystoreProperties['storeFile'])
+            storePassword keystoreProperties['storePassword']
+        }*/
+        release {
+            storeFile file('E:\\NEW_tool\\tool\\6c\\xm\\6c\\platform.keystore')
+            storePassword 'android'
+            keyAlias 'platform'
+            keyPassword 'android'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }//Assemble时使用
+        debug {
+            minifyEnabled false
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }//Assemble和Run时使用
+        /*debug {
+            testCoverageEnabled true
+            signingConfig signingConfigs.config
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }*/
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    android.applicationVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = "AdayoRadio.apk"
+        }
+    }//配置生成产物的文件名
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+    mavenCentral()
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar','*.aar'], dir: 'libs')
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation files('libs/adayo.car.jar')
+    implementation files('libs/aaop_hskin_helper.jar')
+    //implementation files('libs\\RadioCommon.01.13.210310.jar')
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test:rules:1.1.1'
+    androidTestImplementation 'androidx.test.uiautomator:uiautomator:2.2.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'androidx.room:room-runtime:2.0.0'
+    annotationProcessor 'androidx.room:room-compiler:2.0.0'
+
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.0.0'
+    implementation files('libs/commontools.01.08.190326.jar')
+    implementation files('libs/log-component.01.04.190118.jar')
+
+
+    implementation "com.airbnb.android:lottie:3.7.0"
+    implementation "androidx.core:core-ktx:1.6.0"
+
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.0.0"
+
+
+}

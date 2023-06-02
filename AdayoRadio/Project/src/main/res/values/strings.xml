@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+    <string name="app_name">收音机</string>
+    <string name="tv_fm">FM</string>
+    <string name="tv_am">AM</string>
+    <string name="tv_mhz">MHz</string>
+    <string name="tv_init_point">87.5</string>
+    <string name="tv_list_mhz">MHz</string>
+    <string name="tv_list_khz">kHz</string>
+    <string name="list_delete_warn">收藏列表已满，请删除部分收藏电台</string>
+    <string name="no_collection">没有收藏电台\n快去收藏一下吧</string>
+    <string name="all_ready_collection">该电台已收藏</string>
+    <string name="text_radio_list">电台列表</string>
+    <string name="text_my_collection">我的收藏</string>
+    <string name="text_no_collection">没有收藏电台</string>
+    <string name="text_collect">快去收藏一下吧</string>
+    <string name="text_delete">清除</string>
+    <string name="text_cancel">取消</string>
+</resources>
