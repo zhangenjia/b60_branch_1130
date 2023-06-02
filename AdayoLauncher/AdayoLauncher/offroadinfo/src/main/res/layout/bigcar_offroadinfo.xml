@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent_layout"
+    android:layout_width="564px"
+    android:layout_height="860px"
+    android:orientation="horizontal">
+    <!--模糊-->
+    <com.adayo.app.launcher.communicationbase.BlurTransitionView
+        android:id="@+id/crossinfo_blur"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/iv_crossin_frame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_bigcard" />
+
+    <TextView
+        android:id="@+id/tv_orimBig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="122px"
+        android:layout_marginTop="55px"
+        android:text="@string/orim"
+        android:textColor="#fff"
+        android:textSize="40px" />
+
+    <!-- 环境信息=================== -->
+    <RelativeLayout
+        android:id="@+id/rl_environment"
+        android:layout_width="564px"
+        android:layout_height="860px">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="146px"
+            android:layout_marginTop="135px"
+            android:background="@drawable/compass_last" />
+
+        <RelativeLayout
+            android:id="@+id/rl_compass_pointer"
+            android:layout_width="185px"
+            android:layout_height="205px"
+            android:layout_marginLeft="190px"
+            android:layout_marginTop="167px"
+            android:rotation="270">
+
+            <ImageView
+                android:id="@+id/compass_pointer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="90px"
+                android:background="@drawable/compass_pointer" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_compassdirection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="230px"
+            android:text="@string/north"
+            android:textColor="#fff"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/tv_compassangle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="270px"
+            android:text="--"
+            android:textColor="#fff"
+            android:textSize="38px" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_compassangle"
+            android:layout_marginTop="270px"
+            android:layout_marginLeft="10px"
+            android:text="°"
+            android:textColor="#fff"
+            android:textSize="38px" />
+        <TextView
+            android:id="@+id/tv_horizontalangle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="144px"
+            android:layout_marginTop="400px"
+            android:text="- °"
+            android:textColor="#fff"
+            android:textSize="40px" />
+
+        <ImageView
+            android:id="@+id/iv_horizontalangle"
+            android:layout_width="189px"
+            android:layout_height="118px"
+            android:layout_marginLeft="60px"
+            android:layout_marginTop="465px"
+            android:background="@drawable/spin_left_0" />
+
+        <com.adayo.app.launcher.offroadinfo.ui.view.HorizontalCustomView
+            android:id="@+id/cv_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60px"
+            android:layout_marginTop="445px" />
+
+        <TextView
+            android:id="@+id/tv_altitude_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100px"
+            android:layout_marginTop="585px"
+            android:text="@string/altitude"
+            android:textColor="#fff"
+            android:textSize="24px"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/icon_altitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="83px"
+            android:layout_marginTop="566px"
+            android:background="@drawable/icon_altitude" />
+
+        <TextView
+            android:id="@+id/tv_altitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="172px"
+            android:layout_marginTop="585px"
+            android:text="--- m"
+            android:textColor="#fff"
+            android:textSize="24px" />
+
+
+        <TextView
+            android:id="@+id/tv_pitchangle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="400px"
+            android:layout_marginRight="80px"
+            android:text="- °"
+            android:textColor="#fff"
+            android:textSize="40px" />
+
+        <ImageView
+            android:id="@+id/iv_pitchangle"
+            android:layout_width="217px"
+            android:layout_height="104px"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="470px"
+            android:layout_marginRight="47px"
+            android:background="@drawable/spin_right_0" />
+
+        <com.adayo.app.launcher.offroadinfo.ui.view.PitchCustomView
+            android:id="@+id/cv_pitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="431px"
+            android:layout_marginRight="47px" />
+
+        <TextView
+            android:id="@+id/tv_pressure_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="308px"
+            android:layout_marginTop="585px"
+            android:textColor="#fff"
+            android:textSize="24px"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/icon_pressure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="326px"
+            android:layout_marginTop="566px"
+            android:background="@drawable/icon_pressure" />
+
+        <TextView
+            android:id="@+id/tv_atmopressure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="585px"
+            android:layout_marginRight="45px"
+            android:text="---.- hPa"
+            android:textColor="#fff"
+            android:textSize="24px" />
+    </RelativeLayout>
+
+    <!-- 车辆信息
+    ============================ -->
+    <RelativeLayout
+        android:id="@+id/rl_vehicleinfo"
+        android:layout_width="564px"
+        android:layout_height="860px">
+        <!--        <TextView-->
+        <!--            android:id="@+id/tv_wheelAngle"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:textColor="#fff"-->
+        <!--            android:textSize="40px"-->
+        <!--            android:layout_alignParentRight="true"-->
+        <!--            android:layout_marginTop="157px"-->
+        <!--            android:layout_marginRight="220px"/>-->
+
+        <TextView
+            android:id="@+id/tv_wheelAngle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="157px"
+            android:textColor="#fff"
+            android:textSize="40px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="157px"
+            android:layout_toRightOf="@id/tv_wheelAngle"
+            android:textColor="#fff"
+            android:text="°"
+            android:textSize="40px" />
+        <!--左前轮温度-->
+        <TextView
+            android:id="@+id/tv_lf_tiretemperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="338px"
+            android:layout_marginRight="455px"
+            android:text="---"
+            android:textSize="24px" />
+
+        <!--左前轮温度单位-->
+        <TextView
+            android:id="@+id/mTvUnit2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120px"
+            android:layout_marginTop="338px"
+            android:text="℃"
+            android:textSize="24px" />
+
+        <!--左前轮压力-->
+        <TextView
+            android:id="@+id/tv_lf_tirepressure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="370px"
+            android:layout_marginRight="455px"
+            android:text="-.-"
+            android:textSize="24px" />
+
+        <!--左前轮压力单位-->
+        <TextView
+            android:id="@+id/mTvUnit1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120px"
+            android:layout_marginTop="370px"
+            android:text="bar"
+            android:textSize="24px" />
+
+        <!--右前轮温度-->
+        <TextView
+            android:id="@+id/tv_rf_tiretemperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="338px"
+            android:layout_marginRight="130px"
+            android:text="---"
+            android:textSize="24px" />
+
+        <!--右前轮温度单位-->
+        <TextView
+            android:id="@+id/mTvUnit4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="450px"
+            android:layout_marginTop="338px"
+            android:text="℃"
+            android:textSize="24px" />
+
+        <!--右前轮压力-->
+        <TextView
+            android:id="@+id/tv_rf_tirepressure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="370px"
+            android:layout_marginRight="130px"
+            android:text="-.-"
+            android:textSize="24px" />
+
+        <!--右前轮压力单位-->
+        <TextView
+            android:id="@+id/mTvUnit3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="450px"
+            android:layout_marginTop="370px"
+            android:text="bar"
+            android:textSize="24px" />
+
+        <!--左后轮温度-->
+        <TextView
+            android:id="@+id/tv_lr_tiretemperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="504px"
+            android:layout_marginRight="500px"
+            android:text="---"
+            android:textSize="24px" />
+
+        <!--左后轮温度单位-->
+        <TextView
+            android:id="@+id/mTvUnit6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="72px"
+            android:layout_marginTop="504px"
+            android:text="℃"
+            android:textSize="24px" />
+
+        <!--左后轮压力-->
+        <TextView
+            android:id="@+id/tv_lr_tirepressure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="534px"
+            android:layout_marginRight="500px"
+            android:text="-.-"
+            android:textSize="24px" />
+
+        <!--左后轮压力单位-->
+        <TextView
+            android:id="@+id/mTvUnit5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="74px"
+            android:layout_marginTop="534px"
+            android:text="bar"
+            android:textSize="24px" />
+
+        <!--右后轮温度-->
+        <TextView
+            android:id="@+id/tv_rr_tiretemperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="504px"
+            android:layout_marginRight="70px"
+            android:text="---"
+            android:textSize="24px" />
+
+        <!--右后轮温度单位-->
+        <TextView
+            android:id="@+id/mTvUnit8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="507px"
+            android:layout_marginTop="503px"
+            android:text="℃"
+            android:textSize="24px" />
+
+        <!--右后轮压力-->
+        <TextView
+            android:id="@+id/tv_rr_tirepressure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="534px"
+            android:layout_marginRight="70px"
+            android:text="-.-"
+            android:textSize="24px" />
+
+        <!--右后轮压力单位-->
+        <TextView
+            android:id="@+id/mTvUnit7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="509px"
+            android:layout_marginTop="534px"
+            android:text="bar"
+            android:textSize="24px" />
+        <!--左前轮轮胎印-->
+        <ImageView
+            android:id="@+id/lfTireMarks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="168px"
+            android:layout_marginTop="400px"
+            android:background="@drawable/wheel_stamp_front_left" />
+        <!--左前轮-->
+        <ImageView
+            android:id="@+id/iv_wheel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="250px"
+            android:scaleX="0.7"
+            android:scaleY="0.7" />
+
+
+
+        <!-- 刻度盘-->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="202px"
+            android:background="@drawable/steering_angle_bg"
+            android:scaleX="0.7"
+            android:scaleY="0.7"/>
+
+        <!-- 指针-->
+        <ImageView
+            android:id="@+id/iv_pointer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="170px"
+            android:scaleX="0.7"
+            android:scaleY="0.7"/>
+        <!--右前轮轮胎印-->
+        <ImageView
+            android:id="@+id/rfTireMarks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="333px"
+            android:layout_marginTop="400px"
+            android:background="@drawable/wheel_stamp_front_right" />
+        <!-- 右前轮-->
+        <ImageView
+            android:id="@+id/iv_wheel_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="250px"
+            android:scaleX="0.7"
+            android:scaleY="0.7" />
+        <!--前轴-->
+        <ImageView
+            android:id="@+id/iv_axle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="250px"
+            android:scaleX="0.7"
+            android:scaleY="0.7" />
+
+        <!--车骨架-->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="250px"
+            android:background="@drawable/carframe"
+            android:scaleX="0.7"
+            android:scaleY="0.7" />
+
+        <!--左后轮轮胎印-->
+        <ImageView
+            android:id="@+id/lrTireMarks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="100px"
+            android:layout_marginTop="600px"
+            android:background="@drawable/wheel_stamp_rear_left"/>
+
+        <!-- 左后轮-->
+        <ImageView
+            android:id="@+id/lr_wheel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="250px"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:src="@drawable/rr_wheel" />
+
+        <!--右后轮轮胎印-->
+        <ImageView
+            android:id="@+id/rrTireMarks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="385px"
+            android:layout_marginTop="600px"
+            android:background="@drawable/wheel_stamp_rear_right" />
+
+        <!--右后轮-->
+        <ImageView
+            android:id="@+id/rr_wheel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="250px"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:src="@drawable/lr_wheel" />
+
+        <ImageView
+            android:id="@+id/iv_transfer_case_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="408px" />
+
+        <ImageView
+            android:id="@+id/iv_f_differentiallock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="281px"
+            android:alpha="0.3" />
+
+        <ImageView
+            android:id="@+id/iv_r_differentiallock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="559px"
+            android:alpha="0.3" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_tab"
+        android:layout_width="348px"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="678px"
+        android:background="@drawable/img_background_box">
+
+        <TextView
+            android:id="@+id/environInfo"
+            android:layout_width="1px"
+            android:layout_height="72px"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="173"
+            android:background="@drawable/selector1"
+            android:gravity="center"
+            android:text="@string/tab1"
+            android:textColor="@drawable/text_selector"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/vehicleInfo"
+            android:layout_width="1px"
+            android:layout_height="72px"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="166"
+            android:background="@drawable/selector2"
+            android:gravity="center"
+            android:text="@string/tab2"
+            android:textColor="@drawable/text_selector"
+            android:textSize="30px" />
+    </LinearLayout>
+</RelativeLayout>

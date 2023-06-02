@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_naviuninprogress"
+    android:layout_width="564px"
+    android:layout_height="860px">
+
+    <TextView
+        android:id="@+id/tv_bigcardname"
+        android:layout_width="70px"
+        android:layout_height="35px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="244px"
+        android:layout_marginTop="59px" />
+
+    <TextView
+        android:id="@+id/tv_currentlocation"
+        android:layout_width="178px"
+        android:layout_height="29px"
+        android:layout_marginLeft="1200px"
+        android:layout_marginTop="570px"
+        android:layout_centerHorizontal="true"/>
+
+    <RelativeLayout
+        android:layout_width="84px"
+        android:layout_height="84px"
+        android:layout_marginLeft="53px"
+        android:layout_marginTop="670px">
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="21px"
+            android:layout_height="22px"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="84px"
+        android:layout_height="84px"
+        android:layout_marginLeft="240px"
+        android:layout_marginTop="670px">
+        <ImageView
+            android:id="@+id/iv_home"
+            android:layout_width="25px"
+            android:layout_height="22px"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="84px"
+        android:layout_height="84px"
+        android:layout_marginLeft="424px"
+        android:layout_marginTop="670px">
+
+        <ImageView
+            android:id="@+id/iv_company"
+            android:layout_width="22px"
+            android:layout_height="23px"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

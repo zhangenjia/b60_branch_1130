@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent_layout"
+    android:layout_width="564px"
+    android:layout_height="860px"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!--模糊-->
+    <com.adayo.app.launcher.communicationbase.BlurTransitionView
+        android:id="@+id/radio_blur"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <ImageView
+        android:id="@+id/car_bg"
+        android:layout_width="564px"
+        android:layout_height="860px"
+        android:background="@drawable/bg_bigcard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--    FM指针动画效果   -->
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lav_fm_car"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_imageAssetsFolder="images"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <!--    AM指针动画效果   -->
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lav_am_car"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_imageAssetsFolder="images"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <SeekBar
+        android:id="@+id/seekbar_fm_car"
+        android:layout_width="564px"
+        android:layout_height="200px"
+        android:layout_marginTop="134px"
+        android:max="205"
+        android:progressBackgroundTint="@android:color/transparent"
+        android:progressDrawable="@android:color/transparent"
+        android:thumb="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SeekBar
+        android:id="@+id/seekbar_am_car"
+        android:layout_width="564px"
+        android:layout_height="200px"
+        android:layout_marginTop="134px"
+        android:max="119"
+        android:progressBackgroundTint="@android:color/transparent"
+        android:progressDrawable="@android:color/transparent"
+        android:thumb="@android:color/transparent"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/ll_radio_car"
+        android:layout_width="564px"
+        android:layout_height="860px"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_radio_big"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="57px"
+            android:text="@string/radio_text"
+            android:textColor="@color/color_white"
+            android:textSize="40px" />
+
+
+        <RelativeLayout
+            android:layout_width="430px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="352px"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/turn_up_car"
+                android:layout_width="64px"
+                android:layout_height="64px"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/radio_btn_left" />
+
+            <ImageView
+                android:id="@+id/turn_down_car"
+                android:layout_width="64px"
+                android:layout_height="64px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/radio_btn_right" />
+
+            <TextView
+                android:id="@+id/play_text_hz_number_car"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/color_white"
+                android:textSize="49px" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_radio_unit_car"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/play_text_hz_number_car"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="0px"
+            android:text="@string/tv_mhz"
+            android:textColor="#99ffffff"
+            android:textSize="31px" />
+
+        <RelativeLayout
+            android:layout_width="457px"
+            android:layout_height="84px"
+            android:layout_marginLeft="55px"
+            android:layout_marginTop="118px">
+
+            <ImageView
+                android:id="@+id/pre_btn_image_car"
+                android:layout_width="84px"
+                android:layout_height="84px"
+                android:layout_centerVertical="true"
+                android:background="@drawable/radio_btn_previous" />
+
+            <ImageView
+                android:id="@+id/play_btn_image_car"
+                android:layout_width="84px"
+                android:layout_height="84px"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="102px"
+                android:layout_toRightOf="@+id/pre_btn_image_car"
+                android:background="@drawable/radio_btn_play" />
+
+            <ImageView
+                android:id="@+id/next_btn_image_car"
+                android:layout_width="84px"
+                android:layout_height="84px"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="102px"
+                android:layout_toRightOf="@+id/play_btn_image_car"
+                android:background="@drawable/radio_btn_next" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

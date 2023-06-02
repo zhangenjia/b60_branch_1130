@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/smallcar_parent_layout"
+    android:layout_width="@dimen/smallcardwith"
+    android:layout_height="@dimen/smallcardheight"
+    android:layout_marginLeft="40px"
+    android:defaultFocusHighlightEnabled="false"
+    android:orientation="vertical">
+<!--    lottile-->
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottie_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+
+    <!--图一-->
+    <ImageView
+        android:id="@+id/iv_navi_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/img_smallcard_navi" />
+    <!--图二-->
+    <ImageView
+        android:id="@+id/iv_navi_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        android:background="@drawable/img_smallcard_navi_b" />
+    <!--外框-->
+    <ImageView
+        android:id="@+id/iv_navi_frame"
+        android:layout_width="@dimen/smallcardwith"
+        android:layout_height="@dimen/smallcardheight"
+        android:background="@drawable/bg_smallcard" />
+    <!--卡片名-->
+    <TextView
+        android:id="@+id/tv_smallcardname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37px"
+        android:gravity="center"
+        android:text="@string/navigation"
+        android:textColor="#ffffff"
+        android:textSize="36px" />
+    <!--    当前位置-->
+    <TextView
+        android:id="@+id/tv_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="89px"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textSize="28px" />
+</RelativeLayout>

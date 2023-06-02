@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent_layout"
+    android:layout_width="@dimen/smallcardwith"
+    android:layout_height="@dimen/smallcardheight">
+
+    <ImageView
+        android:id="@+id/iv_bt_frame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true" />
+
+    <ImageView
+        android:id="@+id/iv_bt_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/module_bt_img_smallcard"
+       />
+
+    <ImageView
+        android:id="@+id/iv_bt_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/module_bt_img_smallcard_b"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tv_smallcardname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37px"
+        android:gravity="top|center_horizontal"
+        android:text="@string/phone"
+        android:textColor="@color/white"
+        android:textSize="36px"></TextView>
+
+    <TextView
+        android:id="@+id/device_name_tv"
+        android:layout_width="240px"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="89px"
+        android:ellipsize="end"
+        android:gravity="top|center_horizontal"
+        android:lines="1"
+        android:textColor="@color/white"
+        android:textSize="30px">
+
+    </TextView>
+</RelativeLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="520px"
+    android:background="@drawable/bg_dialog"
+    android:descendantFocusability="blocksDescendants">
+
+    <LinearLayout
+        android:layout_width="445px"
+        android:layout_height="59px"
+        android:layout_marginLeft="48px"
+        android:layout_marginTop="34px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/largecardoptional"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/largecardoptional"
+            android:textColor="@drawable/textcolor_selector"
+            android:textSize="40px" />
+
+        <TextView
+            android:id="@+id/smallcardoptional"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/smallcardoptional"
+            android:textColor="@drawable/textcolor_selector"
+            android:textSize="40px" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="445px"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="48px"
+        android:layout_marginTop="86px"
+        android:background="@drawable/dialog_line_chosecard">
+
+        <ImageView
+            android:id="@+id/line_sel_big"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/dialog_line_select" />
+
+        <ImageView
+            android:id="@+id/line_sel_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/dialog_line_select" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_complete"
+        android:layout_width="230px"
+        android:layout_height="72px"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="34px"
+        android:layout_marginRight="53px"
+        android:background="@drawable/bottom_complete_button_selector"
+        android:gravity="center"
+        android:text="@string/done"
+        android:textColor="#000"
+        android:textSize="36px" />
+
+    <com.adayo.app.launcher.ui.view.CustomOverScrollLayout
+        android:id="@+id/sl_left"
+        android:layout_width="match_parent"
+        android:layout_height="563px">
+    <com.adayo.app.launcher.ui.view.CustomRecyclerView
+        android:id="@+id/rv_bottom_bigcard_list"
+        android:layout_width="match_parent"
+        android:layout_height="563px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="-12px"
+        android:layout_marginTop="124px"
+        android:layout_marginRight="-12px"
+        android:orientation="horizontal" />
+    </com.adayo.app.launcher.ui.view.CustomOverScrollLayout>
+
+    <com.adayo.app.launcher.ui.view.CustomOverScrollLayout
+        android:id="@+id/sl_right"
+        android:layout_width="match_parent"
+        android:layout_height="563px">
+        <com.adayo.app.launcher.ui.view.CustomRecyclerView
+            android:id="@+id/rv_bottom_smallcard_list"
+            android:layout_width="match_parent"
+            android:layout_height="563px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="188px"
+            android:orientation="horizontal"
+            android:visibility="gone" />
+    </com.adayo.app.launcher.ui.view.CustomOverScrollLayout>
+
+</RelativeLayout>

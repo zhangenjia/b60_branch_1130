@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">weather</string>
+    <string name="weather">天气</string>
+
+    <string name="sunny">晴</string>
+    <string name="cloudy">多云</string>
+    <string name="overcast">阴</string>
+    <string name="shower">阵雨</string>
+    <string name="koyuki">小雪</string>
+    <string name="sanddust">沙尘</string>
+    <string name="thundershower">雷阵雨</string>
+    <string name="lightrain">小雨</string>
+    <string name="moderaterain">中雨</string>
+    <string name="heavyrain">大雨</string>
+    <string name="rainstorm">暴雨</string>
+    <string name="zhongxue">中雪</string>
+    <string name="heavysnow">大雪</string>
+    <string name="blizzard">暴雪</string>
+    <string name="freezingrain">冻雨</string>
+    <string name="fog">雾</string>
+    <string name="sleet">雨夹雪</string>
+    <string name="rain">雨</string>
+    //(风 台风)
+
+    <string name="airquality">空气质量</string>
+    <string name="excellent">优</string>
+    <string name="good">良</string>
+    <string name="lightpollution">轻度污染</string>
+    <string name="moderatelypollution">中度污染</string>
+    <string name="heavypollution">重度污染</string>
+    <string name="seriouspollution">严重污染</string>
+    <string name="eastwind">东风</string>
+    <string name="southwind">南风</string>
+    <string name="westwind">西风</string>
+    <string name="northwind">北风</string>
+    <string name="southeastwind">东南风</string>
+    <string name="southwestwind">西南风</string>
+    <string name="northwestwind">西北风</string>
+    <string name="northeastwind">东北风</string>
+    <string name="windclass">级</string>
+
+    <string name="notnetworked">网络未连接</string>
+    <string name="checknetwork">请检查网络连接</string>
+    <string name="positioning">定位中...</string>
+
+
+
+
+</resources>

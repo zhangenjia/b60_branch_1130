@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">HM6C17ALauncherapp</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_base">BaseActivity</string>
+    <string name="safety_tips">Safety tips</string>
+    <string name="confirm">Agree</string>
+    <string name="no_more_alert">No longer\nremind</string>
+    <string name="high_config_text">
+        1. Don\'t operate or watch this software while driving, use it under the premise
+        of safety to prevent traffic accidents or other dangerous situations;
+       \n 2. The functions and services provided are for reference only, please do
+        not use them as the only basis for your travel;
+       \n 3. Follow the actual local traffic and road conditions, and strictly abide
+        by traffic laws and regulations and traffic rules.
+        \n 4. Need connect network. When you use functions such as voice, music,etc.,
+        network traffic will be consumed, so the traffic charges incurred will be paid by you
+        TSP, please consult with them for specific charging standards. </string>
+    <string name="low_config_text">1. Don\'t operate or watch this software while driving, use it under the premise of safety to prevent
+        traffic accidents or other dangerous situations;\n2.Please strictly abide by traffic laws and regulations and actual local traffic rules.。</string>
+    <string name="video">Video</string>
+    <string name="tel">Phone</string>
+    <string name="picture">Picture</string>
+    <string name="settings">Settings</string>
+    <string name="mycar">My car</string>
+    <string name="orim">ORIM</string>
+    <string name="apa">APA</string>
+    <string name="avm">AVM</string>
+    <string name="music">Music</string>
+    <string name="radio">Radio</string>
+    <string name="yueyequan">Yueyequan</string>
+    <string name="tencentway">Tencent Way</string>
+    <string name="dvr">DVR</string>
+    <string name="funcaudio">Func Audio</string>
+    <string name="wechat">Wechat</string>
+    <string name="navigation">Navigation</string>
+    <string name="climate">Climate</string>
+    <string name="weather">Weather</string>
+    <string name="largecardoptional">L-widget</string>
+    <string name="smallcardoptional">S-widget</string>
+    <string name="done">Done</string>
+    <string name="easyconnect">Carbit</string>
+    <string name="userguide">UserGuide</string>
+</resources>

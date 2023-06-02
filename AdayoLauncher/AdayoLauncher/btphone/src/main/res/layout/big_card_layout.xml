@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="564px"
+    android:layout_height="860px"
+    android:id="@+id/parent_layout">
+    <!--模糊-->
+    <com.adayo.app.launcher.communicationbase.BlurTransitionView
+        android:id="@+id/bt_blur"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <ImageView
+        android:id="@+id/iv_bt_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_bigcard" />
+    <ImageView
+        android:layout_width="564px"
+        android:layout_height="860px"
+        android:background="@drawable/module_bt_bigcard_phone">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/tv_bigcardname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="58px"
+        android:layout_centerHorizontal="true"
+        android:gravity="top|center_horizontal"
+        android:textSize="40px"
+        android:text="@string/phone"
+        android:textColor="@color/white">
+    </TextView>
+
+    <TextView
+        android:id="@+id/device_name_tv"
+        android:layout_width="540px"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:ellipsize="end"
+        android:layout_marginTop="569px"
+        android:layout_centerHorizontal="true"
+        android:gravity="top|center_horizontal"
+        android:text="@string/phone"
+        android:textSize="36px"
+        android:textColor="@color/white">
+
+    </TextView>
+
+    <RelativeLayout
+        android:id="@+id/linkman_calllog_rl"
+        android:layout_width="564px"
+        android:layout_height="84px"
+        android:layout_marginTop="675px">
+
+        <ImageView
+            android:id="@+id/linkman_iv"
+            android:layout_width="84px"
+            android:layout_height="84px"
+            android:layout_marginLeft="123px"
+            android:src="@drawable/selector_linkman"
+            android:scaleType="center">
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/call_log_iv"
+            android:layout_width="84px"
+            android:layout_height="84px"
+            android:layout_toRightOf="@id/linkman_iv"
+            android:layout_marginLeft="147px"
+            android:src="@drawable/selector_call_log"
+            android:scaleType="center">
+        </ImageView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

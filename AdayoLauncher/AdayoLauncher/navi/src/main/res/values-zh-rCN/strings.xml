@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">navi</string>
+    <string name="navigation">智驾地图</string>
+
+    <string name="m">米</string>
+    <string name="km">公里</string>
+    <string name="enter">进入</string>
+    <string name="h">小时</string>
+    <string name="minute">分钟</string>
+    <string name="endnavi">结束导航</string>
+</resources>

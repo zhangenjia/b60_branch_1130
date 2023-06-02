@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_layout"
+    android:layout_width="@dimen/smallcardwith"
+    android:layout_height="@dimen/smallcardheight"
+    android:background="@drawable/bg_smallcard">
+
+    <!--两个背景-->
+    <RelativeLayout
+        android:id="@+id/logoLaySmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone">
+        <ImageView
+            android:id="@+id/iv_wecarflow_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/img_smallcard_wecarflow" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_wecarflow_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/img_smallcard_wecarflow_b" />
+
+    <!--    音乐名与播放暂停-->
+    <RelativeLayout
+        android:id="@+id/normalLaySmall"
+        android:layout_width="274px"
+        android:layout_height="321px"
+        android:layout_centerHorizontal="true">
+
+
+        <TextView
+            android:id="@+id/small_music_name"
+            android:layout_width="222px"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="91px"
+            android:gravity="center"
+            android:text="@string/music_name"
+            android:textColor="@color/white"
+            android:textSize="30px" />
+
+        <Button
+            android:id="@+id/playButtonSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="182px" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/title_smallcard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37px"
+        android:text="@string/card_name"
+        android:textColor="@color/white"
+        android:textSize="36px" />
+</RelativeLayout>

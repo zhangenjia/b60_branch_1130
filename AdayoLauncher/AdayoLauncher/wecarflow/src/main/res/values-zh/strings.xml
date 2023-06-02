@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">wecarflow</string>
+    <string name="card_name">爱趣听</string>
+    <string name="wifi_name">网络异常</string>
+    <string name="wifi_info">请检查网络连接</string>
+    <string name="music_null">暂无播放</string>
+    <string name="music_name">未知</string>
+    <string name="music_lyric">歌词歌词歌词歌词</string>
+</resources>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">btphone</string>
+    <string name="phone">Telephone</string>
+    <string name="connect_bt_device">Please connect BT device</string>
+</resources>
