@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/cl_display_set_bglocal"
+    tools:context=".view.fragment.DisplaySetFragment">
+
+    <!-- 定位模式 -->
+    <ImageView
+        android:id="@+id/iv_display_set_bglocal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/drive_last_low"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/iv_display_set_bglocal_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:background="@drawable/display_set_bglocal_icon"
+        app:layout_constraintBottom_toBottomOf="@id/tv_display_set_locate"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_display_set_locate" />
+
+    <TextView
+        android:id="@+id/tv_display_set_locate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/display_locate_mode_title"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_tvsize_big2"
+        android:layout_marginLeft="13dp"
+        app:layout_constraintBottom_toBottomOf="@id/iv_display_set_bglocal"
+        app:layout_constraintStart_toEndOf="@id/iv_display_set_bglocal_icon"
+        app:layout_constraintTop_toTopOf="@id/iv_display_set_bglocal" />
+
+    <com.flyco.customtablayout.SegmentTabLayout
+        android:id="@+id/sb_display_set_locate"
+        android:layout_width="388dp"
+        android:layout_height="56dp"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center_vertical|right"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/frame_last_cruise_mode"
+        app:layout_constraintBottom_toBottomOf="@id/iv_display_set_bglocal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/iv_display_set_bglocal"
+        app:tl_indicator_anim_enable="true"
+        app:tl_tab_space_equal="true"
+        app:tl_tab_width="129dp"
+        app:tl_textSelectColor="@color/tab_selected"
+        app:tl_textUnselectColor="@color/tab_unselected"
+        app:tl_textsize="30px"
+        app:tl_thumb_drawable="@drawable/frame_thumb_segment">
+
+    </com.flyco.customtablayout.SegmentTabLayout>
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gl_display_set_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="21dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gl_display_set_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="20dp" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/grid_item"
+    android:layout_width="134dp"
+    android:layout_height="72dp"
+    android:background="@drawable/bg_shape_selected"
+    android:orientation="vertical"
+    android:paddingLeft="7dp"
+    android:paddingRight="7dp">
+
+    <TextView
+        android:id="@+id/solar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/common_tvsize_mid"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="solar" />
+
+    <TextView
+        android:id="@+id/lunar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/common_tvsize_mid2"
+        android:textColor="@color/midgray"
+        android:gravity="center"
+        android:text="lunar" />
+</LinearLayout>

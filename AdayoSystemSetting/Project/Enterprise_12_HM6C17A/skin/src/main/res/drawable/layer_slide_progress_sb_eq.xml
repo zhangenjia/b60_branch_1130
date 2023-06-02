@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@android:id/background">
+
+      <inset android:drawable="@drawable/offroad_system_settings_sound_line_long_last"/>
+    </item>
+
+    <item android:id="@android:id/progress">
+        <clip>
+      <inset  android:drawable="@drawable/offroad_system_settings_sound_line_long_sel"/>
+
+        </clip>  </item>
+
+</layer-list>

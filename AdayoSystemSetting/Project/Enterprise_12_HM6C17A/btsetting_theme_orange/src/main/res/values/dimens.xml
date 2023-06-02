@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="common_tvsize_big0">88sp</dimen>
+    <dimen name="common_tvsize_big1">40sp</dimen>
+    <dimen name="common_tvsize_big2">36sp</dimen>
+    <dimen name="common_tvsize_mid">30sp</dimen>
+    <dimen name="common_tvsize_mid2">24sp</dimen>
+    <dimen name="common_tvsize_small">18sp</dimen>
+    <dimen name="common_tvsize_20">20sp</dimen>
+
+    <dimen name="close_popup_height">48dp</dimen>
+    <dimen name="close_popup_width">48dp</dimen>
+    <dimen name="close_popup_x">52dp</dimen>
+    <dimen name="close_popup_y">23dp</dimen>
+    <dimen name="popup_big_height">860dp</dimen>
+    <dimen name="popup_big_width">1920dp</dimen>
+    <dimen name="popup_big_y_totop">104dp</dimen>
+
+    <dimen name="dlg_title_size">40sp</dimen>
+    <dimen name="dlg_msg_size">36sp</dimen>
+    <dimen name="dlg_positive_btn_size">40sp</dimen>
+    <dimen name="dlg_negative_btn_size">40sp</dimen>
+    <dimen name="dlg_neutral_btn_size">40sp</dimen>
+    <dimen name="dlg_btn_padding_h">137dp</dimen>
+    <dimen name="dlg_cfm_root_padding_start">32dp</dimen>
+    <dimen name="dlg_cfm_root_padding_end">32dp</dimen>
+    <dimen name="dlg_cfm_root_padding_top">70dp</dimen>
+    <dimen name="dlg_cfm_root_padding_bottom">32dp</dimen>
+
+
+</resources>

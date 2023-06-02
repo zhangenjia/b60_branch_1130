@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fl_harman_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <Button
+        android:id="@+id/btn_harman_close"
+        android:layout_width="@dimen/close_popup_width"
+        android:layout_height="@dimen/close_popup_height"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="127dp"
+        android:background="@drawable/selector_btn_close"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!--    <FrameLayout-->
+    <!--        android:id="@+id/fl_harman_surface"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent">-->
+
+
+    <!--    </FrameLayout>-->
+    <ImageView
+        android:id="@+id/iv_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="82dp"
+        android:layout_marginRight="57dp"
+        android:src="@drawable/offroad_system_settings_sound_reset_car_model" />
+
+    <CheckBox
+        android:id="@+id/cb_qls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="224dp"
+        android:layout_marginTop="450dp"
+        android:button="@drawable/selector_reply"
+        android:checked="true"
+        android:clickable="true"
+        android:paddingLeft="20dp"
+        android:text="@string/harman_qls"
+        android:textColor="#ffffff"
+        android:textSize="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bt_harman_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="219dp"
+        android:layout_marginTop="558dp"
+        android:background="@drawable/offroad_system_settings_sound_reset"
+        android:paddingBottom="10dp"
+        android:text="@string/harman_reset"
+        android:textAllCaps="false"
+        android:textColor="#080808"
+        android:textSize="40dp" />
+
+
+    <ImageView
+        android:id="@+id/iv_shi_zi_jia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="870dp"
+        android:layout_marginTop="318dp"
+        android:background="@drawable/offroad_system_settings_adjustment_line" />
+
+    <ImageView
+        android:id="@+id/iv_left_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="735dp"
+        android:layout_marginTop="186dp"
+        android:background="@drawable/offroad_system_settings_sound_reset_zone" />
+
+    <ImageView
+        android:id="@+id/iv_left_mid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="631dp"
+        android:layout_marginTop="385dp"
+        android:src="@drawable/offroad_system_settings_sound_reset_zone" />
+
+    <ImageView
+        android:id="@+id/iv_left_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="493dp"
+        android:layout_marginTop="619dp"
+        android:background="@drawable/offroad_system_settings_sound_reset_zone" />
+
+    <ImageView
+        android:id="@+id/iv_mid_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1008dp"
+        android:layout_marginTop="186dp"
+        android:background="@drawable/offroad_system_settings_sound_reset_zone" />
+
+    <ImageView
+        android:id="@+id/iv_right_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1277dp"
+        android:layout_marginTop="186dp"
+        android:background="@drawable/offroad_system_settings_sound_reset_zone" />
+
+    <ImageView
+        android:id="@+id/iv_right_mid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1381dp"
+        android:layout_marginTop="385dp"
+        android:background="@drawable/offroad_system_settings_sound_reset_zone" />
+
+    <ImageView
+        android:id="@+id/iv_right_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1520dp"
+        android:layout_marginTop="619dp"
+        android:background="@drawable/offroad_system_settings_sound_reset_zone" />
+
+    <com.adayo.app.setting.view.popwindow.harman.HarmanSurfaceView
+        android:id="@+id/view_harman"
+        android:layout_width="1867dp"
+        android:layout_height="1191dp" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="111dp"
+        android:layout_marginTop="131dp"
+        android:text="@string/sound_harman_title"
+        android:textColor="@color/white"
+        android:textSize="40dp" />
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/iv_activity_harman_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="107dp"
+        android:layout_marginTop="120dp"
+        android:src="@drawable/logo_haman" />
+</FrameLayout>

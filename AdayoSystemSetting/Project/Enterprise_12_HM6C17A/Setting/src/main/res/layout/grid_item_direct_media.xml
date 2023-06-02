@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_popup_media"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_popup_media_title1"
+        android:layout_width="331dp"
+        android:layout_height="110dp"
+        android:gravity="center_horizontal|top"
+        android:background="@drawable/selector_direct_media_btn"
+        android:paddingTop="26dp"
+        android:text="@string/direct_media_media_change_title"
+        android:textColor="@color/white"
+        android:textSize="30px" />
+
+    <TextView
+        android:id="@+id/tv_popup_media_title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="19px"
+        android:text="@string/direct_media_media_change_info"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/common_tvsize_20" />
+</FrameLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.adayo.app.setting"
+    android:sharedUserId="android.uid.system">
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- 如果需要精确定位的话请加上此权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- 如果需要粗略定位的话请加上此权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+
+    <application
+        android:name=".BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:theme="@style/Theme.Enterprise_12_HM6C17A.NoActionBar">
+        <activity android:name=".view.activity.MainActivity"
+            android:configChanges="layoutDirection|locale"
+            android:launchMode="singleTask">
+            <intent-filter>
+<!--                <category android:name="android.intent.category.DEFAULT"/>-->
+<!--                <action android:name="adayo.setting.intent.action.mainActivity"/>-->
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".SettingAppService"
+            android:defaultToDeviceProtectedStorage="true"
+            android:directBootAware="true"
+            android:enabled="true"
+            android:exported="true"
+            android:persistent="true"
+            android:process=":remoteSettingAppService">
+            <intent-filter android:priority="1000">
+                <action android:name="com.adayo.app.setting.service" />
+            </intent-filter>
+        </service>
+        <activity
+            android:name=".view.popwindow.soundEq.SoundEqWindow"
+            android:launchMode="singleInstance"
+            android:theme="@style/Dialog">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="adayo.setting.intent.action.EQ"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.popwindow.harman.HarmanPopActivity"
+            android:launchMode="singleInstance"
+            android:theme="@style/Dialog">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="adayo.setting.intent.action.Harman"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

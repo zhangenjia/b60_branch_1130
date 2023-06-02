@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants">
+
+    <TextView
+        android:id="@+id/tv_hispair_name"
+        android:layout_width="0dp"
+        android:layout_height="80px"
+        android:layout_marginStart="8px"
+        android:singleLine="true"
+        android:gravity="start|center_vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/ib_hispair_delete"
+        android:textSize="30px"
+        android:textColor="@color/gray"
+        android:text="Title"/>
+
+    <ImageButton
+        android:id="@+id/ib_hispair_delete"
+        android:layout_width="48px"
+        android:layout_height="48px"
+        android:layout_marginEnd="9px"
+        android:background="@color/transparent"
+        android:src="@drawable/selector_bt_delete"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_hispair_name"
+        app:layout_constraintEnd_toStartOf="@id/iv_hispair_status"/>
+
+    <ImageView
+        android:id="@+id/iv_hispair_status"
+        android:layout_width="48px"
+        android:layout_height="48px"
+        android:layout_marginEnd="6px"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ib_hispair_delete"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/transparent"/>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@drawable/line_bt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>

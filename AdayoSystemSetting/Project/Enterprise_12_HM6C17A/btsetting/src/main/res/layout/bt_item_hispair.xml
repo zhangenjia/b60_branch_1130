@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants">
+
+    <TextView
+        android:id="@+id/tv_hispair_name"
+        android:layout_width="0dp"
+        android:layout_height="80px"
+        android:gravity="start|center_vertical"
+        android:singleLine="true"
+        android:text="Title"
+        android:textColor="@color/gray"
+        android:textSize="30px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/ib_hispair_delete"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/ib_hispair_delete"
+        android:layout_width="48px"
+        android:layout_height="48px"
+        android:layout_marginEnd="9px"
+        android:background="@color/transparent"
+        android:src="@drawable/selector_bt_delete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/rl_hispair_status"
+        app:layout_constraintStart_toEndOf="@id/tv_hispair_name"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/rl_hispair_status"
+        android:layout_width="48px"
+        android:layout_height="48px"
+        android:layout_marginEnd="6px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ib_hispair_delete"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_hispair_status"
+            android:layout_width="48px"
+            android:layout_height="48px"
+            android:background="@color/transparent" />
+
+        <ImageView
+            android:id="@+id/iv_refresh"
+            android:layout_width="48px"
+            android:layout_height="48px"
+            android:src="@drawable/anim_loading"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@drawable/line_bt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

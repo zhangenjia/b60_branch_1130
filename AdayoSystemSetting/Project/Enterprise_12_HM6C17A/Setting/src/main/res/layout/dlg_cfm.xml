@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/offroad_system_settings_popup_background_01">
+
+    <ImageView
+        android:layout_marginRight="25dp"
+        android:id="@+id/iv_reset_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_singlerow_reset"
+        app:layout_constraintBottom_toBottomOf="@id/tv_cfm_title"
+        app:layout_constraintEnd_toStartOf="@id/tv_cfm_title"
+        app:layout_constraintTop_toTopOf="@id/tv_cfm_title" />
+
+    <TextView
+        android:id="@+id/tv_cfm_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textColor="@color/dlg_title"
+        android:textSize="@dimen/common_tvsize_big1"
+        app:layout_constraintEnd_toStartOf="@id/gl_cfm_2"
+        app:layout_constraintStart_toStartOf="@id/gl_cfm_0"
+        app:layout_constraintTop_toTopOf="@id/gl_cfm_1" />
+
+    <TextView
+        android:id="@+id/tv_cfm_msg"
+        android:layout_width="700dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Msg"
+        android:textColor="@color/dlg_msg"
+        android:textSize="@dimen/dlg_msg_size"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintBottom_toTopOf="@id/btn_cfm_positive"
+        app:layout_constraintEnd_toStartOf="@id/gl_cfm_2"
+        app:layout_constraintStart_toStartOf="@id/gl_cfm_0"
+        app:layout_constraintTop_toBottomOf="@id/tv_cfm_title" />
+
+    <Button
+        android:id="@+id/btn_cfm_positive"
+        android:layout_width="354dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:background="@drawable/selector_btn_two"
+        android:text="Positive"
+        android:textColor="@color/dlg_positive_btn_txt"
+        android:textSize="@dimen/dlg_positive_btn_size"
+        app:layout_constraintBottom_toTopOf="@id/gl_cfm_3"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_cfm_negative"
+        android:layout_width="354dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/selector_btn_two"
+        android:text="Negative"
+        android:textColor="@color/dlg_neutral_btn_txt"
+        android:textSize="@dimen/dlg_neutral_btn_size"
+        app:layout_constraintBottom_toTopOf="@id/gl_cfm_3"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gl_cfm_0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/dlg_cfm_root_padding_start" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gl_cfm_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="@dimen/dlg_cfm_root_padding_top" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gl_cfm_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="@dimen/dlg_cfm_root_padding_end" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gl_cfm_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="@dimen/dlg_cfm_root_padding_bottom" />
+
+</android.support.constraint.ConstraintLayout>

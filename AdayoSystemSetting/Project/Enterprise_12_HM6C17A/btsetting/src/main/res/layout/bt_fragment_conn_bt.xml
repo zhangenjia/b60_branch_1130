@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fl_bt"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/offroad_system_settings_high_match_frame_wifi_last_n">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nsv_bt"
+        android:layout_width="match_parent"
+        android:layout_height="784px">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="123px">
+
+                <ImageView
+                    android:id="@+id/iv_bluetooth_icon"
+                    android:layout_width="48px"
+                    android:layout_height="48px"
+                    android:layout_marginStart="12px"
+                    android:layout_marginTop="36px"
+                    android:background="@drawable/icon_big_bt" />
+
+                <TextView
+                    android:id="@+id/tv_bluetooth_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="74px"
+                    android:text="@string/conn_bt_title1"
+                    android:textColor="@color/white"
+                    android:textSize="36px" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_bluetooth_switch"
+                    android:layout_width="88px"
+                    android:layout_height="50px"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="40px"
+                    android:layout_marginEnd="20px">
+
+                    <!--蓝牙开关-->
+                    <com.kyleduo.switchbutton.SwitchButton
+                        android:id="@+id/tgBtn_bluetooth_switch"
+                        android:layout_width="88px"
+                        android:layout_height="50px"
+                        app:kswAnimationDuration="200"
+                        app:kswBackDrawable="@drawable/selector_toggle_switch"
+                        app:kswFadeBack="true"
+                        app:kswThumbDrawable="@drawable/offroad_system_settings_button_switch_yuan"
+                         />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="18dp"
+                android:background="@drawable/line_bt" />
+
+            <LinearLayout
+                android:id="@+id/ll_bt_not_connected"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="190px"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="128px"
+                    android:layout_height="128px"
+                    android:background="@drawable/icon_bluetooth_is_not_connected" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="21px"
+                    android:text="@string/conn_bt_msg"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/common_tvsize_mid" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ly_bluetooth_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_his_pair"
+                    android:layout_width="wrap_content"
+                    android:layout_height="81px"
+                    android:layout_marginStart="18px"
+                    android:gravity="center"
+                    android:text="@string/conn_bt_his_pair"
+                    android:textColor="@color/white"
+                    android:textSize="30px" />
+
+                <ImageView
+                    android:id="@+id/iv_his_pair_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginEnd="18dp"
+                    android:background="@drawable/line_bt"
+                    android:orientation="horizontal" />
+
+                <LinearLayout
+                    android:id="@+id/ll_his_pair"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_his_pair_message"
+                        android:layout_width="match_parent"
+                        android:layout_height="81px"
+                        android:gravity="center"
+                        android:text="@string/conn_bt_his_pair_no_device"
+                        android:textColor="@color/gray"
+                        android:textSize="30px" />
+
+                    <ImageView
+                        android:id="@+id/v_his_pair_bottom"
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginStart="18px"
+                        android:layout_marginEnd="18px"
+                        android:background="@drawable/line_bt"
+                        android:orientation="horizontal" />
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/lv_hispair"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18px"
+                    android:layout_marginEnd="18px"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_can_pair"
+                        android:layout_width="wrap_content"
+                        android:layout_height="80px"
+                        android:layout_marginStart="18px"
+                        android:gravity="center"
+                        android:text="@string/conn_bt_can_pair"
+                        android:textColor="@color/white"
+                        android:textSize="30px" />
+
+                    <RelativeLayout
+                        android:layout_width="52px"
+                        android:layout_height="52px"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="21px">
+
+                        <ImageView
+                            android:id="@+id/ib_can_pair_refresh"
+                            android:layout_width="52px"
+                            android:layout_height="52px"
+                            android:src="@drawable/anim_loading"
+                            android:visibility="gone"
+                            app:skinEnable="false" />
+
+                        <ImageView
+                            android:id="@+id/iv_refresh_normal"
+                            android:layout_width="52px"
+                            android:layout_height="52px"
+                            android:background="@drawable/selector_bt_refresh"
+                            android:visibility="visible" />
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/v_can_pair_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginEnd="18dp"
+                    android:background="@drawable/line_bt"
+                    android:orientation="horizontal" />
+
+                <ListView
+                    android:id="@+id/lv_can_pair"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginEnd="18dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+</FrameLayout>

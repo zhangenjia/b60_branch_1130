@@ -1,0 +1,10 @@
+include ':base'
+include ':VRSettingsDepend'
+include ':SettingsBPresenter'
+include ':SettingsFPresenter'
+include ':Setting',':calendarview'
+include ':btsetting'
+include ':skin'
+include ':btsetting_theme_orange'
+include ':FlycoTabLayout_Lib'
+rootProject.name = "Enterprise_12_HM6C17A"

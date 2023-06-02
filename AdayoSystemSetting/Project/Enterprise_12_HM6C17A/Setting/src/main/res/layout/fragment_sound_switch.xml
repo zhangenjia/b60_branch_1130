@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="896dp"
+    android:id="@+id/cl_sound_switch"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/offroad_system_settings_sound_frame_last_right_three_n"
+    android:layout_height="370dp">
+    <TextView
+        android:id="@+id/tv_sound_touch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|start"
+        android:text="@string/sound_touch_beep_title"
+        android:textColor="@color/white"
+        android:layout_marginStart="22dp"
+        android:textSize="@dimen/common_tvsize_mid"
+        android:layout_marginTop="47dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.adayo.app.setting.base.SwitchButton
+        android:id="@+id/tgBtn_sound_touch_switch"
+        android:layout_width="88dp"
+        android:layout_height="50dp"
+        app:kswBackDrawable="@drawable/selector_toggle_switch_background"
+        app:kswFadeBack="true"
+        android:soundEffectsEnabled="false"
+        app:kswAnimationDuration="200"
+        app:kswThumbDrawable="@drawable/offroad_system_settings_button_switch_yuan"
+        android:layout_marginRight="16dp"
+        app:layout_constraintBottom_toBottomOf="@id/tv_sound_touch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_sound_touch" />
+
+    //电话铃声
+
+    <TextView
+        android:id="@+id/tv_sound_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|start"
+        android:text="@string/sound_phone_ring_title"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_tvsize_mid"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="170dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+    />
+    <com.flyco.customtablayout.SegmentTabLayout
+        android:id="@+id/sb_sound_phone_switch"
+        app:tl_indicator_anim_enable="true"
+        app:tl_tab_space_equal="true"
+        app:tl_tab_width="129dp"
+        app:tl_textSelectColor="@color/tab_selected"
+        app:tl_textUnselectColor="@color/tab_unselected"
+        app:tl_textsize="30px"
+        app:tl_thumb_drawable="@drawable/frame_thumb_segment"
+        android:layout_width="388dp"
+        android:layout_height="56dp"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center_vertical|right"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_sound_phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_sound_phone"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/frame_last_cruise_mode">
+
+    </com.flyco.customtablayout.SegmentTabLayout>
+
+    //suiche
+    <TextView
+        android:id="@+id/tv_sound_speed"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|start"
+        android:text="@string/sound_with_speed_title"
+        android:textColor="@color/white"
+        android:layout_marginTop="291dp"
+        android:textSize="@dimen/common_tvsize_mid"
+        android:layout_marginStart="22dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.flyco.customtablayout.SegmentTabLayout
+        android:id="@+id/sb_sound_speed_switch"
+        app:tl_indicator_anim_enable="true"
+        app:tl_tab_space_equal="true"
+        app:tl_tab_width="129dp"
+        app:tl_textSelectColor="@color/tab_selected"
+        app:tl_textUnselectColor="@color/tab_unselected"
+        app:tl_textsize="30px"
+        app:tl_thumb_drawable="@drawable/frame_thumb_segment"
+        android:layout_width="514dp"
+        android:layout_height="56dp"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center_vertical|right"
+        app:layout_constraintBottom_toBottomOf="@id/tv_sound_speed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_sound_speed"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/frame_last_cruise_mode">
+
+    </com.flyco.customtablayout.SegmentTabLayout>
+
+
+</android.support.constraint.ConstraintLayout>

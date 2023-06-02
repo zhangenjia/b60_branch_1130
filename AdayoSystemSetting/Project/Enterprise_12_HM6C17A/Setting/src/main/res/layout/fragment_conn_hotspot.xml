@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_hospot"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".hotspot.ConnHotspotFragment">
+    <!--通用-热点-->
+
+    <ImageView
+        android:id="@+id/iv_last"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/conn_devnm_last_high"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/iv_hospot_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/conn_hotspot_icon"
+        app:layout_constraintStart_toStartOf="@id/gl_hospot_left"
+        app:layout_constraintTop_toTopOf="@id/gl_hospot_top1" />
+
+    <TextView
+        android:id="@+id/tv_hospot_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:gravity="center_vertical"
+        android:text="@string/conn_hotspot_title1"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_tvsize_big2"
+        app:layout_constraintBottom_toBottomOf="@id/iv_hospot_icon"
+        app:layout_constraintLeft_toRightOf="@id/iv_hospot_icon"
+        app:layout_constraintTop_toTopOf="@id/iv_hospot_icon" />
+<!--    &lt;!&ndash;    状态开关按钮&ndash;&gt;-->
+    <com.adayo.app.setting.base.SwitchButton
+        android:id="@+id/tgBtn_hospot_switch"
+        android:layout_width="88dp"
+        android:layout_height="50dp"
+        app:kswBackDrawable="@drawable/selector_toggle_switch_background"
+        app:kswFadeBack="true"
+        app:kswAnimationDuration="200"
+        app:kswThumbDrawable="@drawable/offroad_system_settings_button_switch_yuan"
+        app:layout_constraintBottom_toBottomOf="@id/iv_hospot_icon"
+        app:layout_constraintRight_toLeftOf="@id/gl_hospot_right"
+        app:layout_constraintTop_toTopOf="@id/iv_hospot_icon" />
+
+    <android.support.constraint.Group
+        android:id="@+id/group_hospot_on"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:constraint_referenced_ids="tv_hospot_title2,tv_hospot_number,tv_hospot_pwd,iv_hospot_arrow,iv_pwd_bg" />
+
+    <TextView
+        android:id="@+id/tv_hospot_title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:gravity="center_vertical"
+        android:text="@string/conn_hotspot_title2"
+        android:textColor="@color/white"
+        android:textSize="30px"
+        android:layout_marginLeft="19dp"
+        app:layout_constraintBottom_toTopOf="@id/iv_pwd_bg"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tv_hospot_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="0"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/common_tvsize_mid"
+        android:layout_marginRight="50dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/tv_hospot_title2"
+        app:layout_constraintTop_toTopOf="@id/tv_hospot_title2" />
+    <ImageView
+        android:id="@+id/iv_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:background="@drawable/line_400"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_hospot_icon" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/tv_hospot_title3"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="18px"-->
+<!--        android:gravity="start|center_vertical"-->
+<!--        android:text="@string/conn_hotspot_title3"-->
+<!--        android:layout_marginTop="123px"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="@dimen/common_tvsize_mid"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <ImageView
+        android:id="@+id/iv_pwd_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginLeft="18px"
+        android:background="@drawable/offroad_system_settings_high_match_input_box_benjimingcheng_n"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_hospot_pwd"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="42px"
+        android:layout_marginRight="40px"
+        android:gravity="start|center_vertical"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:text="123456"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_tvsize_mid"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/iv_hospot_arrow"
+        app:layout_constraintBottom_toBottomOf="@id/iv_pwd_bg"
+        app:layout_constraintTop_toTopOf="@id/iv_pwd_bg" />
+
+    <ImageView
+        android:id="@+id/iv_hospot_arrow"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:scaleType="fitEnd"
+        app:layout_constraintBottom_toBottomOf="@id/iv_pwd_bg"
+        app:layout_constraintTop_toTopOf="@id/iv_pwd_bg"
+        android:src="@drawable/selector_right_arrow"
+        app:layout_constraintEnd_toEndOf="@id/gl_hospot_right"
+        app:layout_constraintStart_toStartOf="@id/gl_hospot_left"
+       />
+
+    <TextView
+        android:id="@+id/tv_hospot_off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="46dp"
+        android:gravity="center_horizontal"
+        android:text="@string/conn_hotspot_msg"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_tvsize_mid"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gl_hospot_top1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="39dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gl_hospot_top2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="100dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gl_hospot_top3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="123px" />
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gl_hospot_top5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="194dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gl_hospot_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gl_hospot_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="36px" />
+</android.support.constraint.ConstraintLayout>

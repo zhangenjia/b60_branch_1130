@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cl_diect_media"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <ImageView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/iv_direct_last"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/direct_media_last" />
+    <ImageView
+       app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/direct_icon" />
+
+    <Button
+        android:id="@+id/btn_direct_media"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginRight="21dp"
+        android:background="@null"
+        android:paddingLeft="74dp"
+        android:drawableRight="@drawable/selector_right_arrow"
+        android:gravity="center_vertical|start"
+        android:text="@string/direct_media_title"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_tvsize_big2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_direct_media_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="84dp"
+        android:gravity="end|center_vertical"
+        android:singleLine="true"
+        android:textColor="@color/text_small_gray"
+        android:textSize="@dimen/common_tvsize_mid"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

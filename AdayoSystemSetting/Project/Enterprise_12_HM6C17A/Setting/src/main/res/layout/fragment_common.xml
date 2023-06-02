@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_common"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.activity.MainActivity">
+    <!--通用的fragment集合-->
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="1894dp"
+        android:id="@+id/nsv_fragment_common"
+        android:layout_height="wrap_content"
+        android:fadeScrollbars="false"
+        android:overScrollMode="never"
+        android:scrollbarThumbVertical="@drawable/offroad_system_settings_bar_sel"
+        android:scrollbarTrackVertical="@drawable/offroad_system_settings_bar_last"
+        android:scrollbars="vertical"
+        android:verticalScrollbarPosition="right">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/cl_common"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!--通用-本机名称-->
+            <include
+                android:id="@+id/frag_conn_devnm"
+                layout="@layout/fragment_conn_devnm"
+                android:layout_width="0dp"
+                android:layout_height="292dp"
+                app:layout_constraintLeft_toLeftOf="@id/gl_main_left1"
+                app:layout_constraintRight_toLeftOf="@id/gl_main_left2"
+                app:layout_constraintTop_toTopOf="parent" />
+            <!--通用-热点-->
+            <include
+                android:id="@+id/frag_conn_hotspot"
+                layout="@layout/fragment_conn_hotspot"
+                android:layout_width="0dp"
+                android:layout_height="292dp"
+                app:layout_constraintLeft_toLeftOf="@id/gl_main_left3"
+                app:layout_constraintRight_toLeftOf="@id/gl_main_left4"
+                app:layout_constraintTop_toTopOf="@id/frag_conn_devnm" />
+            <!--通用 WIFI-->
+            <include
+                layout="@layout/fragment_conn_wifi"
+                android:id="@+id/frag_conn_wifi"
+                android:layout_width="0dp"
+                android:layout_height="784dp"
+                android:layout_marginRight="24px"
+                android:layout_marginBottom="24dp"
+                app:layout_constraintEnd_toStartOf="@id/gl_main_left6"
+                app:layout_constraintStart_toStartOf="@id/gl_main_left5"
+                app:layout_constraintTop_toTopOf="@id/frag_conn_devnm" />
+            <!--通用 蓝牙 不用看-->
+            <include
+                android:id="@+id/frag_conn_bluetooth"
+                layout="@layout/bt_fragment_conn_bt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="@id/gl_main_left6"
+                app:layout_constraintRight_toLeftOf="@id/gl_main_right"
+                app:layout_constraintTop_toTopOf="@id/frag_conn_devnm" />
+
+            <FrameLayout
+                android:id="@+id/frag_conn_reply"
+                android:layout_width="1816dp"
+                android:layout_height="238px"
+                android:layout_marginTop="24dp"
+                app:layout_constraintStart_toStartOf="@id/gl_main_left1"
+                app:layout_constraintTop_toBottomOf="@id/frag_conn_wifi" />
+            <!--通用 定位-->
+            <include
+                layout="@layout/fragment_common_local"
+                android:id="@+id/frag_common_local"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                app:layout_constraintStart_toStartOf="@id/gl_main_left1"
+                app:layout_constraintTop_toBottomOf="@id/frag_conn_devnm" />
+
+            <include
+                android:id="@+id/frag_common_language"
+                layout="@layout/fragment_common_language"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                app:layout_constraintStart_toStartOf="@id/gl_main_left1"
+                app:layout_constraintTop_toBottomOf="@id/frag_common_local" />
+
+            <include
+                android:id="@+id/frag_common_drive"
+                layout="@layout/fragment_common_drive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                app:layout_constraintStart_toStartOf="@id/gl_main_left1"
+                app:layout_constraintTop_toBottomOf="@id/frag_common_language" />
+
+            <include
+                android:id="@+id/frag_common_unit"
+                layout="@layout/fragment_conn_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="336dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintStart_toStartOf="@id/gl_main_left1"
+                app:layout_constraintTop_toBottomOf="@id/frag_conn_reply" />
+            <!--通用- 媒体按键-->
+            <FrameLayout
+                android:id="@+id/frag_direct_media"
+                android:layout_width="1816px"
+                android:layout_height="120px"
+                android:layout_marginTop="24px"
+                app:layout_constraintEnd_toStartOf="@id/gl_main_right"
+                app:layout_constraintStart_toStartOf="@id/gl_main_left1"
+                app:layout_constraintTop_toBottomOf="@id/frag_common_unit" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/gl_main_left1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="52dp" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/gl_main_left2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="488dp" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/gl_main_left3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="512dp" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/gl_main_left4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="948dp" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/gl_main_left5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="972dp" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/gl_main_left6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="1432dp" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/gl_main_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="1868dp" />
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

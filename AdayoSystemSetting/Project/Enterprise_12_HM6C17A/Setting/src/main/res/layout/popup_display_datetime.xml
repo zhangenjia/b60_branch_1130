@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="1920dp"
+    android:layout_height="860dp"
+    android:background="@drawable/shape_bg_popup">
+
+    <Button
+        android:id="@+id/close"
+        android:layout_width="@dimen/close_popup_width"
+        android:layout_height="@dimen/close_popup_height"
+        android:layout_marginStart="@dimen/close_popup_x"
+        android:layout_marginTop="@dimen/close_popup_y"
+        android:background="@drawable/selector_btn_close"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--android:typeface="@string/zh_typeface" -->
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="12px"
+        android:gravity="center"
+        android:text="@string/datetime_title"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dlg_title_size"
+        app:layout_constraintBottom_toBottomOf="@id/close"
+        app:layout_constraintStart_toEndOf="@id/close"
+        app:layout_constraintTop_toTopOf="@id/close" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/selector_datetime_save_bt"
+        android:text="@string/time_save"
+        android:textColor="@color/white"
+        android:textSize="36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/textView4" />
+
+    <TextView
+        android:id="@+id/year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:gravity="center"
+        android:text="@string/year"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_tvsize_big2"
+        app:layout_constraintBottom_toBottomOf="@id/tv_year"
+        app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+        app:layout_constraintTop_toTopOf="@id/tv_year" />
+
+    <TextView
+        android:id="@+id/month"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="149dp"
+        android:gravity="center"
+        android:text="@string/month_subtitle"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_tvsize_big2"
+        app:layout_constraintBottom_toBottomOf="@id/tv_month"
+        app:layout_constraintLeft_toRightOf="@id/bt_year_right"
+        app:layout_constraintTop_toTopOf="@id/tv_month" />
+
+    <Button
+        android:id="@+id/bt_year_left"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="46dp"
+        android:background="@drawable/selector_date_left"
+        app:layout_constraintBottom_toBottomOf="@id/tv_year"
+        app:layout_constraintLeft_toRightOf="@id/year"
+        app:layout_constraintRight_toLeftOf="@id/tv_year"
+        app:layout_constraintTop_toTopOf="@id/tv_year" />
+
+    <TextView
+        android:id="@+id/tv_year"
+        android:layout_width="134dp"
+        android:layout_height="60dp"
+        android:textColor="@color/white"
+        android:textSize="34px"
+        android:gravity="center"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/offroad_system_settings_display_frame_sel_month"
+        app:layout_constraintStart_toEndOf="@id/bt_year_left"
+        app:layout_constraintTop_toTopOf="@id/guidelineTop"
+      />
+
+    <Button
+        android:id="@+id/bt_year_right"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/selector_date_right"
+        app:layout_constraintBottom_toBottomOf="@id/tv_year"
+        app:layout_constraintLeft_toRightOf="@id/tv_year"
+        app:layout_constraintTop_toTopOf="@id/tv_year" />
+
+    <Button
+        android:id="@+id/bt_month_left"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="46dp"
+        android:background="@drawable/selector_date_left"
+        app:layout_constraintBottom_toBottomOf="@id/tv_month"
+        app:layout_constraintLeft_toRightOf="@id/month"
+        app:layout_constraintRight_toLeftOf="@id/tv_month"
+        app:layout_constraintTop_toTopOf="@id/tv_month" />
+
+    <TextView
+        android:id="@+id/tv_month"
+        android:layout_width="134dp"
+        android:textColor="@color/white"
+        android:textSize="34px"
+        android:gravity="center"
+        android:layout_height="60dp"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/offroad_system_settings_display_frame_sel_month"
+        app:layout_constraintLeft_toRightOf="@+id/bt_month_left"
+        app:layout_constraintTop_toTopOf="@id/guidelineTop"
+/>
+
+    <Button
+        android:id="@+id/bt_month_right"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/selector_date_right"
+        app:layout_constraintBottom_toBottomOf="@id/tv_month"
+        app:layout_constraintLeft_toRightOf="@id/tv_month"
+        app:layout_constraintTop_toTopOf="@id/tv_month" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="134dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="33dp"
+        android:gravity="center"
+        android:text="@string/sunday"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_tvsize_big2"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@id/bt_year_left" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="134dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="14dp"
+        android:gravity="center"
+        android:text="@string/monday"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_tvsize_big2"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/textView4"
+        app:layout_constraintStart_toEndOf="@id/textView4"
+        app:layout_constraintTop_toTopOf="@id/textView4" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="134dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="14dp"
+        android:gravity="center"
+        android:text="@string/tuesday"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_tvsize_big2"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/textView3"
+        app:layout_constraintStart_toEndOf="@id/textView3"
+        app:layout_constraintTop_toTopOf="@id/textView3" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="134dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="14dp"
+        android:gravity="center"
+        android:text="@string/wednesday"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_tvsize_big2"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/textView2"
+        app:layout_constraintStart_toEndOf="@id/textView2"
+        app:layout_constraintTop_toTopOf="@id/textView2" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="134dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="14dp"
+        android:gravity="center"
+        android:text="@string/thursday"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_tvsize_big2"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/textView5"
+        app:layout_constraintStart_toEndOf="@id/textView5"
+        app:layout_constraintTop_toTopOf="@id/textView5" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="134dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="14dp"
+        android:gravity="center"
+        android:text="@string/friday"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_tvsize_big2"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/textView6"
+        app:layout_constraintStart_toEndOf="@id/textView6"
+        app:layout_constraintTop_toTopOf="@id/textView6" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="134dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="14dp"
+        android:gravity="center"
+        android:text="@string/saturday"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_tvsize_big2"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/textView7"
+        app:layout_constraintStart_toEndOf="@id/textView7"
+        app:layout_constraintTop_toTopOf="@id/textView7" />
+
+
+
+    <com.haibin.calendarview.CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="1036dp"
+        android:layout_height="wrap_content"
+        app:calendar_height="78dp"
+        app:calendar_padding_right="14dp"
+        app:current_month_lunar_text_color="@color/white"
+        app:current_month_text_color="@color/white"
+        app:day_text_size="30dp"
+        app:month_view_auto_select_day="last_select_day"
+        app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@id/textView8"
+        app:lunar_text_size="24dp"
+        app:max_year="2037"
+        app:min_year="2008"
+        app:current_day_text_color="@color/white"
+        app:current_day_lunar_text_color="@color/white"
+        app:month_view="com.adayo.app.setting.view.popwindow.BJ60MonthView"
+        app:month_view_show_mode="mode_only_current"
+        app:selected_lunar_text_color="@color/white"
+        app:selected_text_color="@color/white"
+        app:selected_theme_color="@color/white"
+        app:week_bar_height="0dp" />
+
+    <Button
+        android:id="@+id/am"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:background="@drawable/selector_datetime_apm_bt"
+        android:gravity="center"
+        android:text="@string/am"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_tvsize_big2"
+        app:layout_constraintStart_toStartOf="@id/guidelinesegmentation"
+        app:layout_constraintTop_toTopOf="@id/guidelineTop" />
+
+    <Button
+        android:id="@+id/pm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_datetime_apm_bt"
+        android:gravity="center"
+        android:text="@string/pm"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_tvsize_big2"
+        app:layout_constraintEnd_toEndOf="@id/am"
+        app:layout_constraintStart_toStartOf="@id/am"
+        app:layout_constraintTop_toBottomOf="@id/am" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:src="@drawable/offroad_system_settings_display_frame_lastl_1212"
+        app:layout_constraintStart_toEndOf="@id/pm"
+        app:layout_constraintTop_toTopOf="@id/guidelineTop" />
+
+    <EditText
+        android:id="@+id/hourView"
+        android:layout_width="112dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@color/transparent"
+        android:contextClickable="false"
+        android:gravity="center"
+        android:maxLength="2"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textCursorDrawable="@drawable/edit_text_guangbiao_big"
+        android:textSize="@dimen/common_tvsize_big0"
+        app:layout_constraintBottom_toBottomOf="@id/imageView"
+        app:layout_constraintStart_toStartOf="@id/imageView"
+        app:layout_constraintTop_toTopOf="@id/imageView" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="30dp"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:text="@string/colon"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_tvsize_big0"
+        app:layout_constraintBottom_toBottomOf="@id/hourView"
+        app:layout_constraintStart_toEndOf="@id/hourView"
+        app:layout_constraintTop_toTopOf="@id/hourView" />
+
+    <EditText
+        android:id="@+id/minView"
+        android:layout_width="112dp"
+        android:layout_height="100dp"
+        android:background="@color/transparent"
+        android:gravity="center"
+        android:maxLength="2"
+        android:textColor="@color/white"
+        android:textCursorDrawable="@drawable/edit_text_guangbiao_big"
+        android:textSize="@dimen/common_tvsize_big0"
+        app:layout_constraintBottom_toBottomOf="@id/hourView"
+        app:layout_constraintStart_toEndOf="@id/textView11"
+        app:layout_constraintTop_toTopOf="@id/hourView" />
+
+    <GridView
+        android:id="@+id/tenkey"
+        android:layout_width="473dp"
+        android:layout_height="528dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="32dp"
+        android:horizontalSpacing="21dp"
+        android:numColumns="3"
+        android:verticalSpacing="16dp"
+        app:layout_constraintStart_toStartOf="@id/am"
+        app:layout_constraintTop_toBottomOf="@id/pm" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="137dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelinesegmentation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="1315dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="92dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineTop2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="208dp" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cl_container"
+    android:layout_width="800px"
+    android:layout_height="423px"
+    android:background="@drawable/popup_background_btsetting">
+
+    <TextView
+        android:id="@+id/tv_cfm_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70px"
+        android:gravity="center"
+        android:text="@string/conn_bt_del_dlg_title"
+        android:textColor="@color/bt_dlg_msg"
+        android:textSize="40px" />
+
+
+    <TextView
+        android:id="@+id/tv_cfm_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="193px"
+        android:gravity="center"
+        android:text="@string/conn_bt_del_dlg_msg"
+        android:textColor="@color/white"
+        android:textSize="36px" />
+
+    <Button
+        android:id="@+id/btn_cfm_positive"
+        android:layout_width="352px"
+        android:layout_height="80px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="32px"
+        android:layout_marginBottom="32px"
+        android:background="@drawable/selector_btn_two"
+        android:gravity="center"
+        android:text="@string/conn_bt_del_dlg_positive_btn"
+        android:textAllCaps="false"
+        android:textColor="@color/bt_dlg_positive_btn_txt"
+        android:textSize="40px" />
+
+    <Button
+        android:id="@+id/btn_cfm_negative"
+        android:layout_width="352px"
+        android:layout_height="80px"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="32px"
+        android:layout_marginBottom="32px"
+        android:background="@drawable/selector_btn_two"
+        android:gravity="center"
+        android:text="@string/conn_bt_del_dlg_negative_btn"
+        android:textAllCaps="false"
+        android:textColor="@color/bt_dlg_neutral_btn_txt"
+        android:textSize="40px" />
+
+</RelativeLayout>

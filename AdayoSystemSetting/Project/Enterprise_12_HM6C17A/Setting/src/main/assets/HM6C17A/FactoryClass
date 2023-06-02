@@ -1,0 +1,11 @@
+{
+  "Common": "com.adayo.app.setting.view.fragment.CommonFragment",
+  "Local": "com.adayo.app.setting.local.CommonLocalFragment",
+  "Devnm": "com.adayo.app.setting.devm.ConnDevnmFragment",
+  "Hotspot": "com.adayo.app.setting.hotspot.ConnHotspotFragment",
+  "Unit": "com.adayo.app.setting.unit.ConnUnitFragment",
+  "Wifi": "com.adayo.app.setting.wifi.ConnWifiFragment",
+  "Drive": "com.adayo.app.setting.drive.DriveFragment",
+  "Language": "com.adayo.app.setting.language.LanguageFragment",
+  "Bluetooth": "com.adayo.btsetting.view.ConnBluetoothFragment"
+}

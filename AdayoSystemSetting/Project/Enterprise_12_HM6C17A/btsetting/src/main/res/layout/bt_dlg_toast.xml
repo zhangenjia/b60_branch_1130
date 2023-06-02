@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/pic_animat"
+    android:layout_width="838px"
+    android:layout_height="188px"
+    android:background="@drawable/popup_background_small_btsetting">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="61px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="66px"
+            android:layout_height="66px"
+            app:skinEnable="false"
+            android:background="@drawable/icon_failure" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24px"
+            android:gravity="center"
+            android:text="@string/conn_bt_toast_hint_bt_pair_fail"
+            android:textColor="@color/white"
+            android:textSize="40px" />
+    </LinearLayout>
+
+
+</RelativeLayout>

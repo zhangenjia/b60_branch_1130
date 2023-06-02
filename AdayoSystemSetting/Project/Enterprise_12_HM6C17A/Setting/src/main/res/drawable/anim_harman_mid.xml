@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/mid00"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid01"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid02"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid03"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid04"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid06"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid07"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid08"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid09"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid10"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid11"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid12"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid13"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid14"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid15"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid16"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid17"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid18"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid19"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid20"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid21"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid22"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid23"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid24"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid25"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid26"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid27"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid28"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid29"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid30"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid31"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid32"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid33"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid34"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid35"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid36"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid37"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid38"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid39"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid40"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid41"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid42"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid43"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid44"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid45"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid46"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid47"
+        android:duration="33" />
+
+    <item
+        android:drawable="@drawable/mid48"
+        android:duration="33" />
+
+    <item
+        android:drawable="@drawable/mid49"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid50"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid51"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid52"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid53"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid54"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid55"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid56"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid57"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid58"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid59"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid60"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid61"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid62"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid63"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid64"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid65"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid66"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid67"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid68"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid69"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid70"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid71"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid72"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid73"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid74"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid75"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid76"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid77"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid78"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid79"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid80"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid81"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid82"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid83"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid84"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid85"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid86"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid87"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid88"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/mid89"
+        android:duration="33" />
+
+</animation-list>

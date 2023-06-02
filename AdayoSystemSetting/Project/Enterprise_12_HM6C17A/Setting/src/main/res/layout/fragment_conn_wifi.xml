@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fl_wifi"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/conn_wifi_last"
+    tools:context=".wifi.ConnWifiFragment">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nsv_wifi_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:fillViewport="true">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_wifi_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36px"
+                android:src="@drawable/conn_wifi_icon"
+                app:layout_constraintStart_toStartOf="@id/gl_wifi_left"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_wifi_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:gravity="center_vertical"
+                android:text="@string/conn_wifi_title1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/common_tvsize_big2"
+                app:layout_constraintBottom_toBottomOf="@id/iv_wifi_icon"
+                app:layout_constraintStart_toEndOf="@id/iv_wifi_icon"
+                app:layout_constraintTop_toTopOf="@id/iv_wifi_icon" />
+
+            <com.adayo.app.setting.base.SwitchButton
+                android:id="@+id/tgBtn_wifi_switch"
+                android:layout_width="88dp"
+                android:layout_height="50dp"
+                app:kswAnimationDuration="200"
+                app:kswBackDrawable="@drawable/selector_toggle_switch_background"
+                app:kswFadeBack="true"
+                app:kswThumbDrawable="@drawable/offroad_system_settings_button_switch_yuan"
+                app:layout_constraintBottom_toBottomOf="@id/iv_wifi_icon"
+                app:layout_constraintEnd_toEndOf="@id/gl_wifi_right"
+                app:layout_constraintTop_toTopOf="@id/iv_wifi_icon" />
+
+            <android.support.constraint.Group
+                android:id="@+id/group_wifi_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:constraint_referenced_ids="iv_wifi_list_title,rcv_wifi_list,rcv_wifi_save" />
+
+            <TextView
+                android:id="@+id/tv_wifi_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                android:paddingLeft="1dp"
+                android:text="@string/conn_wifi_save"
+                android:textColor="@color/white"
+                android:textSize="@dimen/common_tvsize_mid"
+                app:layout_constraintStart_toStartOf="@id/gl_wifi_left"
+                app:layout_constraintTop_toBottomOf="@id/iv_wifi_icon" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rcv_wifi_save"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26px"
+                android:paddingLeft="2dp"
+                app:layout_constraintEnd_toEndOf="@id/gl_wifi_right"
+                app:layout_constraintStart_toStartOf="@id/gl_wifi_left"
+                app:layout_constraintTop_toBottomOf="@+id/tv_wifi_save"
+                tools:itemCount="2"
+                tools:listitem="@layout/item_list_content_wifi" />
+
+            <ImageView
+                android:id="@+id/iv_wlan_line_finish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-6dp"
+                android:src="@drawable/offroad_system_settings_line_quarter_light"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rcv_wifi_save" />
+
+            <TextView
+                android:id="@+id/iv_wifi_list_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                android:paddingLeft="1dp"
+                android:text="@string/conn_wifi_list_title"
+                android:textColor="@color/white"
+                android:textSize="@dimen/common_tvsize_mid"
+                app:layout_constraintStart_toStartOf="@id/gl_wifi_left"
+                app:layout_constraintTop_toBottomOf="@id/rcv_wifi_save" />
+
+            <ImageView
+                android:id="@+id/iv_wifi_list_load"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:src="@drawable/offroad_system_settings_icon_refresh_n"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_wifi_list_title"
+                app:layout_constraintStart_toEndOf="@id/iv_wifi_list_title"
+                app:layout_constraintTop_toTopOf="@id/iv_wifi_list_title" />
+
+            <ImageView
+                android:id="@+id/iv_wifi_list_anim_load"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/anim_loading"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_wifi_list_title"
+                app:layout_constraintStart_toEndOf="@id/iv_wifi_list_title"
+                app:layout_constraintTop_toTopOf="@id/iv_wifi_list_title"
+                app:skinEnable="false"
+                tools:ignore="MissingPrefix" />
+
+            <ImageView
+                android:id="@+id/iv_no_wlan_line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="24dp"
+                android:src="@drawable/offroad_system_settings_line_quarter_light"
+                android:visibility="gone"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iv_wifi_list_title" />
+
+            <TextView
+                android:id="@+id/tv_no_wlan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                android:gravity="center"
+                android:text="@string/wifi_no_wlan"
+                android:textColor="#61ffffff"
+                android:textSize="30px"
+                android:visibility="gone"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iv_no_wlan_line" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rcv_wifi_list"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26px"
+                android:paddingLeft="2dp"
+                app:layout_constraintEnd_toEndOf="@id/gl_wifi_right"
+                app:layout_constraintStart_toStartOf="@id/gl_wifi_left"
+                app:layout_constraintTop_toBottomOf="@+id/iv_wifi_list_title"
+                tools:itemCount="4"
+                tools:listitem="@layout/item_list_content_wifi" />
+
+            <ImageView
+                android:id="@+id/iv_wifi_off"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="26px"
+                android:src="@drawable/offroad_system_settings_icon_wifi_is_not_connected"
+                app:layout_constraintBottom_toTopOf="@id/tv_wifi_off"
+                app:layout_constraintEnd_toEndOf="@id/tv_wifi_off"
+                app:layout_constraintStart_toStartOf="@id/tv_wifi_off" />
+
+            <TextView
+                android:id="@+id/tv_wifi_off"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="292px"
+                android:gravity="center_horizontal"
+                android:text="@string/conn_wifi_msg"
+                android:textColor="@color/white"
+                android:textSize="@dimen/common_tvsize_mid"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/gl_wifi_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="20dp" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/gl_wifi_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="20dp" />
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v4.widget.NestedScrollView>
+</FrameLayout>
