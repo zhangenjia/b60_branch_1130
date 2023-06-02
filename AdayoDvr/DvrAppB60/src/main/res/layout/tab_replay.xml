@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cl_replay"
+    android:layout_width="@dimen/dp1920"
+    android:layout_height="@dimen/dp860">
+
+    <ImageView
+        android:layout_width="@dimen/dp270"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/line"
+        android:layout_marginTop="1px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/ll_replay_back"
+        android:layout_width="@dimen/dp270"
+        android:layout_height="@dimen/dp123"
+        android:clickable="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="24px"
+            android:src="@drawable/btn_return" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16px"
+            android:text="@string/text_replay_back"
+            android:textColor="@drawable/btn_text_color"
+            android:textSize="35px" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="@dimen/dp270"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/line"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_replay_back" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="817px"
+        android:layout_height="116px"
+        android:layout_marginLeft="687px"
+        android:layout_marginTop="708px"
+        android:background="@mipmap/frame_icon_last"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_replay_rewind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="56px"
+            android:clickable="true"
+            android:src="@drawable/btn_rewind_bg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_replay_play_or_pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="211px"
+            android:clickable="true"
+            android:src="@drawable/btn_pause_bg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/iv_replay_forward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="369px"
+            android:clickable="true"
+            android:src="@drawable/btn_forward_bg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/iv_replay_move"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="523px"
+            android:clickable="true"
+            android:src="@mipmap/icon_transfer_emergency_n"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/iv_replay_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="677px"
+            android:clickable="true"
+            android:src="@drawable/btn_delete_bg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

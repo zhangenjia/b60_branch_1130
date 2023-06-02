@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/float_root"
+    android:layout_width="1069px"
+    android:layout_height="wrap_content"
+    android:background="@drawable/frame_keyboardbox"
+    android:clickable="true">
+
+    <RelativeLayout
+        android:id="@+id/call_cl"
+        android:layout_width="match_parent"
+        android:layout_height="228px"
+        android:layout_alignParentBottom="true">
+        <RelativeLayout
+            android:id="@+id/call_info_rl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/profile_photo_tv"
+                android:layout_width="106px"
+                android:layout_height="107px"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="61px"
+                android:textSize="45px"
+                android:gravity="center"
+                android:textColor="@color/colorWhite"
+                android:alpha="0.7"
+                android:background="@drawable/selector_bg_name">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/name_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/profile_photo_tv"
+                android:layout_alignTop="@+id/profile_photo_tv"
+                android:layout_marginLeft="17px"
+                android:layout_marginTop="7px"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:maxWidth="300px"
+                android:textSize="40px"
+                android:textColor="@color/colorWhite" />
+
+            <TextView
+                android:id="@+id/time_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name_1"
+                android:layout_toRightOf="@+id/profile_photo_tv"
+                android:layout_marginTop="10px"
+                android:layout_marginLeft="17px"
+                android:textSize="30px"
+                android:textColor="@color/colorWhite"
+                android:alpha="0.7"
+                android:text="123456789"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/third_call_info_rl"
+            android:layout_width="377px"
+            android:layout_height="141px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="46px"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/third_call_info_rl_2"
+                android:layout_width="211px"
+                android:layout_height="114px"
+                android:layout_centerVertical="true"
+                android:background="@drawable/frame_incoming_call_small"
+                android:layout_alignParentRight="true"
+                android:alpha="0.6">
+                <TextView
+                    android:id="@+id/third_call_name_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="19px"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:maxWidth="200px"
+                    android:textSize="36px"
+                    android:textColor="@color/third_call"
+                    android:alpha="0.7"/>
+
+                <TextView
+                    android:id="@+id/third_call_time_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="72px"
+                    android:textSize="27px"
+                    android:textColor="@color/third_call"
+                    android:alpha="0.7"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="263px"
+                android:layout_height="141px"
+                android:background="@drawable/frame_incoming_call_big">
+                <TextView
+                    android:id="@+id/third_call_name_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="28px"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:maxWidth="250px"
+                    android:textSize="40px"
+                    android:textColor="@color/third_call" />
+
+                <TextView
+                    android:id="@+id/third_call_time_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="84px"
+                    android:textSize="30px"
+                    android:textColor="@color/third_call"
+                    android:alpha="0.7"/>
+            </RelativeLayout>
+            
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="700px"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/icon_dialingKeyboard"
+                android:layout_width="106px"
+                android:layout_height="107px"
+                android:layout_toLeftOf="@+id/icon_mute"
+                android:layout_marginRight="31px"
+                android:background="@drawable/selector_call_dialing_keyboard">
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/icon_mute"
+                android:layout_width="106px"
+                android:layout_height="107px"
+                android:layout_toLeftOf="@+id/phone_answerSwitch"
+                android:layout_marginRight="31px"
+                android:background="@drawable/selector_call_mute">
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/phone_answerSwitch"
+                android:layout_width="106px"
+                android:layout_height="107px"
+                android:layout_toLeftOf="@+id/phone_answer"
+                android:layout_marginRight="31px"
+                android:background="@drawable/selector_call_phone_answer">
+            </ImageView>
+
+            <RelativeLayout
+                android:id="@+id/phone_third_call_rl"
+                android:layout_width="wrap_content"
+                android:layout_height="107px"
+                android:layout_toLeftOf="@+id/phone_hangup"
+                android:layout_marginRight="31px"
+                android:visibility="gone">
+                <ImageView
+                    android:id="@+id/phone_third_answer_iv"
+                    android:layout_width="106px"
+                    android:layout_height="107px"
+                    android:layout_toLeftOf="@+id/phone_third_hold_iv"
+                    android:layout_marginRight="31px"
+                    android:background="@drawable/selector_third_call_answer">
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/phone_third_hold_iv"
+                    android:layout_width="106px"
+                    android:layout_height="107px"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/selector_third_call_hold">
+                </ImageView>
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/phone_answer"
+                android:layout_width="106px"
+                android:layout_height="107px"
+                android:layout_toLeftOf="@+id/phone_hangup"
+                android:layout_marginRight="31px"
+                android:background="@drawable/selector_call_answer"
+                android:visibility="gone">
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/phone_hangup"
+                android:layout_width="106px"
+                android:layout_height="107px"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="59px"
+                android:background="@drawable/selector_call_phone_hangup">
+            </ImageView>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/keyboard_cl"
+        android:layout_width="match_parent"
+        android:layout_height="611px"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20px"
+        android:visibility="gone">
+        <include
+            android:id="@+id/include_call_keyboard"
+            layout="@layout/call_keyboard_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

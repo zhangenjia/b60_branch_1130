@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/cl_language"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- 语言设置 -->
+    <ImageView
+        android:id="@+id/iv_display_set_bglanguage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/drive_last_low" />
+    <ImageView
+        android:id="@+id/iv_language_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|left"
+        android:layout_marginLeft="12dp"
+        android:background="@drawable/language_icon"
+        />
+
+    <TextView
+        android:id="@+id/tv_display_set_lang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|left"
+        android:layout_marginStart="73dp"
+        android:gravity="center"
+        android:text="@string/display_lang_title"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_tvsize_big2" />
+
+    <com.flyco.customtablayout.SegmentTabLayout
+        android:id="@+id/sb_display_set_lang"
+        app:tl_indicator_anim_enable="true"
+        app:tl_tab_space_equal="true"
+        app:tl_tab_width="131dp"
+        app:tl_textSelectColor="@color/tab_selected"
+        app:tl_textUnselectColor="@color/tab_unselected"
+        app:tl_textsize="30px"
+        app:tl_thumb_drawable="@drawable/frame_thumb_segment"
+        android:layout_width="262px"
+        android:layout_height="56dp"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center_vertical|right"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/frame_last_cruise_mode">
+
+    </com.flyco.customtablayout.SegmentTabLayout>
+
+<!--    <include-->
+<!--        android:id="@+id/sb_display_set_lang"-->
+<!--        layout="@layout/item_slide_two"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center_vertical|right"-->
+<!--        android:layout_marginEnd="20dp" />-->
+
+</FrameLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <dimen name="padding_0">0px</dimen>
+    <dimen name="padding_27">27px</dimen>
+    <dimen name="text_28">28px</dimen>
+    <dimen name="text_30">30px</dimen>
+    <dimen name="text_36">36px</dimen>
+    <dimen name="text_34">34px</dimen>
+    <dimen name="text_40">39px</dimen>
+    <dimen name="text_42">42px</dimen>
+    <dimen name="text_48">48px</dimen>
+</resources>

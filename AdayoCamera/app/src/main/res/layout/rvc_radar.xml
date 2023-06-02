@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="512px"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="104px"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="512px"
+        android:layout_height="860px"
+        android:background="@mipmap/img_radar_bg">
+
+
+        <ImageView
+            android:id="@+id/iv_car"
+            android:layout_width="174px"
+            android:layout_height="378px"
+            android:layout_marginTop="243px"
+            android:src="@mipmap/img_empty_car"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_front_left"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_marginLeft="86px"
+            android:layout_marginTop="206px"
+            android:src="@drawable/frame_n"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_front_middle_left"
+            android:layout_width="120px"
+            android:layout_height="120px"
+            android:layout_marginLeft="132px"
+            android:layout_marginTop="139px"
+            android:src="@drawable/frame_n"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_front_middle_right"
+            android:layout_width="120px"
+            android:layout_height="120px"
+            android:layout_marginLeft="260px"
+            android:layout_marginTop="139px"
+            android:src="@drawable/frame_n"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_front_right"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_marginLeft="326px"
+            android:layout_marginTop="206px"
+            android:src="@drawable/frame_n"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_behind_left"
+            android:layout_width="128px"
+            android:layout_height="128px"
+            android:layout_marginLeft="57px"
+            android:layout_marginTop="559px"
+            android:src="@drawable/frame_n"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_behind_middle_left"
+            android:layout_width="148px"
+            android:layout_height="148px"
+            android:layout_marginLeft="105px"
+            android:layout_marginTop="607px"
+            android:src="@drawable/frame_n"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_behind_middle_right"
+            android:layout_width="148px"
+            android:layout_height="148px"
+            android:layout_marginLeft="259px"
+            android:layout_marginTop="607px"
+            android:src="@drawable/frame_n"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_behind_right"
+            android:layout_width="128px"
+            android:layout_height="128px"
+            android:layout_marginLeft="327px"
+            android:layout_marginTop="559px"
+            android:src="@drawable/frame_n"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_radar_error"
+            android:layout_width="wrap_content"
+            android:layout_height="60px"
+            android:layout_marginBottom="30px"
+            android:drawableLeft="@mipmap/icon_warning_gules_small"
+            android:drawablePadding="17px"
+            android:gravity="center_vertical"
+            android:text="@string/rvc_radar_error"
+            android:textColor="@color/white"
+            android:textSize="30px"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="116px"
+        android:clickable="true"
+        android:focusable="true" />
+</LinearLayout>

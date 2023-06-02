@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">HM6C17AOffRoadInfo</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="weather">Weather</string>
+
+<!--    <string name="waringtips1">涉水检测功能在车速低于10KM/h时可用</string>-->
+<!--    <string name="waringtips2">涉水检测功能在坡度小于10°时可用</string>-->
+<!--    <string name="waringtips3">传感器受到遮挡，涉水检测功能不可用</string>-->
+
+
+    <string name="tipsText1">涉水坡度过大，系统临时关闭！</string>
+    <string name="tipsText2">涉水车速过高，系统临时关闭！</string>
+    <string name="tipsText3">后视镜折叠，系统临时关闭！</string>
+    <string name="tipsText4">车门打开，系统临时关闭！</string>
+
+    <string name="tipsText5">坡度＞10°，涉水坡度过大！</string>
+    <string name="tipsText6">车速＞10km/h，涉水车速过高！</string>
+    <string name="tipsText7">涉水重要提示：注意行车安全，请勿超过最大涉水深度</string>
+
+
+
+    <string name ="north">北</string>
+    <string name ="northeast">东北</string>
+    <string name ="east">东</string>
+    <string name ="southeast">东南</string>
+    <string name ="south">南</string>
+    <string name ="southwest">西南</string>
+    <string name ="west">西</string>
+    <string name ="northwest">西北</string>
+    <string name ="max">最深0.75米</string>
+    <string name ="tab1">车辆信息</string>
+    <string name ="tab2">环境信息</string>
+    <string name ="tab3">涉水检测</string>
+</resources>

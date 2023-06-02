@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">音乐</string>
+    <string name="source_lo">USB音乐</string>
+    <string name="source_bt">蓝牙音乐</string>
+    <string name="no_play">暂无播放</string>
+    <string name="unknown">未知</string>
+</resources>

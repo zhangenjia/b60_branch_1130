@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="seek_bar">#F18410</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="transparent_white">#80FFFFFF</color>
+
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="black">#000000</color>
+    <color name="alpha_black">#E0000000</color>
+    <color name="red">#FF3939</color>
+
+    <!-- adayo color add by xuyue -->
+    <color name="text_color_time">#99FFFFFF</color>
+    <color name="qs_text_color_grey">#E0E0E0</color>
+    <color name="hvac_text_default">#666666</color>
+    <color name="widget_text_grey">#A5A5A5</color>
+    <color name="hvac_hi">#d4443c</color>
+    <color name="hvac_lo">#4e9ff2</color>
+    <color name="power_time">#cfcfcf</color>
+    <color name="air_quality_excellent">#00e301</color>
+    <color name="air_quality_good">#f7b607</color>
+    <color name="air_quality_light_pollution">#ff7800</color>
+    <color name="air_quality_moderate_pollution">#e73131</color>
+    <color name="air_quality_severe_pollution">#ce43da</color>
+    <color name="air_quality_serious_pollution">#f02584</color>
+</resources>

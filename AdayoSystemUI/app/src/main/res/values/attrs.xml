@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="hvacIcon">
+        <attr name="sendVehicleIndex">
+            <enum name="hvac_power_on" value="0" />
+            <enum name="hvac_ac_on" value="1" />
+            <enum name="hvac_auto_on" value="2" />
+            <enum name="hvac_recirc_on" value="3" />
+            <enum name="hvac_defroster" value="4" />
+            <enum name="hvac_temperature_set" value="5" />
+            <enum name="hvac_fan_speed" value="6" />
+            <enum name="hvac_fan_direction" value="7" />
+            <enum name="hvac_unlock_fresh_air" value="8" />
+            <enum name="hvac_anion_switch" value="9" />
+            <enum name="hvac_air_clean_control" value="10" />
+            <enum name="hvac_airpuri_and_auto_link" value="11" />
+            <enum name="hvac_pm25_display" value="12" />
+            <enum name="hvac_seat_temperature" value="13" />
+            <enum name="hvac_seat_ventilation" value="14" />
+            <enum name="hvac_front_status" value="15" />
+            <enum name="hvac_dual_zone_set" value="16" />
+            <enum name="hvac_dual_mode_status" value="17" />
+            <enum name="hvac_inside_pm25_value" value="18" />
+            <enum name="hvac_steering_wheel_heat" value="19" />
+            <enum name="bcm_seat_massage_mode" value="20" />
+            <enum name="bcm_seat_massage_intensity" value="21" />
+        </attr>
+        <attr name="receiveVehicleIndex">
+            <enum name="hvac_power_on" value="0" />
+            <enum name="hvac_ac_on" value="1" />
+            <enum name="hvac_auto_on" value="2" />
+            <enum name="hvac_recirc_on" value="3" />
+            <enum name="hvac_defroster" value="4" />
+            <enum name="hvac_temperature_set" value="5" />
+            <enum name="hvac_fan_speed" value="6" />
+            <enum name="hvac_fan_direction" value="7" />
+            <enum name="hvac_unlock_fresh_air" value="8" />
+            <enum name="hvac_anion_switch" value="9" />
+            <enum name="hvac_air_clean_control" value="10" />
+            <enum name="hvac_airpuri_and_auto_link" value="11" />
+            <enum name="hvac_pm25_display" value="12" />
+            <enum name="hvac_seat_temperature" value="13" />
+            <enum name="hvac_seat_ventilation" value="14" />
+            <enum name="hvac_front_status" value="15" />
+            <enum name="hvac_dual_zone_set" value="16" />
+            <enum name="hvac_dual_mode_status" value="17" />
+            <enum name="hvac_inside_pm25_value" value="18" />
+            <enum name="hvac_steering_wheel_heat" value="19" />
+            <enum name="bcm_seat_massage_mode" value="20" />
+            <enum name="bcm_seat_massage_intensity" value="21" />
+        </attr>
+        <attr name="area">
+            <enum name="area_seat_driver" value="0" />
+            <enum name="area_seat_passenger" value="1" />
+            <enum name="area_seat_front" value="2" />
+            <enum name="area_seat_rear" value="3" />
+            <enum name="area_seat_left" value="4" />
+            <enum name="area_seat_right" value="5" />
+            <enum name="area_seat_rear_left" value="6" />
+            <enum name="area_seat_rear_right" value="7" />
+            <enum name="area_seat_all" value="8" />
+            <enum name="area_global" value="9" />
+        </attr>
+        <attr name="onlyShow" format="boolean" />
+        <attr name="needSetValue" format="boolean" />
+        <attr name="needCheckAccOn" format="boolean" />
+        <attr name="sendOffset" format="integer" />
+        <attr name="receiveOffset" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="customButton">
+        <attr name="sourceType">
+            <enum name="source_home" value="0" />
+            <enum name="source_car_setting" value="1" />
+            <enum name="source_auto_parking" value="2" />
+            <enum name="source_setting" value="3" />
+        </attr>
+        <attr name="sourceSwitch">
+            <enum name="app" value="0" />
+            <enum name="service" value="1" />
+        </attr>
+        <attr name="loop" format="boolean" />
+        <attr name="controlType">
+            <enum name="bluetooth_type" value="0" />
+            <enum name="wifi_type" value="1" />
+            <enum name="hotspot_type" value="2" />
+            <enum name="screen_type" value="3" />
+        </attr>
+        <attr name="needShowText" format="boolean" />
+        <attr name="responseLongClick" format="boolean" />
+        <attr name="parameter" format="string" />
+        <attr name="systemStatus">
+            <enum name="system_status_screen" value="1" />
+            <enum name="system_status_power" value="2" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="customLayout">
+        <attr name="type">
+            <enum name="volume" value="0" />
+            <enum name="brightness" value="1" />
+        </attr>
+        <attr name="responseClick" format="boolean" />
+        <attr name="hasSubtract" format="boolean" />
+        <attr name="hasPlus" format="boolean" />
+        <attr name="hasText" format="boolean" />
+        <attr name="isVertical" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="RealtimeBlurView">
+        <attr name="realtimeBlurRadius" format="dimension" />
+        <attr name="realtimeDownsampleFactor" format="float" />
+        <attr name="realtimeOverlayColor" format="color" />
+    </declare-styleable>
+</resources>

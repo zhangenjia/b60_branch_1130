@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/frame_video_last_bg">
+
+    <ImageView
+        android:id="@+id/iv_driving_warning_ico"
+        android:layout_width="156dp"
+        android:layout_height="156dp"
+        android:src="@drawable/com_icon_prompt_warning"
+        app:layout_constraintBottom_toTopOf="@+id/tv_driving_warning_h1"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_driving_warning_1"
+        app:layout_constraintStart_toStartOf="@+id/guideline_driving_warning_0"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/tv_driving_warning_h1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:maxLines="2"
+        android:paddingHorizontal="4dp"
+        android:text="@string/lo_video_detail_info_driving_warning"
+        android:textColor="#FFFFFFFF"
+        android:textSize="40sp"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toTopOf="@+id/tv_driving_warning_h2"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_driving_warning_1"
+        app:layout_constraintStart_toStartOf="@+id/guideline_driving_warning_0"
+        app:layout_constraintTop_toBottomOf="@+id/iv_driving_warning_ico" />
+
+    <TextView
+        android:id="@+id/tv_driving_warning_h2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:gravity="center"
+        android:maxLines="2"
+        android:paddingHorizontal="4dp"
+        android:text="@string/lo_video_detail_info_desc_driving_warning"
+        android:textColor="#99FFFFFF"
+        android:textSize="30sp"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toTopOf="@+id/btn_driving_warning_exit"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_driving_warning_1"
+        app:layout_constraintStart_toStartOf="@+id/guideline_driving_warning_0"
+        app:layout_constraintTop_toBottomOf="@+id/tv_driving_warning_h1" />
+
+    <Button
+        android:id="@+id/btn_driving_warning_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="56dp"
+        android:background="@drawable/selector_detail_exit_btn"
+        android:maxWidth="478dp"
+        android:maxHeight="78dp"
+        android:paddingHorizontal="4dp"
+        android:text="@string/lo_video_detail_info_exit"
+        android:textColor="#FFFFFFFF"
+        android:textSize="40sp"
+        android:visibility="gone"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_driving_warning_1"
+        app:layout_constraintStart_toStartOf="@+id/guideline_driving_warning_0"
+        app:layout_constraintTop_toBottomOf="@+id/tv_driving_warning_h2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_driving_warning_0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_driving_warning_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

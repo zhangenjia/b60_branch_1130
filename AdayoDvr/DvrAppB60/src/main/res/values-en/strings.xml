@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DvrApp</string>
+
+    <!--    Common-->
+    <string name="text_ok">"OK"</string>
+    <string name="text_cancel">"Cancel"</string>
+    <string name="text_wait">"请稍等..."</string>
+    <string name="text_quit">"Quit(%1$d)"</string>
+    <string name="text_fast_click">"请勿频繁操作"</string>
+
+    <!--    Main-->
+    <string name="text_title_dvr">"DVR"</string>
+    <string name="text_power_off_tips">"确定关闭DVR？"</string>
+    <string name="text_closed">"DVR is closed"</string>
+    <string name="text_drive_tip">"For your safety, do not watch the video while driving"</string>
+    <string name="text_sdcard_exit">"SD卡已安全退出"</string>
+    <string name="text_no_sdcard">"未检测到SD卡"</string>
+    <string name="text_not_connected">"DVR isn't connected"</string>
+    <string name="text_open_on">Camera on....</string>
+
+    <!--    Record-->
+    <string name="text_record_ordinary_video">"N-REC"</string>
+    <string name="text_record_emergency_video">"E-REC"</string>
+    <string name="text_record_ordinary_shot">"PHOTO"</string>
+    <string name="text_record_mic">"Mic"</string>
+    <string name="text_record_replay">"Playback"</string>
+    <string name="text_record_setting">"Setting"</string>
+    <string name="text_record_close">"OFF"</string>
+
+    <!--    Playback-->
+    <string name="text_playback_back">"Back"</string>
+    <string name="text_playback_ordinary_video">"N-REC"</string>
+    <string name="text_playback_emergency_video">"E-REC"</string>
+    <string name="text_playback_photo">"Photo"</string>
+    <string name="text_playback_at_will_photo">"Free shot"</string>
+    <string name="text_playback_edit">"Edit"</string>
+    <string name="text_playback_pause">"Pause"</string>
+    <string name="text_playback_mute">"静&#12288;&#12288;音"</string>
+    <string name="text_playback_at_will_video">"Video"</string>
+    <string name="text_playback_at_will_picture">"Photo"</string>
+
+    <!--    Replay-->
+    <string name="text_replay_back">"Back"</string>
+    <string name="text_replay_ordinary_video">"N-REC"</string>
+    <string name="text_replay_emergency_video">"E-REC"</string>
+    <string name="text_replay_photo">"Photo"</string>
+    <string name="text_replay_at_will_photo">"Free shot"</string>
+    <string name="text_replay_edit">"Edit"</string>
+    <string name="text_replay_pause">"Pause"</string>
+    <string name="text_replay_mute">"静&#12288;&#12288;音"</string>
+    <string name="text_replay_delete">"Delete"</string>
+    <string name="text_delete_current_video">"Delete current recording"</string>
+    <string name="text_delete_current_photo">"Delete current photo"</string>
+    <string name="text_move_current_to_normal">"Move to N-REC"</string>
+    <string name="text_move_current_to_normal1">"The emergency video list is no longer saved, please go to the ordinary video list to view"</string>
+    <string name="text_move_current_to_emergency">"Move to E-REC"</string>
+    <string name="text_move_current_to_emergency1">"The normal video list is no longer saved, please go to the emergency video list to view"</string>
+    <string name="text_warning">"警告"</string>
+    <string name="text_warning_line1">"For your safety, please do not watch the video while driving"</string>
+    <string name="text_warning_line2">"Allow video viewing can be turned on in the system settings "</string>
+    <string name="text_replay_del_normal">"The normal video list is no longer saved"</string>
+    <string name="text_replay_del_emergency">"The emergency video list is no longer saved"</string>
+    <string name="text_replay_mov_normal">"The normal video list is no longer saved,"</string>
+    <string name="text_replay_mov_emergency">"The emergency video list is no longer saved,"</string>
+    <string name="text_replay_delete_picture1">"Unrecoverable photos after deletion"</string>
+    <string name="text_replay_delete_video">"Unrecoverable after the video is deleted"</string>
+    <string name="text_replay_upload_title">Upload current file</string>
+    <!--    Edit-->
+    <string name="text_edit_back">"Back"</string>
+    <string name="text_edit_normal_video">"Ordinary video"</string>
+    <string name="text_edit_emergency_video">"Emergency video"</string>
+    <string name="text_edit_photo">"Photo"</string>
+    <string name="text_edit_edit">"Edit"</string>
+    <string name="text_edit_prev">"上一页"</string>
+    <string name="text_edit_next">"下一页"</string>
+    <string name="text_edit_select">"Select All"</string>
+    <string name="text_edit_cancel_select">"Cancel"</string>
+    <string name="text_edit_delete">"Delete"</string>
+    <string name="text_edit_delete1">"Delete"</string>
+    <string name="text_edit_move">"Move"</string>
+    <string name="text_edit_move1">"Move"</string>
+    <string name="text_edit_upload">"Upload"</string>
+    <string name="text_edit_delete_tips">"Delete selected video"</string>
+    <string name="text_edit_delete_picture">"Delete selected photos"</string>
+    <string name="text_edit_delete_picture1">"Unrecoverable photos after deletion"</string>
+    <string name="text_edit_del_normal">"The normal video list is no longer saved"</string>
+    <string name="text_edit_del_emergency">"The emergency video list is no longer saved"</string>
+    <string name="text_edit_mov_normal">"The normal video list is no longer saved,"</string>
+    <string name="text_edit_mov_emergency">"The emergency video list is no longer saved,"</string>
+    <string name="text_edit_move_to_emergency">"Move to E-REC"</string>
+    <string name="text_edit_move_to_normal">"Remove E-REC"</string>
+    <string name="text_edit_no_video_file">"No video files"</string>
+    <string name="text_edit_no_picture_file">"No picture file"</string>
+    <string name="text_edit_delete_file">"Delete selected files"</string>
+    <string name="text_edit_delete_file_content">"Unrecoverable after file deletion"</string>
+
+    <string name="text_edit_move_to_emergency_tab">"Move to E-REC"</string>
+    <string name="text_edit_move_to_normal_tab">"Remove E-REC"</string>
+
+    <string name="text_edit_upload_title">Upload selected files</string>
+    <string name="text_edit_upload_body">Upload files to the cloud, this process may consume more data</string>
+    <string name="text_edit_upload_confirm">Upload</string>
+
+    <!--    Setting-->
+    <string name="text_setting_back">"Back"</string>
+    <string name="text_setting_title_setting">"Setting"</string>
+    <string name="text_setting_resolution">"Resolution"</string>
+    <string name="text_setting_time">"Recording time"</string>
+    <string name="text_setting_driving_monitor_sensitivity">"Driving monitoring sensitivity"</string>
+    <string name="text_setting_parking_monitor_sensitivity">"Parking monitoring sensitivity"</string>
+    <string name="text_setting_sdcard_memory">"SD card memory"</string>
+    <string name="text_setting_sdcard_memory_ordinary_video">"Ordinary video"</string>
+    <string name="text_setting_sdcard_memory_emergency_video">"Emergency video"</string>
+    <string name="text_setting_sdcard_memory_photo">"Photo"</string>
+    <string name="text_setting_sdcard_memory_at_will_photo">"Free shot"</string>
+    <string name="text_setting_sdcard_format">"Format"</string>
+    <string name="text_setting_sdcard_system_version">"System version"</string>
+    <string name="text_setting_sdcard_restore_settings">"Restore factory settings"</string>
+    <string name="text_setting_parking_monitor">"停车监控"</string>
+    <string name="text_setting_sdcard_format_success">"Formatted successfully"</string>
+    <string name="text_setting_sdcard_info">"SD卡容量查询"</string>
+    <string name="text_setting_sdcard_emergency_video">"Emergency video"</string>
+    <string name="text_setting_sdcard_normal_video">"Ordinary video"</string>
+    <string name="text_setting_sdcard_photo">"相册"</string>
+    <string name="text_setting_dvr_version">"DVR版本"</string>
+    <string name="text_setting_factory_setting">"Restore factory settings"</string>
+    <string name="text_setting_factory_setting_success">"Succeeded"</string>
+    <string name="text_setting_factory_setting_fail">"Setup failed, please retry"</string>
+    <string name="text_setting_sdcard_format_title">Format SD card</string>
+    <string name="text_setting_sdcard_format_tips">"This operation will erase all data in the SD card"</string>
+    <string name="text_setting_sdcard_format_ok">"Format"</string>
+    <string name="text_setting_factory_reset_tips">"This action will restore all custom settings and data"</string>
+    <string name="text_setting_factory_reset_tips1">"设置和数据"</string>
+    <string name="text_setting_factory_reset_ok">"Restore"</string>
+    <string name="text_setting_factory_formatting">"Formatting,please wait..."</string>
+    <string name="text_setting_factory_formatting_success">"Succeeded"</string>
+    <string name="text_setting_factory_formatting_fail">"Formatting failed, please retry"</string>
+    <string name="text_setting_factory_restoring">"Restoring,please wait..."</string>
+    <string name="text_setting_resolution_change">"请等待2秒,分辨率切换中..."</string>
+    <string name="text_setting_dvr_widget_text">"行车记录仪"</string>
+    <string name="text_setting_dvr_recording_time_one">"1 minute"</string>
+    <string name="text_setting_dvr_recording_time_three">"3 minute"</string>
+    <string name="text_setting_dvr_recording_time_five">"5 minute"</string>
+    <string name="text_setting_dvr_resolution_1080">"1920*1080"</string>
+    <string name="text_setting_dvr_resolution_720">"1280*720"</string>
+    <string name="text_setting_dvr_sensitivity_high">"High"</string>
+    <string name="text_setting_dvr_sensitivity_middle">"Medium"</string>
+    <string name="text_setting_dvr_sensitivity_low">"Low"</string>
+
+    <!--    Dialog-->
+    <string name="text_custom_dialog_ok">"确认"</string>
+    <string name="text_custom_dialog_cancel">"取消"</string>
+    <string name="text_custom_dialog_sdcard_format_success">"Formatted successfully"</string>
+
+    <string name="text_open">open</string>
+    <string name="text_pause">pause</string>
+
+    <string-array name="text_setting_dvr_resolution_arr">
+        <item>"1920*1080"</item>
+        <item>"1280*720"</item>
+    </string-array>
+
+    <string-array name="text_setting_dvr_recording_time_arr">
+        <item>"1 min"</item>
+        <item>"3 min"</item>
+        <item>"5 min"</item>
+    </string-array>
+
+    <string-array name="text_setting_dvr_drive_sensitivity_arr">
+        <item>"Low"</item>
+        <item>"Middle"</item>
+        <item>"High"</item>
+    </string-array>
+
+    <string-array name="text_setting_dvr_park_sensitivity_arr">
+        <item>"Low"</item>
+        <item>"Middle"</item>
+        <item>"High"</item>
+    </string-array>
+</resources>

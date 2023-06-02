@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">offroadinfo</string>
+    <string name="orim">越野信息</string>
+    <string name ="tab1">环境信息</string>
+    <string name ="tab2">车辆信息</string>
+    <string name ="altitude">海拔</string>
+    <string name ="atmopressure">大气压</string>
+
+    <string name ="north">北</string>
+    <string name ="northeast">东北</string>
+    <string name ="east">东</string>
+    <string name ="southeast">东南</string>
+    <string name ="south">南</string>
+    <string name ="southwest">西南</string>
+    <string name ="west">西</string>
+    <string name ="northwest">西北</string>
+</resources>

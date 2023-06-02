@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cl_record"
+    android:layout_width="@dimen/dp1920"
+    android:layout_height="@dimen/dp860">
+
+    <ImageView
+        android:layout_width="@dimen/dp270"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/line"
+        android:layout_marginTop="1px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/ll_record_ordinary_video"
+        android:layout_width="@dimen/dp270"
+        android:layout_height="@dimen/dp123"
+        android:clickable="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_ordinary_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:visibility="visible"
+            android:layout_marginLeft="24px"
+            android:src="@drawable/btn_video" />
+        <ImageView
+            android:id="@+id/iv_ordinary_stop_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:visibility="gone"
+            android:layout_marginLeft="24px"
+            android:src="@drawable/btn_stop_video" />
+
+        <TextView
+            android:id="@+id/tv_ordinary_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16px"
+            android:text="@string/text_record_ordinary_video"
+            android:textColor="@drawable/btn_text_color"
+            android:textSize="35px" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="@dimen/dp270"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/line"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_record_ordinary_video" />
+
+    <LinearLayout
+        android:id="@+id/ll_record_emergency_video"
+        android:layout_width="@dimen/dp270"
+        android:layout_height="@dimen/dp123"
+        android:clickable="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_record_ordinary_video">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="24px"
+            android:src="@drawable/btn_ecm_video" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16px"
+            android:text="@string/text_record_emergency_video"
+            android:textColor="@drawable/btn_text_color"
+            android:textSize="35px" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="@dimen/dp270"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/line"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_record_emergency_video" />
+
+    <LinearLayout
+        android:id="@+id/ll_record_shot"
+        android:layout_width="@dimen/dp270"
+        android:layout_height="@dimen/dp123"
+        android:clickable="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_record_emergency_video">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="24px"
+            android:src="@drawable/btn_photo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16px"
+            android:text="@string/text_record_ordinary_shot"
+            android:textColor="@drawable/btn_text_color"
+            android:textSize="35px" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="@dimen/dp270"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/line"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_record_shot" />
+
+    <LinearLayout
+        android:id="@+id/ll_record_mic"
+        android:layout_width="@dimen/dp270"
+        android:layout_height="@dimen/dp123"
+        android:clickable="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_record_shot">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="24px"
+            android:src="@drawable/btn_mic_phone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16px"
+            android:text="@string/text_record_mic"
+            android:textColor="@drawable/btn_text_color"
+            android:textSize="35px" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="@dimen/dp270"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/line"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_record_mic" />
+
+    <LinearLayout
+        android:id="@+id/ll_record_playback"
+        android:layout_width="@dimen/dp270"
+        android:layout_height="@dimen/dp123"
+        android:clickable="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_record_mic">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="24px"
+            android:src="@drawable/btn_replay" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16px"
+            android:text="@string/text_record_replay"
+            android:textColor="@drawable/btn_text_color"
+            android:textSize="35px" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="@dimen/dp270"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/line"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_record_playback" />
+
+    <LinearLayout
+        android:id="@+id/ll_record_setting"
+        android:layout_width="@dimen/dp270"
+        android:layout_height="@dimen/dp123"
+        android:clickable="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_record_playback">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="24px"
+            android:src="@drawable/btn_setting" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16px"
+            android:text="@string/text_record_setting"
+            android:textColor="@drawable/btn_text_color"
+            android:textSize="35px" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="@dimen/dp270"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/line"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_record_setting" />
+
+    <LinearLayout
+        android:id="@+id/ll_record_close"
+        android:layout_width="@dimen/dp270"
+        android:layout_height="@dimen/dp123"
+        android:clickable="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_record_setting">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="24px"
+            android:src="@drawable/brn_close" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16px"
+            android:text="@string/text_record_close"
+            android:textColor="@drawable/btn_text_color"
+            android:textSize="35px" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="@dimen/dp270"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/line"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

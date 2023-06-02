@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_layout"
+    android:layout_width="564px"
+    android:layout_height="860px">
+    <!--模糊-->
+    <com.adayo.app.launcher.communicationbase.BlurTransitionView
+        android:id="@+id/blur"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <!--播放视频控件-->
+    <TextureView
+        android:id="@+id/textureView"
+        android:layout_width="match_parent"
+        android:layout_height="840px" />
+    <!--银色外框背景-->
+    <ImageView
+        android:id="@+id/iv_weathercard_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_bigcard" />
+    <!--    卡片名-->
+    <TextView
+        android:id="@+id/tv_weathercardname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55px"
+        android:text="@string/weather"
+        android:textColor="#fff"
+        android:textSize="40px" />
+    <!--    刷新按钮-->
+    <ImageView
+        android:id="@+id/refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="102px"
+        android:layout_marginTop="675px"
+        android:background="@drawable/com_icon_position_p" />
+    <!--无网络-->
+    <RelativeLayout
+        android:id="@+id/noNet"
+        android:layout_width="564px"
+        android:layout_height="860px"
+        android:visibility="invisible">
+        <!--        android:text="网络未连接，请检查网络连接"-->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="239px"
+            android:background="@drawable/not_networked" />
+
+        <TextView
+            android:id="@+id/notnetworked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="482px"
+            android:text="@string/notnetworked"
+            android:textColor="#fff"
+            android:textSize="40px" />
+
+        <TextView
+            android:id="@+id/checknetwork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="539px"
+            android:gravity="center"
+            android:text="@string/checknetwork"
+            android:textColor="#fff"
+            android:textSize="30px" />
+    </RelativeLayout>
+
+    <!--正常情况下天气页面布局-->
+    <RelativeLayout
+        android:id="@+id/normal"
+        android:layout_width="564px"
+        android:layout_height="860px">
+
+        <TextView
+            android:id="@+id/tempText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="222px"
+            android:layout_marginRight="21px"
+            android:layout_toLeftOf="@+id/tempUnitText"
+            android:textColor="#fff"
+            android:textSize="100px" />
+
+        <TextView
+            android:id="@+id/tempUnitText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="235px"
+            android:layout_marginRight="345px"
+            android:text=" ℃"
+            android:textColor="#fff"
+            android:textSize="40px" />
+
+        <TextView
+            android:id="@+id/aqiText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="56px"
+            android:layout_marginTop="348px"
+            android:text="@string/airquality"
+            android:textColor="#D7FFFFFF"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/aqi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="348px"
+            android:layout_toRightOf="@+id/aqiText"
+            android:textColor="#fff"
+            android:textSize="30px" />
+
+        <ImageView
+            android:id="@+id/aqiPointImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/aqi"
+            android:layout_marginLeft="5px"
+            android:layout_marginTop="350px"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="340px"
+            android:layout_marginTop="408px"
+            android:textColor="#fff"
+            android:textSize="40px" />
+
+        <TextView
+            android:id="@+id/tempMaxText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50px"
+            android:layout_marginTop="415px"
+            android:textColor="#fff"
+            android:textSize="36px" />
+
+        <TextView
+            android:id="@+id/tempMaxUnitText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7px"
+            android:layout_marginTop="420px"
+            android:layout_toRightOf="@+id/tempMaxText"
+            android:text=" ℃"
+            android:textColor="#fff"
+            android:textSize="18px" />
+
+        <TextView
+            android:id="@+id/backslashText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7px"
+            android:layout_marginTop="415px"
+            android:layout_marginRight="7px"
+            android:layout_toRightOf="@+id/tempMaxUnitText"
+            android:text="/"
+            android:textColor="#fff"
+            android:textSize="36px" />
+
+        <TextView
+            android:id="@+id/mintempText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="415px"
+            android:layout_toRightOf="@+id/backslashText"
+            android:textColor="#fff"
+            android:textSize="36px" />
+
+        <TextView
+            android:id="@+id/minUnitText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7px"
+            android:layout_marginTop="420px"
+            android:layout_toRightOf="@+id/mintempText"
+            android:text=" ℃"
+            android:textColor="#fff"
+            android:textSize="18px" />
+
+        <TextView
+            android:id="@+id/weatherText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/minUnitText"
+            android:layout_marginLeft="36px"
+            android:layout_marginTop="412px"
+            android:textColor="#fff"
+            android:textSize="36px" />
+
+        <TextView
+            android:id="@+id/locationText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="337px"
+            android:layout_marginTop="697px"
+            android:text=""
+            android:textColor="#fff"
+            android:textSize="36px" />
+
+        <ImageView
+            android:id="@+id/weatherImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="327px"
+            android:layout_marginTop="200px"
+            android:background="@drawable/icon_weather_cloudy" />
+
+        <TextView
+            android:id="@+id/windDirectionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="59px"
+            android:textSize="30px"
+            android:textColor="#fff"
+            android:layout_marginTop="480px"/>
+
+        <TextView
+            android:id="@+id/windLevelText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30px"
+            android:layout_toRightOf="@+id/windDirectionText"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="480px"
+            android:textColor="#fff"
+          />
+
+    </RelativeLayout>
+
+
+    <!--定位中-->
+    <RelativeLayout
+        android:id="@+id/inPositioningLayout"
+        android:layout_width="564px"
+        android:layout_height="860px"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/loadingImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="245px"
+            android:src="@drawable/anim_loading" />
+
+        <TextView
+            android:id="@+id/positioningText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="482px"
+            android:text="@string/positioning"
+            android:textColor="#fff"
+            android:textSize="40px" />
+    </RelativeLayout>
+
+</RelativeLayout>

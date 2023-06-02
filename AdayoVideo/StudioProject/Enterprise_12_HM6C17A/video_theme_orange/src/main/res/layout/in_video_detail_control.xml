@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipChildren="false"
+    tools:context=".ui.page.fragment.detail.DetailFragment"
+    tools:showIn="@layout/fragment_video_detail">
+
+    <SeekBar
+        android:id="@+id/sb_detail_progress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginEnd="22dp"
+        android:paddingStart="0dp"
+        android:paddingEnd="0dp"
+        android:progressDrawable="@drawable/layer_detail_progress_sb"
+        android:splitTrack="true"
+        android:thumb="@drawable/icon_schedule"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:progress="50" />
+
+    <TextView
+        android:id="@+id/tv_detail_nowProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="--:--"
+        android:textColor="#99FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_detail_allProgress"
+        app:layout_constraintStart_toStartOf="@+id/sb_detail_progress"
+        app:layout_constraintTop_toTopOf="@+id/tv_detail_allProgress" />
+
+    <TextView
+        android:id="@+id/tv_detail_allProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="--:--"
+        android:textColor="#99FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/sb_detail_progress"
+        app:layout_constraintTop_toBottomOf="@+id/sb_detail_progress" />
+
+    <ImageView
+        android:id="@+id/iv_detail_ctrBtnBg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/csl_detail_ctrBtnHost"
+        app:layout_constraintEnd_toEndOf="@+id/csl_detail_ctrBtnHost"
+        app:layout_constraintStart_toStartOf="@+id/csl_detail_ctrBtnHost"
+        app:layout_constraintTop_toTopOf="@+id/csl_detail_ctrBtnHost" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/csl_detail_ctrBtnHost"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_detail_allProgress">
+
+        <ImageButton
+            android:id="@+id/imgBtn_detail_fill"
+            android:layout_width="84dp"
+            android:layout_height="84dp"
+            android:background="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imgBtn_detail_prev"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/selector_detail_fill_btn" />
+
+        <ImageButton
+            android:id="@+id/imgBtn_detail_prev"
+            android:layout_width="84dp"
+            android:layout_height="84dp"
+            android:background="@null"
+            app:layout_constraintBottom_toBottomOf="@+id/imgBtn_detail_fill"
+            app:layout_constraintEnd_toStartOf="@+id/imgBtn_detail_play"
+            app:layout_constraintStart_toEndOf="@+id/imgBtn_detail_fill"
+            app:layout_constraintTop_toTopOf="@+id/imgBtn_detail_fill"
+            app:srcCompat="@drawable/selector_detail_prev_btn" />
+
+        <ImageButton
+            android:id="@+id/imgBtn_detail_play"
+            android:layout_width="84dp"
+            android:layout_height="84dp"
+            android:background="@null"
+            app:layout_constraintBottom_toBottomOf="@+id/imgBtn_detail_fill"
+            app:layout_constraintEnd_toStartOf="@+id/imgBtn_detail_next"
+            app:layout_constraintStart_toEndOf="@+id/imgBtn_detail_prev"
+            app:layout_constraintTop_toTopOf="@+id/imgBtn_detail_fill"
+            app:srcCompat="@drawable/selector_detail_pause_btn" />
+
+        <ImageButton
+            android:id="@+id/imgBtn_detail_next"
+            android:layout_width="84dp"
+            android:layout_height="84dp"
+            android:background="@null"
+            app:layout_constraintBottom_toBottomOf="@+id/imgBtn_detail_fill"
+            app:layout_constraintEnd_toStartOf="@+id/imgBtn_detail_effect"
+            app:layout_constraintStart_toEndOf="@+id/imgBtn_detail_play"
+            app:layout_constraintTop_toTopOf="@+id/imgBtn_detail_fill"
+            app:srcCompat="@drawable/selector_detail_next_btn" />
+
+        <ImageButton
+            android:id="@+id/imgBtn_detail_effect"
+            android:layout_width="84dp"
+            android:layout_height="84dp"
+            android:background="@null"
+            app:layout_constraintBottom_toBottomOf="@+id/imgBtn_detail_fill"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imgBtn_detail_next"
+            app:layout_constraintTop_toTopOf="@+id/imgBtn_detail_fill"
+            app:srcCompat="@drawable/selector_detail_effect_btn" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

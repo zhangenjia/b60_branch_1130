@@ -1,0 +1,340 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Enterprise_12_HM6C17A</string>
+
+    <string-array name="color_value">
+        <item>双模</item>
+        <item>GPS</item>
+        <item>北斗</item>
+
+    </string-array>
+    <string name="tab_item_common_title">通用</string>
+    <string name="tab_item_sound_title">声音</string>
+    <string name="tab_item_display_title">显示与亮度</string>
+    <string name="tab_item_voice_title">语音</string>
+    <string name="tab_item_system_title">系统信息</string>
+
+    <string name="toast_hint_sound_loudness_min">已是最小音量</string>
+    <string name="toast_hint_wifi_password_err">,密码不正确</string>
+    <string name="toast_hint_wifi_connect_err">连接失败</string>
+    <string name="toast_hint_bt_connected_fail">连接失败</string>
+    <string name="toast_hint_bt_pairing">蓝牙请求配对中，请在手机端确认授权</string>
+    <string name="toast_hint_bt_pair_code">配对码：</string>
+
+    <string name="conn_devnm_title">本机名称</string>
+    <string name="conn_devnm_inputtitle1">本机名称</string>
+    <string name="conn_devnm_inputtitle2">(限输入12个字符或6个中文)</string>
+    <string name="conn_devnm_input_hint">请输入本机名称</string>
+    <string name="conn_devnm_input_confirm">保存</string>
+
+    <string name="conn_hotspot_title1">热点</string>
+    <string name="conn_hotspot_msg">请先打开开关</string>
+    <string name="conn_hotspot_title2">已连接设备</string>
+    <string name="conn_hotspot_title3">热点密码</string>
+    <string name="conn_hotspot_inputtitle1">无线局域网密码</string>
+    <string name="conn_hotspot_inputtitle2">(输入不少于8位字符)</string>
+    <string name="conn_hotspot_input_hint">请输入密码</string>
+    <string name="conn_wifi_title1">WIFI</string>
+    <string name="conn_wifi_msg">请先打开开关</string>
+    <string name="conn_wifi_list_title">WLAN网络</string>
+    <string name="conn_wifi_save">保存网络</string>
+    <string name="conn_wifi_inputtitle1">输入密码</string>
+    <string name="conn_wifi_inputtitle2_begin">(输入“</string>
+    <string name="conn_wifi_inputtitle2_end">”的密码)</string>
+    <string name="conn_wifi_input_hint">请输入密码</string>
+    <string name="conn_wifi_input_confirm">加入</string>
+    <string name="conn_wifi_disconn_dlg_title">清除或连接新网络</string>
+    <string name="conn_wifi_disconn_dlg_msg">清除网络后，连接需要输入密码</string>
+    <string name="conn_wifi_disconn_dlg_positive_btn">断开网络</string>
+    <string name="conn_wifi_disconn_dlg_negative_btn">清除网络</string>
+    <string name="conn_wifi_disconn_dlg_neutral_btn">取消</string>
+    <string name="conn_wifi_reconn_dlg_title">清除或连接新网络</string>
+    <string name="conn_wifi_reconn_dlg_msg">清除网络后,连接需要输入密码</string>
+    <string name="conn_wifi_reconn_dlg_positive_btn">连接新网络</string>
+    <string name="conn_wifi_reconn_dlg_negative_btn">清除网络</string>
+    <string name="conn_wifi_reconn_dlg_neutral_btn">取消</string>
+    <string name="sound_main_title">声音</string>
+    <string name="sound_loudness_title">声音设置</string>
+    <string name="sound_loudness_system">电话铃声</string>
+    <string name="sound_loudness_bluetooth">蓝牙音乐</string>
+    <string name="sound_loudness_media">媒&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;体</string>
+    <string name="sound_loudness_phone">电&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;话</string>
+    <string name="sound_loudness_navigation">导&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;航</string>
+    <string name="sound_loudness_voice">语&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;音</string>
+    <string name="sound_eq_title">均衡调节</string>
+    <string name="sound_eq_high_state">高音调节</string>
+    <string name="sound_eq_mid_state">中音调节</string>
+    <string name="sound_eq_low_state">低音调节</string>
+    <string name="sound_harman_title">哈曼环绕声</string>
+    <string name="sound_with_speed_title">随车速调节音量</string>
+    <string name="sound_with_speed_close_state">关</string>
+    <string name="sound_with_speed_high_state">高</string>
+    <string name="sound_with_speed_mid_state">中</string>
+    <string name="sound_with_speed_low_state">低</string>
+    <string name="sound_touch_beep_title">触摸提示音</string>
+    <string name="sound_phone_ring_title">电话铃声类型</string>
+    <string name="sound_phone_ring_mountain_stream_state">山涧</string>
+    <string name="sound_phone_ring_running_water_state">传统</string>
+    <string name="sound_phone_ring_starry_sky_state">星空</string>
+
+    <string name="voice_main_title">语音设置</string>
+    <string name="voice_wake_title">语音唤醒</string>
+    <string name="voice_wake_word_title">自定义唤醒词</string>
+    <string name="voice_assistant_title">语音助手</string>
+    <string name="voice_assistant_info_beijing">北京北京</string>
+    <string name="voice_assistant_info_libai">召唤李白</string>
+    <string name="voice_assistant_info_daji">召唤妲己</string>
+    <string name="voice_wake_free_title">免唤醒指令</string>
+    <string name="voice_wake_free_info"><u>点击查看可免唤醒指令功能</u></string>
+    <string name="voice_wake_word_input_title1">自定义唤醒词</string>
+    <string name="voice_wake_word_input_title2">(请输入3~5个汉字) </string>
+    <string name="voice_wake_word_input_hint">请输入自定义唤醒词</string>
+    <string name="voice_wake_word_input_positive_btn">保存</string>
+    <string name="voice_wake_free_info_title">无需语音唤醒助理, 部分指令可直接说:</string>
+    <string name="voice_wake_off_info">关闭后无法语音唤醒，可通过方控和悬浮按钮唤醒</string>
+
+    <string name="direct_media_title">方向盘媒体自定义按键</string>
+    <string name="direct_media_media_change_title">媒体源切换</string>
+    <string name="direct_media_media_change_info">切换FM/AM/USB在线音乐媒体源</string>
+    <string name="direct_media_media_play_title">媒体播放/暂停</string>
+    <string name="direct_media_media_play_info">所有媒体播放/暂停</string>
+    <string name="direct_media_yueye_info_title">越野信息</string>
+    <string name="direct_media_yueye_info_info">打开越野信息</string>
+    <string name="direct_media_music_app_title">爱趣听</string>
+    <string name="direct_media_music_app_info">打开爱趣听</string>
+    <string name="direct_media_navi_switch_title">导航</string>
+    <string name="direct_media_navi_switch_info">打开导航</string>
+    <string name="direct_media_navi_broadcast_info">提示音播报</string>
+    <string name="direct_media_navi_soundoff_title">导航静音</string>
+    <string name="direct_media_navi_soundoff_info">静音开/关</string>
+    <string name="direct_media_go_home_title">回家</string>
+    <string name="direct_media_go_home_info">回家导航</string>
+    <string name="direct_media_go_company_title">去公司</string>
+    <string name="direct_media_go_company_info">去公司导航</string>
+    <string name="direct_media_mobile_internet_title">悦野圈</string>
+    <string name="direct_media_mobile_internet_info">打开悦野圈</string>
+    <string name="direct_media_dvr_switch_title">行车记录仪</string>
+    <string name="direct_media_dvr_switch_info">打开行车记录仪</string>
+    <string name="direct_media_air_conditioner_title">空调</string>
+    <string name="direct_media_air_conditioner_info">打开空调</string>
+    <string name="direct_media_screen_off_title">屏幕关闭</string>
+    <string name="direct_media_screen_off_info">中控显示屏关闭，音频正常播放</string>
+    <string name="direct_media_wireless_charging_title">无线充电</string>
+    <string name="direct_media_wireless_charging_info">无线充电开/关</string>
+    <string name="direct_media_car_set_title">车辆设置</string>
+    <string name="direct_media_car_set_info">打开车辆设置</string>
+    <string name="direct_media_system_set_title">系统设置</string>
+    <string name="direct_media_system_set_info">打开系统设置</string>
+    <string name="direct_media_system_yueyequan_title">悦野圈对讲</string>
+    <string name="direct_media_system_yueyequan_info">开启悦野圈对讲</string>
+
+
+    <string name="display_locate_mode_title">定位模式</string>
+    <string name="display_local_mode_dual_state">双模</string>
+    <string name="display_local_mode_gps_state">GPS</string>
+    <string name="display_local_mode_beidou_state">北斗</string>
+    <string name="display_lang_title">语言/Language</string>
+    <string name="display_lang_ch_state">中文</string>
+    <string name="display_lang_en_state">Eng</string>
+    <string name="display_video_with_driving_title">允许行车观看视频</string>
+    <string name="display_unit_main_title">单位</string>
+    <string name="display_unit_temperature_title">温度</string>
+    <string name="display_unit_temperature_celsius_state">℃</string>
+    <string name="display_unit_temperature_fahrenheit_state">℉</string>
+    <string name="display_unit_mileage_title">里程/油耗/高度</string>
+    <string name="display_unit_mileage_metric_state">公制</string>
+    <string name="display_unit_mileage_imperial_state">英制</string>
+    <string name="display_lightness_title">亮度调节</string>
+    <string name="display_lightness_auto_title">亮度随大灯调节</string>
+    <string name="display_time_main_title">时间/日期</string>
+    <string name="display_time_auto_content">自动设置</string>
+    <string name="display_time_mode_title">时间制式</string>
+    <string name="display_time_mode_24_state">24小时制</string>
+    <string name="display_time_mode_12_state">12小时制</string>
+    <string name="display_time_set_title">时间/日期</string>
+    <string name="display_theme_mode_title">显示/主题</string>
+    <string name="display_theme_mode_1_state">长途穿越</string>
+    <string name="display_theme_mode_2_state">越野模式</string>
+    <string name="display_standby_mode_title">待机界面</string>
+    <string name="display_standby_mode_1_state">时钟</string>
+    <string name="display_standby_mode_2_state">LOGO</string>
+    <string name="display_standby_mode_3_state">纯黑</string>
+
+    <string name="sys_title">系统信息</string>
+    <string name="sys_current_ver_title">版本信息</string>
+    <string name="sys_current_ver_nothing">暂无版本信息</string>
+    <string name="sys_restore_title">恢复出厂设置</string>
+    <string name="sys_restore_reset_dlg_title">恢复出厂设置</string>
+    <string name="sys_restore_reset_dlg_msg">恢复出厂设置将\n还原所有自定义设置和数据</string>
+    <string name="sys_restore_reset_dlg_positive_btn">取消</string>
+    <string name="sys_restore_reset_dlg_neutral_btn">恢复</string>
+
+    <string name="upgrade_title">升级</string>
+    <string name="upgrade_ota_title">在线升级</string>
+    <string name="upgrade_usb_title">车机USB升级</string>
+
+    //免唤醒指令说明
+    <string name="open_music">
+        “收藏收藏”&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+        “取消收藏”&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+        “上一首”&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+        “下一首”\n\n\n“打开导航”&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+        “关闭导航”&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+        “增大音量”&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+        “减小音量”\n\n\n"“打开微信”&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;“回到桌面”</string>
+
+    //来电拒绝短信回复
+    <string name="conn_replay_title">来电拒绝短信回复</string>
+    <string name="conn_replay_switch">此功能需手机端授权短信存取权限</string>
+    <string name="conn_replay_button1">自动回复（我正在开车，稍后给你回复）</string>
+    <string name="conn_replay_button2">自定义回复</string>
+    <string name="conn_replay_button3">我马上会打给你</string>
+    <string name="conn_replay_dialog_title">自定义回复</string>
+    <string name="conn_replay_dialog_hint">（输入不少于8位字符）</string>
+    <string name="conn_replay_dialog_input_hint">请输入自定义回复信息</string>
+    //时间日期设定画面用
+    <string name="datetime_title">日期时间</string>
+    <string name="year">年份</string>
+    <string name="month_subtitle">月份</string>
+    <string name="month">月</string>
+    <string name="monday">一</string>
+    <string name="tuesday">二</string>
+    <string name="wednesday">三</string>
+    <string name="thursday">四</string>
+    <string name="friday">五</string>
+    <string name="saturday">六</string>
+    <string name="sunday">日</string>
+
+    <string-array name="lunar_first_of_month">
+        <item>春节</item>
+        <item>二月</item>
+        <item>三月</item>
+        <item>四月</item>
+        <item>五月</item>
+        <item>六月</item>
+        <item>七月</item>
+        <item>八月</item>
+        <item>九月</item>
+        <item>十月</item>
+        <item>冬月</item>
+        <item>腊月</item>
+    </string-array>
+    <string-array name="tradition_festival">
+        <item>除夕</item>
+        <item>0101春节</item>
+        <item>0115元宵节</item>
+        <item>0505端午节</item>
+        <item>0815中秋节</item>
+        <item>0909重阳节</item>
+    </string-array>
+    <string-array name="lunar_str">
+        <item>初一</item>
+        <item>初二</item>
+        <item>初三</item>
+        <item>初四</item>
+        <item>初五</item>
+        <item>初六</item>
+        <item>初七</item>
+        <item>初八</item>
+        <item>初九</item>
+        <item>初十</item>
+        <item>十一</item>
+        <item>十二</item>
+        <item>十三</item>
+        <item>十四</item>
+        <item>十五</item>
+        <item>十六</item>
+        <item>十七</item>
+        <item>十八</item>
+        <item>十九</item>
+        <item>二十</item>
+        <item>廿一</item>
+        <item>廿二</item>
+        <item>廿三</item>
+        <item>廿四</item>
+        <item>廿五</item>
+        <item>廿六</item>
+        <item>廿七</item>
+        <item>廿八</item>
+        <item>廿九</item>
+        <item>三十</item>
+    </string-array>
+
+    <string-array name="solar_festival" tools:ignore="InconsistentArrays">
+        <item>0101元旦</item>
+        <item>0214情人节</item>
+        <item>0308妇女节</item>
+        <item>0501劳动节</item>
+        <item>0504青年节</item>
+        <item>0601儿童节</item>
+        <item>0701建党节</item>
+        <item>0801建军节</item>
+        <item>0910教师节</item>
+        <item>1001国庆节</item>
+        <item>1225圣诞节</item>
+    </string-array>
+
+    <string-array name="solar_term">
+        <item>春分</item>
+        <item>清明节</item>
+        <item>谷雨</item>
+        <item>立夏</item>
+        <item>小满</item>
+        <item>芒种</item>
+        <item>夏至</item>
+        <item>小暑</item>
+        <item>大暑</item>
+        <item>立秋</item>
+        <item>处暑</item>
+        <item>白露</item>
+        <item>秋分</item>
+        <item>寒露</item>
+        <item>霜降</item>
+        <item>立冬</item>
+        <item>小雪</item>
+        <item>大雪</item>
+        <item>冬至</item>
+        <item>小寒</item>
+        <item>大寒</item>
+        <item>立春</item>
+        <item>雨水</item>
+        <item>惊蛰</item>
+    </string-array>
+
+    <string-array name="special_festivals">
+        <item>母亲节</item>
+        <item>父亲节</item>
+        <item>感恩节</item>
+    </string-array>
+
+    <string name="time">时间</string>
+    <string name="am">上午</string>
+    <string name="pm">下午</string>
+    <string name="colon">：</string>
+    <string name="toast_hint_time_not_set">请设定时间</string>
+    <!--font-->
+    <string name="zh_typeface">sans-serif</string>
+    <!--需要替换为 FZLTHK-GBK1-0 -->
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="time_save">保存</string>
+
+    <string name="harman_qls">QLS环绕声</string>
+
+    <string name="harman_reset">重置</string>
+    <string name="sound_field_adjustment">音场调节</string>
+
+    <string name="wifi_no_wlan">未检测到可连接网络</string>
+
+    <string name="sys_1">工厂模式</string>
+
+    <string name="voice_1">连续对话</string>
+    <string name="voice_2">连续时长</string>
+    <string name="voice_3">对话中屏幕显示内容</string>
+    <string name="voice_4">15s</string>
+    <string name="voice_5">30s</string>
+    <string name="voice_6">60s</string>
+    <string name="voice_7">有效指令</string>
+    <string name="voice_8">全部对话</string>
+</resources>

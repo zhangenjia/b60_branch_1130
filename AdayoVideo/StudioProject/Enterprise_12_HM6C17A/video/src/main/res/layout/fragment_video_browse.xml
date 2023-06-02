@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.page.fragment.browse.BrowseFragment">
+
+    <View
+        android:id="@+id/view_browse_bg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="118dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="6dp"
+        android:background="@drawable/frame_video_list_last"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_list"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginVertical="2dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="26dp"
+        android:paddingEnd="26dp"
+        android:scrollbarStyle="outsideInset"
+        android:scrollbarThumbVertical="@drawable/com_bar_sel"
+        android:scrollbarTrackVertical="@drawable/com_bar_last"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/view_browse_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/view_browse_bg"
+        app:layout_constraintTop_toTopOf="@+id/view_browse_bg"
+        tools:itemCount="5"
+        tools:listitem="@layout/item_video_browse_entity" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

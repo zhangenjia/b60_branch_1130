@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Video</string>
+    <string name="main_tab_title_lo_video">Video</string>
+    <string name="lo_video_info_no_device">Please insert a valid USB device</string>
+    <string name="lo_video_browse_info_no_file">No video files</string>
+    <string name="lo_video_browse_info_loading">Loading…</string>
+    <string name="lo_video_detail_info_driving_warning">For your safety, \ndo not watch the video while driving.</string>
+    <string name="lo_video_detail_info_desc_driving_warning">"Allow watch video" can be turned on in the system settings</string>
+    <string name="lo_video_detail_info_exit">Quit(%ds)</string>
+    <string name="lo_music_detail_not_support">Video file error, \nplay next after 3 seconds</string>
+</resources>

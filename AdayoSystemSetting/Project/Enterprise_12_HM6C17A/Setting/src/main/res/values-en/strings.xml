@@ -1,0 +1,335 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Enterprise_12_HM6C17A</string>
+
+    <string name="tab_item_common_title">General</string>
+    <string name="tab_item_sound_title">Sounds</string>
+    <string name="tab_item_display_title">Display</string>
+    <string name="tab_item_voice_title">Voice</string>
+    <string name="tab_item_system_title">Update</string>
+
+    <string name="toast_hint_sound_loudness_min">Minimum volume</string>
+    <string name="toast_hint_wifi_password_err">,incorrect password</string>
+    <string name="toast_hint_wifi_connect_err">Connection Failed</string>
+    <string name="toast_hint_bt_connected_fail">Connection Failed</string>
+    <string name="toast_hint_bt_pairing">Bluetooth is requesting pairing, please confirm the authorization on the mobile phone</string>
+    <string name="toast_hint_bt_pair_code">Pair Number:</string>
+
+    <string name="conn_devnm_title">Device name</string>
+    <string name="conn_devnm_inputtitle1">Device name</string>
+    <string name="conn_devnm_inputtitle2">(Limit to input 12 characters or 6 Chinese)</string>
+    <string name="conn_devnm_input_hint">Please input device name</string>
+    <string name="conn_devnm_input_confirm">Save</string>
+
+    <string name="conn_hotspot_title1">Hotspot</string>
+    <string name="conn_hotspot_msg">Please Open the switch first</string>
+    <string name="conn_hotspot_title2">Connected Devices</string>
+    <string name="conn_hotspot_title3">Hotspot password</string>
+    <string name="conn_hotspot_inputtitle1">Wireless LAN password</string>
+    <string name="conn_hotspot_inputtitle2">(Enter no less than 8 characters)</string>
+    <string name="conn_hotspot_input_hint">Please enter your password</string>
+
+    <string name="conn_wifi_title1">WIFI</string>
+    <string name="conn_wifi_msg">Please turn on the switch first</string>
+    <string name="conn_wifi_list_title">Wi-Fi network</string>
+    <string name="conn_wifi_save">Save network</string>
+    <string name="conn_wifi_inputtitle1">Enter password</string>
+    <string name="conn_wifi_inputtitle2_begin">(enter \"</string>
+    <string name="conn_wifi_inputtitle2_end">\" s password) </string>
+    <string name="conn_wifi_input_hint">Please enter your password</string>
+    <string name="conn_wifi_input_confirm">Connect</string>
+    <string name="conn_wifi_disconn_dlg_title">Forget or Connect</string>
+    <string name="conn_wifi_disconn_dlg_msg">Requires a password to connect after forgetting the network</string>
+    <string name="conn_wifi_disconn_dlg_positive_btn">Disconnect</string>
+    <string name="conn_wifi_disconn_dlg_negative_btn">Forget</string>
+    <string name="conn_wifi_disconn_dlg_neutral_btn">Cancel</string>
+    <string name="conn_wifi_reconn_dlg_title">Forget or Connect</string>
+    <string name="conn_wifi_reconn_dlg_msg">Requires a password to connect after forgetting the network</string>
+    <string name="conn_wifi_reconn_dlg_positive_btn">Connect</string>
+    <string name="conn_wifi_reconn_dlg_negative_btn">Forget</string>
+    <string name="conn_wifi_reconn_dlg_neutral_btn">Cancel</string>
+    <string name="sound_main_title">Sounds</string>
+    <string name="sound_loudness_title">Sound</string>
+    <string name="sound_loudness_system">Ring\ntone</string>
+    <string name="sound_loudness_bluetooth">BT Audio</string>
+    <string name="sound_loudness_media">Media</string>
+    <string name="sound_loudness_phone">Phone</string>
+    <string name="sound_loudness_navigation">Navi</string>
+    <string name="sound_loudness_voice">Voice</string>
+    <string name="sound_eq_title">Balancing</string>
+    <string name="sound_eq_high_state">Treble</string>
+    <string name="sound_eq_mid_state">Midrange</string>
+    <string name="sound_eq_low_state">Bass</string>
+    <string name="sound_harman_title">Harman Surround Sound</string>
+    <string name="sound_with_speed_title">Volume adjust with speed</string>
+    <string name="sound_with_speed_close_state">Off</string>
+    <string name="sound_with_speed_high_state">High</string>
+    <string name="sound_with_speed_mid_state">Mid</string>
+    <string name="sound_with_speed_low_state">Low</string>
+    <string name="sound_touch_beep_title">Touch tone</string>
+    <string name="sound_phone_ring_title">Ring tone type</string>
+    <string name="sound_phone_ring_mountain_stream_state">Stream</string>
+    <string name="sound_phone_ring_running_water_state">Classic</string>
+    <string name="sound_phone_ring_starry_sky_state">Starry</string>
+
+    <string name="voice_main_title">Voice settings</string>
+    <string name="voice_wake_title">Wake up</string>
+    <string name="voice_wake_word_title">Custom wake word</string>
+    <string name="voice_assistant_title">Voice assistant</string>
+    <string name="voice_assistant_info_beijing">北京北京</string>
+    <string name="voice_assistant_info_libai">召唤李白</string>
+    <string name="voice_assistant_info_daji">召唤妲己</string>
+    <string name="voice_wake_free_title">Available wake-free statements</string>
+    <string name="voice_wake_free_info"><u>Click to view statements</u></string>
+    <string name="voice_wake_word_input_title1">Custom wake word</string>
+    <string name="voice_wake_word_input_title2">(请输入3~5个汉字) </string>
+    <string name="voice_wake_word_input_hint">请输入自定义唤醒词</string>
+    <string name="voice_wake_word_input_positive_btn">Save</string>
+    <string name="voice_wake_free_info_title">No need to wake up assistant, you can directly say some instructions：</string>
+    <string name="voice_wake_off_info">Unable to voice wake when turned off, and it can be woken up by SWC or floating button</string>
+
+    <string name="direct_media_title">SWC Media Buttons</string>
+    <string name="direct_media_media_change_title">Media source</string>
+    <string name="direct_media_media_change_info">FM/AM/USB/Online music</string>
+    <string name="direct_media_media_play_title">Play/pause</string>
+    <string name="direct_media_media_play_info">All media play/pause</string>
+    <string name="direct_media_yueye_info_title">Off-road info</string>
+    <string name="direct_media_yueye_info_info">Open Off-road info</string>
+    <string name="direct_media_music_app_title">Func Audio</string>
+    <string name="direct_media_music_app_info">Open Func Audio</string>
+    <string name="direct_media_navi_switch_title">Navi</string>
+    <string name="direct_media_navi_switch_info">Open Navigation</string>
+    <string name="direct_media_navi_broadcast_info">Prompt tone announcement</string>
+    <string name="direct_media_navi_soundoff_title">Mute Navi</string>
+    <string name="direct_media_navi_soundoff_info">Mute on/off</string>
+    <string name="direct_media_go_home_title">Go home</string>
+    <string name="direct_media_go_home_info">Navi home</string>
+    <string name="direct_media_go_company_title">Go to company</string>
+    <string name="direct_media_go_company_info">Navi to the company</string>
+    <string name="direct_media_mobile_internet_title">Off Road Circle</string>
+    <string name="direct_media_mobile_internet_info">Open Off Road Circle</string>
+    <string name="direct_media_dvr_switch_title">DVR</string>
+    <string name="direct_media_dvr_switch_info">Open DVR</string>
+    <string name="direct_media_air_conditioner_title">Climate</string>
+    <string name="direct_media_air_conditioner_info">Turn on Climate</string>
+    <string name="direct_media_screen_off_title">Screen off</string>
+    <string name="direct_media_screen_off_info">Screen off,and the audio plays</string>
+    <string name="direct_media_wireless_charging_title">Qi</string>
+    <string name="direct_media_wireless_charging_info">On/Off</string>
+    <string name="direct_media_car_set_title">Vehicle</string>
+    <string name="direct_media_car_set_info">Open Vehicle</string>
+    <string name="direct_media_system_set_title">Settings</string>
+    <string name="direct_media_system_set_info">Open Settings</string>
+    <string name="direct_media_system_yueyequan_title">Intercom</string>
+    <string name="direct_media_system_yueyequan_info">Turn on Intercom</string>
+
+
+    <string name="display_locate_mode_title">Positioning mode</string>
+    <string name="display_local_mode_dual_state">Dual</string>
+    <string name="display_local_mode_gps_state">GPS</string>
+    <string name="display_local_mode_beidou_state">Beidou </string>
+    <string name="display_lang_title">语言/Language</string>
+    <string name="display_lang_ch_state">中文</string>
+    <string name="display_lang_en_state">Eng</string>
+    <string name="display_video_with_driving_title">Video While Driving</string>
+    <string name="display_unit_main_title">Unit</string>
+    <string name="display_unit_temperature_title">Temperature</string>
+    <string name="display_unit_temperature_celsius_state">℃</string>
+    <string name="display_unit_temperature_fahrenheit_state">℉</string>
+    <string name="display_unit_mileage_title">Mileage/Fuel consumption/Height</string>
+    <string name="display_unit_mileage_metric_state">Metric</string>
+    <string name="display_unit_mileage_imperial_state">Imperial</string>
+    <string name="display_lightness_title">Brightness</string>
+    <string name="display_lightness_auto_title">Brightness auto switching</string>
+    <string name="display_time_main_title">Time/Date</string>
+    <string name="display_time_auto_content">Set automatically</string>
+    <string name="display_time_mode_title">Time format</string>
+    <string name="display_time_mode_24_state">24hr</string>
+    <string name="display_time_mode_12_state">12hr</string>
+    <string name="display_time_set_title">Time/Date</string>
+    <string name="display_theme_mode_title">Display/Topic</string>
+    <string name="display_theme_mode_1_state">Long-distance</string>
+    <string name="display_theme_mode_2_state">Off-road</string>
+    <string name="display_standby_mode_title">Standby interface</string>
+    <string name="display_standby_mode_1_state">Clock</string>
+    <string name="display_standby_mode_2_state">LOGO</string>
+    <string name="display_standby_mode_3_state">Black</string>
+
+    <string name="sys_title">Information/Info</string>
+    <string name="sys_current_ver_title">Version information</string>
+    <string name="sys_current_ver_nothing">No version information</string>
+    <string name="sys_restore_title">Restore factory settings</string>
+    <string name="sys_restore_reset_dlg_title">Restore factory settings</string>
+    <string name="sys_restore_reset_dlg_msg">Factory reset will restore all custom settings and data</string>
+    <string name="sys_restore_reset_dlg_positive_btn">Cancel</string>
+    <string name="sys_restore_reset_dlg_neutral_btn">Restore</string>
+
+    <string name="upgrade_title">Update</string>
+    <string name="upgrade_ota_title">Update OTA</string>
+    <string name="upgrade_usb_title">Update by USB</string>
+    //Incoming call rejection SMS reply
+    <string name="conn_replay_title">Incoming call rejection SMS reply</string>
+    <string name="conn_replay_switch">Require the SMS storage permission</string>
+    <string name="conn_replay_button1">Auto-reply (我正在开车，稍后给你回复)</string>
+    <string name="conn_replay_button2">Custom reply</string>
+    <string name="conn_replay_button3">我马上会打给你</string>
+    <string name="conn_replay_dialog_title">Custom reply</string>
+    <string name="conn_replay_dialog_hint">(Enter no less than 8 characters)</string>
+    <string name="conn_replay_dialog_input_hint">Please enter a custom reply message</string>
+
+    <string name="open_music">
+        “收藏收藏”&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+        “取消收藏”&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+        “上一首”&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+        “下一首”\n\n\n“打开导航”&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+        “关闭导航”&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+        “增大音量”&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+        “减小音量”\n\n\n"“打开微信”&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;“回到桌面”</string>
+    //时间日期设定画面用
+    <string name="datetime_title">Date and Time</string>
+    <string name="year">Year</string>
+    <string name="month_subtitle">Month</string>
+    <string name="month"></string>
+    <string name="monday">MON</string>
+    <string name="tuesday">TUE</string>
+    <string name="wednesday">WED</string>
+    <string name="thursday">THU</string>
+    <string name="friday">FRI</string>
+    <string name="saturday">SAT</string>
+    <string name="sunday">SUN</string>
+
+    <string-array name="lunar_first_of_month">
+        <item>春节</item>
+        <item>二月</item>
+        <item>三月</item>
+        <item>四月</item>
+        <item>五月</item>
+        <item>六月</item>
+        <item>七月</item>
+        <item>八月</item>
+        <item>九月</item>
+        <item>十月</item>
+        <item>冬月</item>
+        <item>腊月</item>
+    </string-array>
+    <string-array name="tradition_festival">
+        <item>除夕</item>
+        <item>0101春节</item>
+        <item>0115元宵节</item>
+        <item>0505端午节</item>
+        <item>0815中秋节</item>
+        <item>0909重阳节</item>
+    </string-array>
+    <string-array name="lunar_str">
+        <item>初一</item>
+        <item>初二</item>
+        <item>初三</item>
+        <item>初四</item>
+        <item>初五</item>
+        <item>初六</item>
+        <item>初七</item>
+        <item>初八</item>
+        <item>初九</item>
+        <item>初十</item>
+        <item>十一</item>
+        <item>十二</item>
+        <item>十三</item>
+        <item>十四</item>
+        <item>十五</item>
+        <item>十六</item>
+        <item>十七</item>
+        <item>十八</item>
+        <item>十九</item>
+        <item>二十</item>
+        <item>廿一</item>
+        <item>廿二</item>
+        <item>廿三</item>
+        <item>廿四</item>
+        <item>廿五</item>
+        <item>廿六</item>
+        <item>廿七</item>
+        <item>廿八</item>
+        <item>廿九</item>
+        <item>三十</item>
+    </string-array>
+
+    <string-array name="solar_festival" tools:ignore="InconsistentArrays">
+        <item>0101元旦</item>
+        <item>0214情人节</item>
+        <item>0308妇女节</item>
+        <item>0501劳动节</item>
+        <item>0504青年节</item>
+        <item>0601儿童节</item>
+        <item>0701建党节</item>
+        <item>0801建军节</item>
+        <item>0910教师节</item>
+        <item>1001国庆节</item>
+        <item>1225圣诞节</item>
+    </string-array>
+
+
+    <string-array name="solar_term">
+        <item>春分</item>
+        <item>清明节</item>
+        <item>谷雨</item>
+        <item>立夏</item>
+        <item>小满</item>
+        <item>芒种</item>
+        <item>夏至</item>
+        <item>小暑</item>
+        <item>大暑</item>
+        <item>立秋</item>
+        <item>处暑</item>
+        <item>白露</item>
+        <item>秋分</item>
+        <item>寒露</item>
+        <item>霜降</item>
+        <item>立冬</item>
+        <item>小雪</item>
+        <item>大雪</item>
+        <item>冬至</item>
+        <item>小寒</item>
+        <item>大寒</item>
+        <item>立春</item>
+        <item>雨水</item>
+        <item>惊蛰</item>
+    </string-array>
+
+    <string-array name="special_festivals">
+        <item>母亲节</item>
+        <item>父亲节</item>
+        <item>感恩节</item>
+    </string-array>
+
+    <string name="time">Time</string>
+    <string name="am">AM</string>
+    <string name="pm">PM</string>
+    <string name="colon">:</string>
+    <string name="toast_hint_time_not_set">Please set the time</string>
+    <!--font-->
+    <string name="zh_typeface">sans-serif</string>
+    <!--需要替换为 FZLTHK-GBK1-0 -->
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="time_save">Save</string>
+
+    <string name="harman_qls">QLS</string>
+
+    <string name="harman_reset">Reset</string>
+
+    <string name="sound_field_adjustment">Sound field</string>
+
+    <string name="wifi_no_wlan">No connectable network</string>
+
+    <string name="sys_1">Factory Model</string>
+
+    <string name="voice_1">Continuous dialogue</string>
+    <string name="voice_2">Continuous duration</string>
+    <string name="voice_3">Contents during the conversation</string>
+    <string name="voice_4">15s</string>
+    <string name="voice_5">30s</string>
+    <string name="voice_6">60s</string>
+    <string name="voice_7">Valid CMD</string>
+    <string name="voice_8">All dialogs</string>
+</resources>

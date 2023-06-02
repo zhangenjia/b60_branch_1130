@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Radio</string>
+    <string name="tv_fm">FM</string>
+    <string name="tv_am">AM</string>
+    <string name="tv_mhz">MHz</string>
+    <string name="tv_init_point">87.5</string>
+    <string name="tv_list_mhz">MHz</string>
+    <string name="tv_list_khz">kHz</string>
+    <string name="list_delete_warn">The favorite list is full, \nPlease delete some favorite stations</string>
+    <string name="no_collection">No favorite stations\nGo to collect it</string>
+    <string name="all_ready_collection">This station has been added to Favorites </string>
+    <string name="text_radio_list">Station List</string>
+    <string name="text_my_collection">Favorites List</string>
+    <string name="text_no_collection">No favorite stations</string>
+    <string name="text_collect">Go to collect it</string>
+    <string name="text_delete">Delete</string>
+    <string name="text_cancel">Cancel</string>
+</resources>

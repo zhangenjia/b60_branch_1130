@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">offroadinfo</string>
+    <string name="orim">ORIM</string>
+    <string name ="tab1">E I</string>
+    <string name ="tab2">V I</string>
+    <string name ="altitude">ALT</string>
+    <string name ="atmopressure">AP</string>
+
+    <string name ="north">North</string>
+    <string name ="northeast">Northeast</string>
+    <string name ="east">East</string>
+    <string name ="southeast">Southeast</string>
+    <string name ="south">South</string>
+    <string name ="southwest">Southwest</string>
+    <string name ="west">West</string>
+    <string name ="northwest">Northwest</string>
+</resources>

@@ -1,0 +1,8 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="warning_content">36px</dimen>
+    <dimen name="tabtitlesize">31sp</dimen>
+    <dimen name="card_spacing">22px</dimen>//小卡间隔
+    <dimen name="smallcardwith">300px</dimen>//小卡宽
+    <dimen name="smallcardheight">322px</dimen>//小大高
+</resources>

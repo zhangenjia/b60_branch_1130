@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="564px"
+    android:layout_height="860px"
+    android:id="@+id/parent_layout">
+    <!--模糊-->
+    <com.adayo.app.launcher.communicationbase.BlurTransitionView
+        android:id="@+id/blurView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/bgImgBig"
+        android:layout_width="564px"
+        android:layout_height="860px"
+        android:background="@drawable/bg_bigcard"/>
+
+    <com.adayo.app.launcher.wecarflow.util.RoundImageViewUtil
+        android:id="@+id/roundImage"
+        android:layout_width="564px"
+        android:layout_height="860px"/>
+
+    <TextView
+        android:id="@+id/title_bigcard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="61px"
+        android:text="@string/card_name"
+        android:textColor="@color/white"
+        android:textSize="36px" />
+
+    <ImageView
+        android:id="@+id/logoImgBig"
+        android:layout_width="240px"
+        android:layout_height="240px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="172px"
+        android:background="@drawable/frame_aiquting"/>
+
+        <SeekBar
+            android:id="@+id/processSeekBar"
+            android:layout_width="462px"
+            android:layout_height="8px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="457px"
+            android:thumb="@null"
+            android:thumbOffset="0px"/>
+
+<!--    无网络画面-->
+    <RelativeLayout
+        android:id="@+id/noNetworkLayBig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="512px"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/wifi_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/wifi_name"
+            android:textColor="@color/white"
+            android:textSize="40px" />
+
+        <TextView
+            android:id="@+id/wifi_info"
+            android:layout_width="424px"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="62px"
+            android:gravity="center"
+            android:text="@string/wifi_info"
+            android:textColor="@color/white"
+            android:textSize="30px" />
+    </RelativeLayout>
+
+
+<!--    无播放画面-->
+    <RelativeLayout
+        android:id="@+id/noPlayLayBig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="512px"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/noContentText"
+            android:layout_width="353px"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/music_null"
+            android:textColor="@color/white"
+            android:textSize="40px" />
+
+    </RelativeLayout>
+
+<!--    正常画面-->
+    <RelativeLayout
+        android:id="@+id/normalLayBig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="512px">
+
+        <TextView
+            android:id="@+id/music_name"
+            android:layout_width="353px"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/music_name"
+            android:textColor="@color/white"
+            android:textSize="40px" />
+
+        <TextView
+            android:id="@+id/music_lyric"
+            android:layout_width="424px"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="62px"
+            android:gravity="center"
+            android:text="@string/music_lyric"
+            android:textColor="@color/white"
+            android:textSize="30px" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/music_control"
+        android:layout_width="457px"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="675px">
+
+        <Button
+            android:id="@+id/preButton"
+            android:layout_width="84px"
+            android:layout_height="84px"
+            android:background="@drawable/com_icon_left_n" />
+
+        <Button
+            android:id="@+id/playButtonBig"
+            android:layout_width="84px"
+            android:layout_height="84px"
+            android:layout_centerHorizontal="true"/>
+<!--            android:background="@drawable/large_card_icon_play_n" />-->
+
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_width="84px"
+            android:layout_height="84px"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/com_icon_right_n" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:source="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="656px">
+
+    <ImageView
+        android:layout_width="398px"
+        android:layout_height="470px"
+        android:layout_marginTop="139px"
+        android:layout_marginLeft="244px"
+        android:background="@drawable/img_seat_left"/>
+
+    <ImageView
+        android:layout_width="398px"
+        android:layout_height="470px"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="139px"
+        android:layout_marginRight="244px"
+        android:background="@drawable/img_seat_right"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        android:layout_width="1470px"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        source:lottie_imageAssetsFolder="images" />
+
+<!--    <com.adayo.app.systemui.windows.views.FrameSurfaceView-->
+<!--        android:id="@+id/animation_view"-->
+<!--        android:layout_width="1470px"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_centerHorizontal="true" />-->
+
+    <RelativeLayout
+        android:layout_width="438px"
+        android:layout_height="399px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="112px"
+        android:background="@drawable/popup_background_sm">
+
+        <ImageView
+            android:id="@+id/face_mode"
+            android:layout_width="90px"
+            android:layout_height="90px"
+            android:layout_marginLeft="89px"
+            android:layout_marginTop="46px"
+            android:background="@drawable/selector_hvac_mode_face" />
+
+        <ImageView
+            android:id="@+id/foot_mode"
+            android:layout_width="90px"
+            android:layout_height="90px"
+            android:layout_marginLeft="89px"
+            android:layout_marginTop="155px"
+            android:background="@drawable/selector_hvac_mode_foot" />
+
+        <ImageView
+            android:id="@+id/wind_mode"
+            android:layout_width="90px"
+            android:layout_height="90px"
+            android:layout_marginLeft="89px"
+            android:layout_marginTop="263px"
+            android:background="@drawable/selector_hvac_mode_wind" />
+
+        <ImageView
+            android:id="@+id/face_foot_mode"
+            android:layout_width="90px"
+            android:layout_height="90px"
+            android:layout_marginLeft="258px"
+            android:layout_marginTop="46px"
+            android:background="@drawable/selector_hvac_mode_facefoot" />
+
+        <ImageView
+            android:id="@+id/foot_wind_mode"
+            android:layout_width="90px"
+            android:layout_height="90px"
+            android:layout_marginLeft="258px"
+            android:layout_marginTop="155px"
+            android:background="@drawable/selector_hvac_mode_footwind" />
+
+        <com.adayo.app.systemui.bases.BaseHvacSwitch
+            android:layout_width="90px"
+            android:layout_height="90px"
+            android:layout_marginLeft="258px"
+            android:layout_marginTop="263px"
+            android:background="@drawable/selector_hvac_mode_defrost"
+            source:area="area_seat_all"
+            source:receiveVehicleIndex="hvac_front_status"
+            source:sendOffset="1"
+            source:sendVehicleIndex="hvac_front_status" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">B60ATS</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="sport">Sport</string>
+    <string name="eco">Eco</string>
+    <string name="shushi">Comfort</string>
+    <string name="xuedi">Snow</string>
+    <string name="chuanyue">Through</string>
+    <string name="shadi">Sand</string>
+    <string name="nidi">Mud</string>
+    <string name="yanshi">Rock</string>
+    <string name="sheshui">Wading</string>
+
+    <string name="textmode">Text mode</string>
+    <string name="picturemode">Pic mode</string>
+
+    <string name="sportmod">Sport</string>
+    <string name="ecomod">Economic</string>
+    <string name="shushimod">Comfort</string>
+    <string name="xuedimod">Snow</string>
+    <string name="chuanyuemod">Through</string>
+    <string name="shadimod">Sand</string>
+    <string name="nidimod">Mud</string>
+    <string name="yanshimod">Rock</string>
+    <string name="sheshuimod">Wading</string>
+
+    <string name="target">Ready to enter</string>
+    <string name="confirm">Activated</string>
+    <string name="setupfailed">Setup failed</string>
+
+    <string name="sportModTips">Apply to mountain roads and intense driving, provide a more dynamic driving experience, biased towards dynamic performance.</string>
+    <string name="ecoModTips">Apply to expressways, urban congested road conditions and warm and slippery roads in rainy days, which are biased towards economic performance.</string>
+    <string name="shushiModTips">Apply to driving on highways or similar hard roads, taking into account power and economy.</string>
+    <string name="xuediModTips">Apply to environments where wheels are prone to skidding such as ice, snow, grass, and gravel. It is recommended to reduce the tire pressure to 70%.</string>
+    <string name="chuanyueModTips">Apply to cross-country long-distance crossing, bumpy roads and other environments. It is recommended to reduce the tire pressure to 70%.</string>
+    <string name="shadiModTips">Apply to soft and dry deserts, sand dunes, sandy land, beaches and other environments. It is recommended to reduce the tire pressure to 30%.</string>
+    <string name="nidiModTips">Apply to muddy, rut, deep groove and non-paved road surface with uneven surface. It is recommended to reduce the tire pressure to 50%.</string>
+    <string name="yanshiModTips">Apply to rugged environment such as stony mountain, dry river, log and so on. It is recommended to reduce the tire pressure to 70%.</string>
+    <string name="sheshuiModTips">Apply to driving in deep water with slow speed. It is recommended to reduce the tire pressure to 70%.</string>
+</resources>

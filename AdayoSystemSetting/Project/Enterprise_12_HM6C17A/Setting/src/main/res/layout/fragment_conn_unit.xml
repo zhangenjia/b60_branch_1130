@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:id="@+id/cl_unit"
+    android:layout_height="wrap_content"
+    tools:context=".view.fragment.factory.product.Unit.ConnUnitFragment">
+
+    <!-- 单位 -->
+    <ImageView
+        android:id="@+id/iv_display_set_bgunit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/unit_last_high"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/iv_unit_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/unit_icon"
+        android:layout_marginRight="13dp"
+        app:layout_constraintBottom_toBottomOf="@id/tv_display_set_unit"
+        app:layout_constraintEnd_toStartOf="@id/tv_display_set_unit"
+        app:layout_constraintTop_toTopOf="@id/tv_display_set_unit" />
+
+    <TextView
+        android:id="@+id/tv_display_set_unit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="40px"
+        android:textSize="@dimen/common_tvsize_big2"
+        android:textColor="@color/white"
+        android:text="@string/display_unit_main_title"
+        android:layout_marginLeft="73dp"
+        app:layout_constraintTop_toTopOf="@id/iv_display_set_bgunit"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <!-- 温度 -->
+    <TextView
+        android:id="@+id/tv_display_set_temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="162dp"
+        android:textSize="@dimen/common_tvsize_mid"
+        android:textColor="@color/white"
+        android:text="@string/display_unit_temperature_title"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tv_display_set_mileage"/>
+    <com.flyco.customtablayout.SegmentTabLayout
+        android:id="@+id/sb_display_set_temperature"
+        app:tl_indicator_anim_enable="true"
+        app:tl_tab_space_equal="true"
+        app:tl_tab_width="131dp"
+        app:tl_textSelectColor="@color/tab_selected"
+        app:tl_textUnselectColor="@color/tab_unselected"
+        app:tl_textsize="30px"
+        app:tl_thumb_drawable="@drawable/frame_thumb_segment"
+        android:layout_width="262px"
+        android:layout_height="@dimen/custom_tablayout_height"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center_vertical|right"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintTop_toTopOf="@id/tv_display_set_temperature"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/tv_display_set_temperature"
+        android:background="@drawable/frame_last_cruise_mode"/>
+  <ImageView
+        android:id="@+id/line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="123dp"
+        android:layout_marginLeft="14px"
+        android:background="@drawable/line_1780"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+    <!-- 距离 -->
+    <TextView
+        android:id="@+id/tv_display_set_mileage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="38dp"
+        android:gravity="center"
+        android:textSize="@dimen/common_tvsize_mid"
+        android:textColor="@color/white"
+        android:text="@string/display_unit_mileage_title"
+        android:layout_marginLeft="21px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <com.flyco.customtablayout.SegmentTabLayout
+        android:id="@+id/sb_display_set_mileage"
+        app:tl_indicator_anim_enable="true"
+        app:tl_tab_space_equal="true"
+        app:tl_tab_width="131dp"
+        app:tl_textSelectColor="@color/tab_selected"
+        app:tl_textUnselectColor="@color/tab_unselected"
+        app:tl_textsize="30px"
+        app:tl_thumb_drawable="@drawable/frame_thumb_segment"
+        android:layout_width="262px"
+        android:layout_height="@dimen/custom_tablayout_height"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center_vertical|right"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintTop_toTopOf="@id/tv_display_set_mileage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/tv_display_set_mileage"   android:background="@drawable/frame_last_cruise_mode"/>
+
+</android.support.constraint.ConstraintLayout>

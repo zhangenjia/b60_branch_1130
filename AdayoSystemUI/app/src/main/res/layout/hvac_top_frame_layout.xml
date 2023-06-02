@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:source="http://schemas.android.com/apk/res-auto"
+    android:layout_width="1866px"
+    android:layout_height="120px"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/img_tab_frame_long_bg"
+    android:orientation="horizontal">
+    <com.adayo.app.systemui.bases.BaseHvacSwitch
+        android:layout_width="116px"
+        android:layout_height="116px"
+        android:layout_marginLeft="163px"
+        android:background="@drawable/selector_hvac_auto"
+        source:area="area_seat_front"
+        source:receiveOffset="1"
+        source:sendOffset="1"
+        source:sendVehicleIndex="hvac_auto_on"
+        source:receiveVehicleIndex="hvac_auto_on" />
+
+    <com.adayo.app.systemui.bases.BaseHvacSwitch
+        android:layout_width="116px"
+        android:layout_height="116px"
+        android:layout_marginLeft="174px"
+        android:background="@drawable/selector_hvac_ac"
+        source:area="area_seat_all"
+        source:receiveOffset="1"
+        source:sendOffset="1"
+        source:sendVehicleIndex="hvac_ac_on"
+        source:receiveVehicleIndex="hvac_ac_on" />
+
+    <com.adayo.app.systemui.windows.views.HvacCycleModeView
+        android:layout_width="116px"
+        android:layout_height="116px"
+        android:layout_marginLeft="174px"
+        android:background="@drawable/selector_hvac_circulation"
+        source:area="area_seat_all"
+        source:receiveOffset="1"
+        source:sendVehicleIndex="hvac_recirc_on"
+        source:receiveVehicleIndex="hvac_recirc_on" />
+
+    <com.adayo.app.systemui.bases.BaseHvacSwitch
+        android:layout_width="116px"
+        android:layout_height="116px"
+        android:layout_marginLeft="174px"
+        android:background="@drawable/selector_hvac_sync"
+        source:area="area_seat_all"
+        source:sendOffset="1"
+        source:sendVehicleIndex="hvac_dual_zone_set"
+        source:receiveVehicleIndex="hvac_dual_mode_status" />
+
+    <com.adayo.app.systemui.bases.BaseHvacSwitch
+        android:layout_width="116px"
+        android:layout_height="116px"
+        android:layout_marginLeft="174px"
+        android:background="@drawable/selector_hvac_off"
+        source:receiveOffset="1"
+        source:sendOffset="1"
+        source:area="area_seat_all"
+        source:sendVehicleIndex="hvac_power_on"
+        source:receiveVehicleIndex="hvac_power_on" />
+
+    <com.adayo.app.systemui.bases.BaseHvacSwitch
+        android:layout_width="116px"
+        android:layout_height="116px"
+        android:layout_marginLeft="174px"
+        android:background="@drawable/selector_hvac_rear_defrost"
+        source:receiveOffset="1"
+        source:sendOffset="1"
+        source:area="area_seat_all"
+        source:sendVehicleIndex="hvac_defroster"
+        source:receiveVehicleIndex="hvac_defroster" />
+
+</LinearLayout>

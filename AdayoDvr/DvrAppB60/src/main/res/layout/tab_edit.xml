@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_edit"
+    android:layout_width="@dimen/dp1920"
+    android:layout_height="@dimen/dp860">
+
+    <ImageView
+        android:layout_width="@dimen/dp270"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/line"
+        android:layout_marginTop="1px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/ll_edit_back"
+        android:layout_width="@dimen/dp270"
+        android:layout_height="@dimen/dp123"
+        android:clickable="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="24px"
+            android:src="@drawable/btn_return" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16px"
+            android:text="@string/text_edit_back"
+            android:textColor="@drawable/btn_text_color"
+            android:textSize="35px" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="@dimen/dp270"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/line"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_edit_back" />
+
+    <LinearLayout
+        android:id="@+id/ll_edit_all_select"
+        android:layout_width="@dimen/dp270"
+        android:layout_height="@dimen/dp123"
+        android:clickable="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_edit_back">
+
+        <ImageView
+            android:id="@+id/iv_select_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="24px"
+            android:src="@mipmap/icon_select_all_n" />
+
+        <TextView
+            android:id="@+id/tv_select_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16px"
+            android:text="@string/text_edit_select"
+            android:textColor="@color/white"
+            android:textSize="35px" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="@dimen/dp270"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/line"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_edit_all_select" />
+
+    <LinearLayout
+        android:id="@+id/ll_edit_delete"
+        android:layout_width="@dimen/dp270"
+        android:layout_height="@dimen/dp123"
+        android:clickable="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_edit_all_select">
+
+        <ImageView
+            android:id="@+id/iv_edit_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="24px"
+            android:src="@drawable/btn_delete" />
+
+        <TextView
+            android:id="@+id/tv_edit_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16px"
+            android:text="@string/text_edit_delete1"
+            android:textColor="@drawable/btn_text_color"
+            android:textSize="35px" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="@dimen/dp270"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/line"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_edit_delete" />
+
+    <LinearLayout
+        android:id="@+id/ll_edit_move"
+        android:layout_width="@dimen/dp270"
+        android:layout_height="@dimen/dp123"
+        android:clickable="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_edit_delete">
+
+        <ImageView
+
+            android:id="@+id/iv_edit_move"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="24px"
+            android:src="@drawable/btn_move_emergency" />
+
+        <TextView
+            android:id="@+id/tv_edit_move"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16px"
+            android:text="@string/text_edit_move_to_emergency_tab"
+            android:textColor="@drawable/btn_text_color"
+            android:textSize="35px" />
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/iv_line"
+        android:layout_width="@dimen/dp270"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/line"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_edit_move" />
+
+
+    <ImageView
+        android:layout_width="@dimen/dp270"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/line"
+        app:layout_constraintBottom_toTopOf="@id/ll_edit_control"
+        app:layout_constraintLeft_toLeftOf="parent" />
+    <LinearLayout
+        android:id="@+id/ll_edit_control"
+        android:layout_width="@dimen/dp270"
+        android:layout_height="@dimen/dp123"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_edit_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="24px"
+            android:clickable="true"
+            android:src="@mipmap/icon_up_n" />
+
+        <LinearLayout
+            android:layout_width="@dimen/dp73"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="21px"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_edit_cur_page"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_dp24" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_dividing_line" />
+
+            <TextView
+                android:id="@+id/tv_edit_tot_page"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_dp24" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_edit_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="21px"
+            android:clickable="true"
+            android:src="@mipmap/icon_down_n" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="@dimen/dp270"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/line"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <GridView
+        android:id="@+id/gv_edit"
+        android:layout_width="@dimen/dp1650"
+        android:layout_height="@dimen/dp860"
+        android:layout_marginLeft="@dimen/dp270"
+        android:columnWidth="@dimen/dp536"
+        android:numColumns="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/item_edit" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

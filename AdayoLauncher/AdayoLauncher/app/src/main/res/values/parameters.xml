@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bigCardWidth">630px</dimen>//大卡宽度
+    <dimen name="bigCardHeight">914px</dimen>//大卡高度
+    <dimen name="smallCardWidth">274px</dimen>//小卡宽度
+    <dimen name="smallCardHeight">321px</dimen>//小卡高度
+    <dimen name="bottomWindowHeight">321px</dimen>//底部弹框高度
+    <dimen name="bottomWindowTabHeight">321px</dimen>//底部弹框Tab高度
+    <dimen name="bottomWindowBigCardWidth">321px</dimen>//底部大卡宽度
+    <dimen name="bottomWindowBigCardHeight">321px</dimen>//底部大卡高度
+    <dimen name="bottomWindowSmallCardWidth">321px</dimen>//底部小卡宽度
+    <dimen name="bottomWindowSallCardHeight">321px</dimen>//底部小卡高度
+</resources>

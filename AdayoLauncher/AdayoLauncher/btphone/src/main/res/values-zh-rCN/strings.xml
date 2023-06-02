@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">btphone</string>
+    <string name="phone">电话</string>
+    <string name="connect_bt_device">请先连接蓝牙设备</string>
+</resources>

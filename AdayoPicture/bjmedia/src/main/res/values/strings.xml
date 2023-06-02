@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">图片</string>
+    <string name="loading">设备加载中</string>
+    <string name="music_loading" translatable="false">加载中···</string>
+    <string name="picture">图片</string>
+    <string name="unplug_device">已拔出USB设备</string>
+    <string name="picture_no_file">无图片文件</string>
+    <string name="picture_no_device">请插入有效的USB设备</string>
+    <string name="picture_error_file">图片文件错误</string>
+</resources>

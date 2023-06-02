@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">视频</string>
+    <string name="main_tab_title_lo_video">视频</string>
+    <string name="lo_video_info_no_device">请插入有效的USB设备</string>
+    <string name="lo_video_browse_info_no_file">无视频文件</string>
+    <string name="lo_video_browse_info_loading">加载中…</string>
+    <string name="lo_video_detail_info_driving_warning">为了您的安全，\n请勿在行车时观看视频</string>
+    <string name="lo_video_detail_info_desc_driving_warning">可在系统设置中开启“允许观看视频”</string>
+    <string name="lo_video_detail_info_exit">退出（%ds）</string>
+    <string name="lo_music_detail_not_support">视频文件错误，\n3秒后播放下一个</string>
+</resources>

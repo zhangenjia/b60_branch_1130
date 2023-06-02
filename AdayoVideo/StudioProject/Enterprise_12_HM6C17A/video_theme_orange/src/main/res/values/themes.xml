@@ -1,0 +1,50 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.Enterprise_12_HM6C17A" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/white</item>
+        <!-- Customize your theme here. -->
+        <!--窗口背景-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--禁用StaringWindow-->
+        <item name="android:windowDisablePreview">true</item>
+        <!--等同于设置View.SYSTEM_UI_FLAG_LAYOUT_STABLE|View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN-->
+        <item name="android:windowTranslucentStatus">true</item>
+        <!--等同于设置View.SYSTEM_UI_FLAG_LAYOUT_STABLE|View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION-->
+        <item name="android:windowTranslucentNavigation">true</item>
+        <!--按钮文字全大写-->
+        <item name="android:textAllCaps">false</item>
+        <item name="android:windowAnimationStyle">@style/NoAnimation</item>
+    </style>
+
+    <style name="Theme.Enterprise_12_HM6C17A.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Enterprise_12_HM6C17A.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.Enterprise_12_HM6C17A.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Theme.Enterprise_12_HM6C17A.MainTabLayout.TextAppearance" parent="TextAppearance.AppCompat.Title">
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="NoAnimation">
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@null</item>
+        <item name="android:taskOpenEnterAnimation">@null</item>
+        <item name="android:taskOpenExitAnimation">@null</item>
+        <item name="android:taskCloseEnterAnimation">@null</item>
+        <item name="android:taskCloseExitAnimation">@null</item>
+        <item name="android:taskToFrontEnterAnimation">@null</item>
+        <item name="android:taskToFrontExitAnimation">@null</item>
+        <item name="android:taskToBackEnterAnimation">@null</item>
+        <item name="android:taskToBackExitAnimation">@null</item>
+    </style>
+
+</resources>

@@ -1,0 +1,122 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--自定义对话框样式400ms-->
+    <style name="StatusBarAnimation" parent="android:Animation">
+        <!--进入时的动画-->
+        <item name="android:windowEnterAnimation">@anim/status_bar_in</item>
+        <!--退出时的动画-->
+        <item name="android:windowExitAnimation">@anim/status_bar_out</item>
+    </style>
+    <!--自定义对话框样式400ms-->
+    <style name="NavigationBarAnimation" parent="android:Animation">
+        <!--进入时的动画-->
+        <item name="android:windowEnterAnimation">@anim/bottom_in</item>
+        <!--退出时的动画-->
+        <item name="android:windowExitAnimation">@anim/bottom_out</item>
+    </style>
+    <!--自定义对话框样式400ms-->
+    <style name="LeftInOutAnimation" parent="android:Animation">
+        <!--进入时的动画-->
+        <item name="android:windowEnterAnimation">@anim/left_in</item>
+        <!--退出时的动画-->
+        <item name="android:windowExitAnimation">@anim/left_out</item>
+    </style>
+    <!--自定义对话框样式400ms-->
+    <style name="RightInOutAnimation" parent="android:Animation">
+        <!--进入时的动画-->
+        <item name="android:windowEnterAnimation">@anim/right_in</item>
+        <!--退出时的动画-->
+        <item name="android:windowExitAnimation">@anim/right_out</item>
+    </style>
+    <!--dialog animation-->
+    <style name="DialogAnimation" parent="android:Animation">
+        <!--进入时的动画-->
+        <item name="android:windowEnterAnimation">@anim/dialog_enter</item>
+        <!--退出时的动画-->
+        <item name="android:windowExitAnimation">@anim/dialog_exit</item>
+    </style>
+
+    <style name="MassageAnimationFrontLeft" parent="android:Animation">
+        <!--进入时的动画-->
+        <item name="android:windowEnterAnimation">@anim/massage_front_left_enter</item>
+        <!--退出时的动画-->
+        <item name="android:windowExitAnimation">@anim/massage_front_left_exit</item>
+    </style>
+
+    <style name="MassageAnimationFrontRight" parent="android:Animation">
+        <!--进入时的动画-->
+        <item name="android:windowEnterAnimation">@anim/massage_front_right_enter</item>
+        <!--退出时的动画-->
+        <item name="android:windowExitAnimation">@anim/massage_front_right_exit</item>
+    </style>
+
+    <style name="MassageAnimationRearLeft" parent="android:Animation">
+        <!--进入时的动画-->
+        <item name="android:windowEnterAnimation">@anim/massage_rear_left_enter</item>
+        <!--退出时的动画-->
+        <item name="android:windowExitAnimation">@anim/massage_rear_left_exit</item>
+    </style>
+
+    <style name="MassageAnimationRearRight" parent="android:Animation">
+        <!--进入时的动画-->
+        <item name="android:windowEnterAnimation">@anim/massage_rear_right_enter</item>
+        <!--退出时的动画-->
+        <item name="android:windowExitAnimation">@anim/massage_rear_left_exit</item>
+    </style>
+
+    <!-- 半透明dialog的样式 -->
+    <style name="TranslucentStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+
+    <!-- 透明dialog的样式 -->
+    <style name="TransparentStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+    <!-- 透明dialog的样式 -->
+    <style name="BlackStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+    </style>
+    <!-- HVAC dialog的样式 -->
+    <style name="processDialog" parent="@android:style/Theme.Black">
+        <item name="android:windowBackground">@android:color/black</item><!--背景透明-->
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsTranslucent">false</item><!--半透明-->
+        <item name="android:windowNoTitle">true</item><!--无标题-->
+        <item name="android:backgroundDimEnabled">true</item><!--模糊-->
+        <item name="android:backgroundDimAmount">0.5</item>
+        <item name="android:alpha">0.3</item>
+    </style>
+
+</resources>

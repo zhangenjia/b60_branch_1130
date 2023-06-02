@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/offroad_system_settings_icon_more_dis" android:state_enabled="false" />
+    <item android:drawable="@drawable/offroad_system_settings_icon_more_n" android:state_enabled="true" android:state_pressed="false" />
+    <item android:drawable="@drawable/offroad_system_settings_icon_more_p" android:state_enabled="true" android:state_pressed="true" />
+</selector>

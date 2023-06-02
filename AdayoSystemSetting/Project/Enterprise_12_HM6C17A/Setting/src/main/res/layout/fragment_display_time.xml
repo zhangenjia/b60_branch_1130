@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:id="@+id/cl_time"
+    android:layout_height="match_parent"
+    tools:context=".view.fragment.factory.product.Time.HighTimeFragment">
+
+    <ImageView
+        android:id="@+id/iv_display_set_time_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:background="@drawable/display_set_lightneww_last"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_display_set_time_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="13px"
+        android:src="@drawable/time_icon"
+        app:layout_constraintBottom_toBottomOf="@id/tv_display_set_time"
+        app:layout_constraintEnd_toStartOf="@id/tv_display_set_time"
+        app:layout_constraintTop_toTopOf="@id/tv_display_set_time" />
+
+    <TextView
+        android:id="@+id/tv_display_set_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="44dp"
+        android:gravity="center"
+        android:text="@string/display_time_main_title"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_tvsize_big2"
+        app:layout_constraintStart_toStartOf="@id/iv_display_set_time_bg"
+        app:layout_constraintTop_toTopOf="@id/iv_display_set_time_bg" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="123dp"
+        android:src="@drawable/line_860"
+        app:layout_constraintEnd_toEndOf="@id/iv_display_set_time_bg"
+        app:layout_constraintStart_toStartOf="@id/iv_display_set_time_bg"
+        app:layout_constraintTop_toTopOf="@id/iv_display_set_time_bg" />
+
+    <TextView
+        android:id="@+id/tv_display_set_time_auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        android:text="@string/display_time_auto_content"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_tvsize_mid"
+        app:layout_constraintBottom_toBottomOf="@id/iv_display_set_time_icon"
+        app:layout_constraintRight_toLeftOf="@id/tgBtn_display_set_time_auto"
+        app:layout_constraintTop_toTopOf="@id/iv_display_set_time_icon" />
+
+    <com.adayo.app.setting.base.SwitchButton
+        android:id="@+id/tgBtn_display_set_time_auto"
+        android:layout_width="88dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="20dp"
+        app:kswAnimationDuration="200"
+        app:kswBackDrawable="@drawable/selector_toggle_switch_background"
+        app:kswFadeBack="true"
+        app:kswThumbDrawable="@drawable/offroad_system_settings_button_switch_yuan"
+        app:layout_constraintBottom_toBottomOf="@id/iv_display_set_time_icon"
+        app:layout_constraintEnd_toEndOf="@id/iv_display_set_time_bg"
+        app:layout_constraintTop_toTopOf="@id/iv_display_set_time_icon" />
+
+    <!-- 时间制式 -->
+    <TextView
+        android:id="@+id/tv_display_set_time_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="82dp"
+        android:gravity="center"
+        android:text="@string/display_time_mode_title"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_tvsize_mid"
+        app:layout_constraintStart_toStartOf="@id/iv_display_set_time_icon"
+        app:layout_constraintTop_toBottomOf="@id/iv_display_set_time_icon" />
+
+    <LinearLayout
+        android:id="@+id/sb_display_set_time_mode_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@id/tv_display_set_time_mode"
+        app:layout_constraintEnd_toEndOf="@id/tgBtn_display_set_time_auto"
+        app:layout_constraintTop_toTopOf="@id/tv_display_set_time_mode">
+
+        <com.flyco.customtablayout.SegmentTabLayout
+            android:id="@+id/sb_display_set_time_mode"
+            android:layout_width="402dp"
+            android:layout_height="@dimen/custom_tablayout_height"
+            android:background="@drawable/frame_last_cruise_mode"
+            app:tl_indicator_anim_enable="true"
+            app:tl_tab_space_equal="true"
+            app:tl_tab_width="201dp"
+            app:tl_textSelectColor="@color/tab_selected"
+            app:tl_textUnselectColor="@color/tab_unselected"
+            app:tl_textsize="30px"
+            app:tl_thumb_drawable="@drawable/frame_thumb_segment" />
+    </LinearLayout>
+
+
+    <!--                <ImageView-->
+    <!--                    android:id="@+id/iv_line_time"-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_marginStart="14dp"-->
+    <!--                    android:layout_marginTop="47dp"-->
+    <!--                    android:src="@drawable/offroad_system_settings_line_half_n"-->
+    <!--                    app:layout_constraintStart_toStartOf="@id/iv_display_set_time_bg"-->
+    <!--                    app:layout_constraintTop_toBottomOf="@id/tv_display_set_time_mode" />-->
+
+    <!-- 时间/日期手动设置 -->
+    <Button
+        android:id="@+id/btn_set_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="29dp"
+        android:background="@null"
+        android:drawableEnd="@drawable/selector_right_arrow"
+        android:gravity="center_vertical|start"
+        android:text="@string/display_time_set_title"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_tvsize_mid"
+        app:layout_constraintBottom_toBottomOf="@id/iv_display_set_time_bg"
+        app:layout_constraintEnd_toEndOf="@id/tgBtn_display_set_time_auto"
+        app:layout_constraintStart_toStartOf="@id/tv_display_set_time_mode" />
+
+    <TextView
+        android:id="@+id/tv_display_set_time_set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="68dp"
+        android:gravity="center_vertical|end"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_tvsize_mid"
+        app:layout_constraintBottom_toBottomOf="@id/btn_set_time"
+        app:layout_constraintEnd_toEndOf="@id/btn_set_time"
+        app:layout_constraintTop_toTopOf="@id/btn_set_time" />
+
+
+</android.support.constraint.ConstraintLayout>

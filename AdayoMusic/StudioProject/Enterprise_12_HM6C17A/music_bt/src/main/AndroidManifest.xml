@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.adayo.app.music.bt">
+
+    <uses-permission android:name="app.custom.permission" />
+
+    <application>
+        <service
+            android:name=".btmusic.service.LocalMusicService"
+            android:defaultToDeviceProtectedStorage="true"
+            android:directBootAware="true"
+            android:process=":remoteLocalMusicService"
+            android:enabled="true"
+            android:exported="true"
+            android:persistent="true">
+            <intent-filter android:priority="1000">
+                <action android:name="com.adayo.app.music.service" />
+            </intent-filter>
+        </service>
+
+    </application>
+</manifest>

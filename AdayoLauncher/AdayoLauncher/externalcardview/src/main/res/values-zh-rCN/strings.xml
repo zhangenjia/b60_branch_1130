@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">externalcardview</string>
+
+    <string name="video">视频</string>
+    <string name="phone">电话</string>
+    <string name="picture">图片</string>
+    <string name="settings">系统设置</string>
+    <string name="mycar">我的车</string>
+    <string name="orim">越野信息</string>
+    <string name="apa">自动泊车</string>
+    <string name="avm">全景影像</string>
+    <string name="music">音乐</string>
+    <string name="radio">收音机</string>
+    <string name="yueyequan">悦野圈</string>
+    <string name="tencentway">腾讯随行</string>
+    <string name="dvr">行车记录仪</string>
+    <string name="funcaudio">爱趣听</string>
+    <string name="wechat">微信</string>
+    <string name="navigation">导航</string>
+    <string name="climate">空调</string>
+    <string name="weather">天气</string>
+    <string name="easyconnect">手机互联</string>
+    <string name="largecardoptional">大卡可选</string>
+    <string name="smallcardoptional">小卡可选</string>
+    <string name="done">完成</string>
+</resources>

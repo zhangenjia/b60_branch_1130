@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">SystemUI</string>
+    <string name="air_quality_unit">%1$dμg/m³</string>
+
+    <string name="unconnected">Unconnected</string>
+    <string name="bluetooth">Bluetooth</string>
+    <string name="hotspot">Hotspot</string>
+    <string name="message_center">Message Center</string>
+    <string name="message_empty">No message</string>
+
+    <string name="message_traffic_renewal">Traffic renewal</string>
+    <string name="message_traffic_renewal_reminder">Traffic renewal reminder</string>
+    <string name="message_tsp">TSP message</string>
+    <string name="message_ota">OTA upgrade</string>
+    <string name="message_unread">Unread</string>
+    <string name="am">AM</string>
+    <string name="pm">PM</string>
+    <string name="hvac_front">Front Row</string>
+    <string name="hvac_rear">Rear Row</string>
+    <string name="hvac_seat">Seat Area</string>
+    <string name="hvac_seat_massage">Massage</string>
+    <string name="confirm">OK</string>
+    <string name="need_start_engine">This function can only be used\nafter engine starts</string>
+    <string name="massage_is_off">Massage is off and resumed after\nengine start completed</string>
+    <string name="voltage_low">Voltage is too low, \nmassage is off</string>
+    <string name="voltage_high">Voltage is too high, \nmassage is off</string>
+
+    <string name="close">OFF</string>
+    <string name="low">Low</string>
+    <string name="middle">Middle</string>
+    <string name="high">High</string>
+    <string name="pulse">Pulse</string>
+    <string name="wave">Wave</string>
+    <string name="catwalk">Catwalk</string>
+    <string name="single">SR</string>
+    <string name="cross">Cross</string>
+    <string name="butterfly">BF</string>
+    <string name="loin">Waist</string>
+    <string name="serpentine">Snake</string>
+</resources>

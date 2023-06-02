@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="64px">
+
+    <TextView
+        android:id="@+id/clock_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="12:00"
+        android:textColor="@color/white"
+        android:textSize="34px" />
+
+    <TextView
+        android:id="@+id/clock_time_unit"
+        android:layout_width="wrap_content"
+        android:layout_height="16px"
+        android:layout_marginTop="4px"
+        android:layout_toRightOf="@+id/clock_time"
+        android:gravity="center"
+        android:text="上午"
+        android:textColor="@color/white"
+        android:textSize="15px"
+        android:visibility="gone" />
+</RelativeLayout>

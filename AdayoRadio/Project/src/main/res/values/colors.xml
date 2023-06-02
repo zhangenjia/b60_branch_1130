@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_gray">#ccfefefe</color>
+    <color name="color_blue">#13CAFF</color>
+    <color name="color_transparent">#00000000</color>
+    <color name="color_freq_blue">#e0e0e0</color>
+    <color name="color_freq_white">#FFFFFF</color>
+    <color name="radio_ctrlbar_text">#192027</color>
+    <color name="radio_freq_text">#EFFDFF</color>
+    <color name="radio_keyboard_d">#5F5F5F</color>
+    <color name="radio_keyboard_p">#086097</color>
+    <color name="radio_keyboard_n">#C6D5D8</color>
+    <color name="radio_list_table">#738b97</color>
+    <color name="back">#999da4</color>
+    <color name="dialog_left">#ff3048</color>
+    <color name="no_change">#7c98ab</color>
+    <color name="color_white">#FFFFFF</color>
+    <color name="dialog_color_gray">#B7BBD0</color>
+    <color name="color_grey">#849fac</color>
+    <color name="color_red">#ff3048</color>
+    <color name="transparent">#00000000</color>
+    <color name="color_black">#FFFFFF</color>
+    <color name="text_unit">#99ffffff</color>
+</resources>

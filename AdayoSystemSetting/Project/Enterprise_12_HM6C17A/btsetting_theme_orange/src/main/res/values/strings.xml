@@ -1,0 +1,39 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="conn_bt_toast_hint_bt_connected_fail">连接失败</string>
+    <string name="conn_bt_toast_hint_bt_pair_fail">配对失败</string>
+    <string name="conn_bt_toast_hint_bt_pairing">蓝牙请求配对中，请在手机端确认授权</string>
+    <string name="conn_bt_toast_hint_bt_pair_code">配对码：</string>
+
+    <string name="conn_bt_title1">蓝牙</string>
+    <string name="conn_bt_msg">请先打开开关</string>
+    <string name="conn_bt_his_pair">已配对设备</string>
+    <string name="conn_bt_his_pair_no_device">无已配对设备</string>
+    <string name="conn_bt_can_pair">可用设备</string>
+
+    <!--DeleteDialog-->
+    <string name="conn_bt_del_dlg_title">删除当前已配对设备</string>
+    <string name="conn_bt_del_dlg_msg">删除后您仍可重新配对</string>
+    <string name="conn_bt_del_dlg_positive_btn">删除设备</string>
+    <string name="conn_bt_del_dlg_negative_btn">取消</string>
+
+
+    <!--DisConnectAndConnectOtherDialog-->
+    <string name="conn_bt_connect_new_dlg_msg">断开当前蓝牙连接新蓝牙？</string>
+    <string name="conn_bt_connect_new_dlg_positive_btn">连接新蓝牙</string>
+    <string name="conn_bt_connect_new_dlg_negative_btn">取消</string>
+
+    <!--DisConnectDialog-->
+    <string name="conn_bt_disconnect_dlg_msg">断开后，蓝牙音乐\n蓝牙电话将不可用</string>
+    <string name="conn_bt_disconnect_dlg_positive_btn">断开已连接设备</string>
+    <string name="conn_bt_disconnect_dlg_negative_btn">取消</string>
+
+
+
+    <string name="conn_bt_pair_request">蓝牙配对请求</string>
+    <string name="conn_bt_pair_compare">请确定是否与“</string>
+    <string name="conn_bt_pair">”配对</string>
+
+    <string name="conn_bt_pair1">配对</string>
+    <string name="conn_bt_refuse">拒绝</string>
+
+</resources>

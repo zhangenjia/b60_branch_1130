@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.adayo.app.systemui.windows.views.PullDownDumperLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout"
+    android:layout_width="1920px"
+    android:layout_height="964px"
+    android:background="@null"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="104px">
+
+        <RelativeLayout
+            android:id="@+id/background_layout"
+            android:layout_width="1920px"
+            android:layout_height="860px"
+            android:background="@drawable/bg_blur">
+
+            <com.adayo.app.systemui.windows.views.SettingSwitchButton
+                android:layout_width="152px"
+                android:layout_height="152px"
+                android:layout_marginLeft="424px"
+                android:layout_marginTop="104px"
+                android:background="@drawable/selector_screen_button_bg"
+                android:clickable="true"
+                app:controlType="screen_type"
+                app:systemStatus="system_status_screen" />
+
+            <com.adayo.app.systemui.windows.views.SettingSwitchButton
+                android:layout_width="704px"
+                android:layout_height="152px"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="104px"
+                android:background="@drawable/selector_bt_btn_bg"
+                android:clickable="true"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:paddingLeft="200px"
+                android:paddingRight="200px"
+                android:singleLine="true"
+                android:text="@string/bluetooth"
+                android:textColor="@color/white"
+                android:textSize="36px"
+                app:controlType="bluetooth_type"
+                app:needShowText="true"
+                app:responseLongClick="true"
+                app:sourceType="source_setting" />
+
+            <com.adayo.app.systemui.windows.views.SourceButton
+                android:layout_width="152px"
+                android:layout_height="152px"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="104px"
+                android:layout_marginRight="424px"
+                android:background="@drawable/selector_setting_btn_bg"
+                android:clickable="true"
+                app:loop="false"
+                app:sourceType="source_setting" />
+
+            <com.adayo.app.systemui.windows.views.SeekBarLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="288px"
+                android:clickable="true"
+                android:orientation="horizontal"
+                app:hasPlus="true"
+                app:hasSubtract="true"
+                app:responseClick="true"
+                app:type="brightness" />
+
+            <com.adayo.app.systemui.windows.views.SeekBarLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="472px"
+                android:clickable="true"
+                android:orientation="horizontal"
+                app:hasPlus="true"
+                app:hasSubtract="true"
+                app:responseClick="true"
+                app:type="volume" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/close_qs_panel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="950px"
+            android:src="@drawable/com_fast_bar" />
+    </LinearLayout>
+</com.adayo.app.systemui.windows.views.PullDownDumperLayout>

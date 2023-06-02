@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/offroad_system_settings_icon_privacy_n" android:state_checked="false" android:state_pressed="false"/>
+    <item android:drawable="@drawable/offroad_system_settings_icon_privacy_p" android:state_checked="false" android:state_pressed="true"/>
+
+    <item android:drawable="@drawable/offroad_system_settings_icon_eye_n" android:state_checked="true" android:state_pressed="false"/>
+    <item android:drawable="@drawable/offroad_system_settings_icon_eye_p" android:state_checked="true" android:state_pressed="true"/>
+</selector>

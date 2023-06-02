@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">radio</string>
+    <string name="radio_text">Radio</string>
+    <string name="tv_mhz">MHz</string>
+    <string name="tv_khz">kHz</string>
+</resources>

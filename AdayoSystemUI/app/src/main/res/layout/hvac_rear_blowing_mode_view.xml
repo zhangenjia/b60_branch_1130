@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:source="http://schemas.android.com/apk/res-auto"
+    android:layout_width="1074px"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="640px"
+        android:layout_height="586px"
+        android:layout_marginLeft="470px"
+        android:layout_marginTop="167px"
+        android:background="@drawable/img_rear_outlet"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        android:layout_width="854px"
+        android:layout_height="598px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="130px"
+        android:layout_marginTop="74px"
+        source:lottie_imageAssetsFolder="images" />
+
+    <RelativeLayout
+        android:layout_width="370px"
+        android:layout_height="256px"
+        android:layout_marginTop="191px"
+        android:background="@drawable/popup_background_huo">
+
+        <ImageView
+            android:id="@+id/face_mode"
+            android:layout_width="90px"
+            android:layout_height="90px"
+            android:layout_marginLeft="66px"
+            android:layout_marginTop="35px"
+            android:background="@drawable/selector_hvac_mode_face" />
+
+        <ImageView
+            android:id="@+id/face_foot_mode"
+            android:layout_width="90px"
+            android:layout_height="90px"
+            android:layout_marginLeft="214px"
+            android:layout_marginTop="35px"
+            android:background="@drawable/selector_hvac_mode_facefoot" />
+
+        <ImageView
+            android:id="@+id/foot_mode"
+            android:layout_width="90px"
+            android:layout_height="90px"
+            android:layout_marginLeft="66px"
+            android:layout_marginTop="133px"
+            android:background="@drawable/selector_hvac_mode_foot" />
+    </RelativeLayout>
+</RelativeLayout>

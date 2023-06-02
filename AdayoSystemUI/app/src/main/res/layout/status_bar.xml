@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="72px">
+
+    <com.adayo.app.systemui.windows.views.ClockView
+        android:id="@+id/clock_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="19px" />
+
+    <com.adayo.app.systemui.windows.views.SystemIconsView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="150px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" />
+</RelativeLayout>

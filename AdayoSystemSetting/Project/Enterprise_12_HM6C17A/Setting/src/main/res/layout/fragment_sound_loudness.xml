@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cl_sound_loudness"
+    android:layout_width="896dp"
+    android:layout_height="754dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sound_loudness_last"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="13dp"
+        app:layout_constraintEnd_toStartOf="@id/tv_popup_loundness_title"
+        app:layout_constraintBottom_toBottomOf="@id/tv_popup_loundness_title"
+        app:layout_constraintTop_toTopOf="@id/tv_popup_loundness_title"
+        android:background="@drawable/sound_loudness_icon" />
+
+    <TextView
+        android:id="@+id/tv_popup_loundness_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="73dp"
+        android:gravity="center_vertical"
+        android:text="@string/sound_loudness_title"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_tvsize_big2"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_line_light"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_line_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="123dp"
+        android:src="@drawable/offroad_system_settings_line_half_light"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        android:id="@+id/sb_popup_loundness_system"
+        layout="@layout/item_slide_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        app:layout_constraintBottom_toTopOf="@id/sb_popup_loundness_bluetooth"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_line_light" />
+
+
+    <include
+        android:id="@+id/sb_popup_loundness_bluetooth"
+        layout="@layout/item_slide_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sb_popup_loundness_system" />
+
+
+    <include
+        android:id="@+id/sb_popup_loundness_media"
+        layout="@layout/item_slide_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sb_popup_loundness_bluetooth" />
+
+
+    <include
+        android:id="@+id/sb_popup_loundness_phone"
+        layout="@layout/item_slide_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sb_popup_loundness_media" />
+
+
+    <include
+        android:id="@+id/sb_popup_loundness_navi"
+        layout="@layout/item_slide_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sb_popup_loundness_phone" />
+
+
+    <include
+        android:id="@+id/sb_popup_loundness_voice"
+        layout="@layout/item_slide_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sb_popup_loundness_navi" />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="textStyle_base">
+        <!--item name="android:typeface">@string/zh_typeface</item-->
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!--主画面-->
+    <style name="textStyleFrmTitle" parent="textStyle_base">
+        <item name="android:textSize">36sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!--dialog style-->
+    <style name="pair_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+    <style name="Free_wake_instruction">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">30px</item>
+    </style>
+
+
+    <style name="TransparentStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name = "android:windowAnimationStyle">@style/PauseDialogAnimation</item>
+    </style>
+
+    <style  name = "PauseDialogAnimation" >
+        <!--进入时的动画-->
+        <item name="android:windowEnterAnimation">@anim/dialog_enter</item>
+        <!--退出时的动画-->
+        <item name="android:windowExitAnimation">@anim/dialog_exit</item>
+    </style>
+</resources>

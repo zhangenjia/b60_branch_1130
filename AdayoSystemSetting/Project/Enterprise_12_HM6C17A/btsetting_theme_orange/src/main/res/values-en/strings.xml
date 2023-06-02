@@ -1,0 +1,43 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="conn_bt_toast_hint_bt_connected_fail">Connection Failed</string>
+    <string name="conn_bt_toast_hint_bt_pair_fail">Failed to pair</string>
+    <string name="conn_bt_toast_hint_bt_pairing">pairing,confirm on phone</string>
+    <string name="conn_bt_toast_hint_bt_pair_code">Pair Number:</string>
+
+
+    <string name="conn_bt_title1">Bluetooth</string>
+    <string name="conn_bt_msg">Please turn on the Bluetooth switch</string>
+    <string name="conn_bt_his_pair">Paired devices</string>
+    <string name="conn_bt_his_pair_no_device">No paired devices</string>
+    <string name="conn_bt_can_pair">Available devices</string>
+
+    <!--DeleteDialog-->
+    <string name="conn_bt_del_dlg_title">Unpair</string>
+    <string name="conn_bt_del_dlg_msg">Unpaired ,you can repair</string>
+    <string name="conn_bt_del_dlg_positive_btn">Delete</string>
+    <string name="conn_bt_del_dlg_negative_btn">Cancel</string>
+
+
+    <!--DisConnectAndConnectOtherDialog-->
+    <string name="conn_bt_connect_new_dlg_msg">End your connection and connect \nthe new device?</string>
+    <string name="conn_bt_connect_new_dlg_positive_btn">Connect</string>
+    <string name="conn_bt_connect_new_dlg_negative_btn">Cancel</string>
+<!--
+    After disconnection, bluetooth music bluetooth phone will be unavailable
+-->
+    <!--DisConnectDialog-->
+    <string name="conn_bt_disconnect_dlg_msg">After disconnection, bluetooth music\nbluetooth phone will be unavailable</string>
+    <string name="conn_bt_disconnect_dlg_positive_btn">Disconnect</string>
+    <string name="conn_bt_disconnect_dlg_negative_btn">Cancel</string>
+
+
+
+    <string name="conn_bt_pair_request">Bluetooth pairing request</string>
+    <string name="conn_bt_pair_compare">Please confirm whether it is with"</string>
+    <string name="conn_bt_pair">"pair</string>
+    <string name="conn_bt_pair1">pair</string>
+    <string name="conn_bt_refuse">Reject</string>
+
+</resources>
+
+

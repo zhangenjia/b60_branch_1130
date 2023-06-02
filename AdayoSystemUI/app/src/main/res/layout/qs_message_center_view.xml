@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="888px"
+    android:layout_height="760px"
+    android:background="@drawable/dropbox_message_center_bg_box"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="36px"
+        android:clickable="true"
+        android:drawableLeft="@drawable/dropbox_icon_news"
+        android:drawablePadding="6px"
+        android:gravity="center_vertical"
+        android:text="@string/message_center"
+        android:textColor="@color/white"
+        android:textSize="36px" />
+
+    <TextView
+        android:id="@+id/msg_unread"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/title"
+        android:layout_marginLeft="13px"
+        android:layout_marginTop="62px"
+        android:clickable="true"
+        android:text="@string/message_unread"
+        android:textColor="@color/red"
+        android:textSize="24px"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/msg_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="26px"
+        android:layout_marginRight="10px"
+        android:clickable="true"
+        android:scaleType="center"
+        android:src="@drawable/selector_qs_message_edit" />
+
+    <LinearLayout
+        android:id="@+id/edit_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="100px"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="26px"
+        android:layout_marginRight="10px"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/message_delete"
+            android:layout_width="88px"
+            android:layout_height="88px"
+            android:clickable="true"
+            android:scaleType="center"
+            android:src="@drawable/selector_qs_message_delete" />
+
+        <ImageView
+            android:id="@+id/message_back"
+            android:layout_width="88px"
+            android:layout_height="88px"
+            android:layout_marginRight="6px"
+            android:clickable="true"
+            android:scaleType="center"
+            android:src="@drawable/selector_qs_message_back" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="860px"
+        android:layout_height="1px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="151px"
+        android:background="@drawable/line"
+        android:clickable="true" />
+
+    <com.adayo.app.systemui.windows.views.SlideRecyclerView
+        android:id="@+id/msg_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16px"
+        android:layout_marginTop="184px"
+        android:layout_marginRight="16px"
+        android:layout_marginBottom="16px"
+        android:clickable="true"
+        android:divider="@null"
+        android:listSelector="#00000000"
+        android:scrollbars="none" />
+
+
+    <TextView
+        android:id="@+id/empty_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="275px"
+        android:clickable="true"
+        android:gravity="center_horizontal"
+        android:drawableTop="@drawable/com_icon_big_no_file"
+        android:drawablePadding="36px"
+        android:text="@string/message_empty"
+        android:textColor="@color/white"
+        android:textSize="30px" />
+
+</RelativeLayout>

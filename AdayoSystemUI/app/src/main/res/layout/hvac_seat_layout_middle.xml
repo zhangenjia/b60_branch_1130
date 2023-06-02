@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:source="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="880px"
+        android:layout_height="684px"
+        android:layout_marginLeft="492px"
+        android:layout_marginTop="42px"
+        android:background="@drawable/img_vehicle_seat"/>
+
+    <ImageView
+        android:id="@+id/seat_copilot"
+        android:layout_width="349px"
+        android:layout_height="272px"
+        android:layout_marginLeft="586px"
+        android:layout_marginTop="113px"
+        android:visibility="gone"
+        android:background="@drawable/img_hot_main_copilot"/>
+
+    <ImageView
+        android:id="@+id/seat_driver"
+        android:layout_width="385px"
+        android:layout_height="278px"
+        android:layout_marginLeft="548px"
+        android:layout_marginTop="278px"
+        android:visibility="gone"
+        android:background="@drawable/img_hot_driver"/>
+    <ImageView
+        android:id="@+id/seat_right_back"
+        android:layout_width="269px"
+        android:layout_height="257px"
+        android:layout_marginLeft="984px"
+        android:layout_marginTop="138px"
+        android:visibility="gone"
+        android:background="@drawable/img_seat_right_back"/>
+    <ImageView
+        android:id="@+id/seat_back_left"
+        android:layout_width="440px"
+        android:layout_height="355px"
+        android:layout_marginLeft="998px"
+        android:layout_marginTop="266px"
+        android:visibility="gone"
+        android:background="@drawable/img_seat_back_left"/>
+
+    <com.adayo.app.systemui.windows.views.HvacSeatHeatingView
+        android:layout_width="152px"
+        android:layout_height="140px"
+        android:layout_marginLeft="362px"
+        android:layout_marginTop="42px"
+        android:scaleType="center"
+        source:area="area_seat_passenger"
+        source:receiveVehicleIndex="hvac_seat_temperature"
+        source:sendVehicleIndex="hvac_seat_temperature" />
+
+    <com.adayo.app.systemui.windows.views.HvacSeatHeatingView
+        android:layout_width="152px"
+        android:layout_height="140px"
+        android:layout_marginLeft="362px"
+        android:layout_marginTop="457px"
+        android:scaleType="center"
+        source:area="area_seat_driver"
+        source:receiveVehicleIndex="hvac_seat_temperature"
+        source:sendVehicleIndex="hvac_seat_temperature"/>
+
+    <com.adayo.app.systemui.windows.views.HvacSeatHeatingView
+        android:layout_width="152px"
+        android:layout_height="140px"
+        android:layout_marginLeft="1398px"
+        android:layout_marginTop="42px"
+        android:scaleType="center"
+        source:area="area_seat_rear_right"
+        source:receiveVehicleIndex="hvac_seat_temperature"
+        source:sendVehicleIndex="hvac_seat_temperature"/>
+
+    <com.adayo.app.systemui.windows.views.HvacSeatHeatingView
+        android:layout_width="152px"
+        android:layout_height="140px"
+        android:layout_marginLeft="1398px"
+        android:layout_marginTop="457px"
+        android:scaleType="center"
+        source:area="area_seat_rear_left"
+        source:receiveVehicleIndex="hvac_seat_temperature"
+        source:sendVehicleIndex="hvac_seat_temperature"/>
+
+</RelativeLayout>

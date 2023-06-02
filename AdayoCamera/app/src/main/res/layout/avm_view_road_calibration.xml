@@ -1,0 +1,227 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="104px"
+        android:clickable="true"
+        android:focusable="true" />
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="860px"
+        android:background="@color/black">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/container_road_calibration"
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:background="@color/black"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tv_road_calibration_hint_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60px"
+                android:gravity="center"
+                android:text="@string/road_calibration_start_hint_title"
+                android:textColor="@color/white"
+                android:textSize="40px"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_road_calibration_hint_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60px"
+                android:lineSpacingMultiplier="1.2"
+                android:text="@string/road_calibration_start_hint_content"
+                android:textColor="@color/white_60"
+                android:textSize="36px"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_road_calibration_hint_title" />
+
+            <TextView
+                android:id="@+id/tv_road_calibration_hint_positive"
+                android:layout_width="352px"
+                android:layout_height="80px"
+                android:layout_marginRight="20px"
+                android:layout_marginBottom="100px"
+                android:background="@drawable/btn_dialog"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/road_calibration_start_hint_btn"
+                android:textColor="@color/btn_dialog"
+                android:textSize="40px"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/tv_road_calibration_hint_negative" />
+
+            <TextView
+                android:id="@+id/tv_road_calibration_hint_negative"
+                android:layout_width="352px"
+                android:layout_height="80px"
+                android:layout_marginLeft="20px"
+                android:layout_marginBottom="100px"
+                android:background="@drawable/btn_dialog"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/road_calibration_start_hint_cancel"
+                android:textColor="@color/btn_dialog"
+                android:textSize="40px"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/tv_road_calibration_hint_positive"
+                app:layout_constraintRight_toRightOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/container_dialog_road_enter_confirm"
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:background="@color/bg_update_dialog"
+            android:clickable="true"
+            android:focusable="true"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/dialog_road_enter_confirm"
+                android:layout_width="838px"
+                android:layout_height="470px"
+                android:background="@mipmap/img_popup_background2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+                <ImageView
+                    android:layout_width="66px"
+                    android:layout_height="66px"
+                    android:layout_marginBottom="17px"
+                    android:src="@mipmap/icon_avm_failure"
+                    app:layout_constraintBottom_toTopOf="@+id/tv_dialog_road_enter_confirm_title"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_dialog_road_enter_confirm_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/road_calibration_start_hint_confirm_title"
+                    android:textColor="@color/text_dialog_title"
+                    android:textSize="40px"
+                    app:layout_constraintBottom_toTopOf="@+id/tv_dialog_road_enter_confirm_content"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_dialog_road_enter_confirm_content"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="223px"
+                    android:gravity="center"
+                    android:text="@string/road_calibration_start_hint_confirm_content"
+                    android:textColor="@color/text_dialog_content"
+                    android:textSize="36px"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_dialog_road_enter_confirm_positive"
+                    android:layout_width="352px"
+                    android:layout_height="80px"
+                    android:layout_marginLeft="51px"
+                    android:layout_marginBottom="51px"
+                    android:background="@drawable/btn_dialog"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="@string/road_calibration_start_hint_confirm_btn"
+                    android:textColor="@color/btn_dialog"
+                    android:textSize="40px"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_dialog_road_enter_confirm_negative"
+                    android:layout_width="352px"
+                    android:layout_height="80px"
+                    android:layout_marginRight="51px"
+                    android:layout_marginBottom="51px"
+                    android:background="@drawable/btn_dialog"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="@string/road_calibration_start_hint_confirm_cancel"
+                    android:textColor="@color/btn_dialog"
+                    android:textSize="40px"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/dialog_tv_home_tips"
+            android:layout_width="838px"
+            android:layout_height="188px"
+            android:layout_marginLeft="542px"
+            android:layout_marginRight="540px"
+            android:layout_marginBottom="26px"
+            android:visibility="gone"
+            android:background="@mipmap/apa_popup_background_last"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+            <TextView
+                android:id="@+id/tv_home_tips"
+                android:layout_width="838px"
+                android:layout_height="188px"
+                android:gravity="center"
+                android:text="@string/apa_view_home_tips"
+                android:textColor="@color/white"
+                android:textSize="40px"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_lower_br"
+        android:layout_width="match_parent"
+        android:layout_height="116px"
+        android:background="@drawable/btn_lower_br"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/btn_apa"
+            android:layout_width="160px"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <View
+            android:id="@+id/btn_home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true" />
+    </LinearLayout>
+    <View
+        android:id="@+id/dialog_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

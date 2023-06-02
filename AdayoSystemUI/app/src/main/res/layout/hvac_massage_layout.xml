@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:source="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="880px"
+        android:layout_height="684px"
+        android:layout_marginLeft="492px"
+        android:layout_marginTop="79px"
+        android:background="@drawable/img_vehicle_seat" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/front_left_view"
+        android:layout_width="380px"
+        android:layout_height="287px"
+        android:layout_marginLeft="553px"
+        android:layout_marginTop="311px"
+        source:lottie_imageAssetsFolder="images"
+        source:lottie_loop="true" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/front_right_view"
+        android:layout_width="346px"
+        android:layout_height="270px"
+        android:layout_marginLeft="589px"
+        android:layout_marginTop="146px"
+        source:lottie_imageAssetsFolder="images"
+        source:lottie_loop="true" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/rear_left_view"
+        android:layout_width="370px"
+        android:layout_height="337px"
+        android:layout_marginLeft="1000px"
+        android:layout_marginTop="300px"
+        source:lottie_imageAssetsFolder="images"
+        source:lottie_loop="true" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/rear_right_view"
+        android:layout_width="266px"
+        android:layout_height="251px"
+        android:layout_marginLeft="985px"
+        android:layout_marginTop="171px"
+        source:lottie_imageAssetsFolder="images"
+        source:lottie_loop="true" />
+
+    <ImageView
+        android:id="@+id/seat_mask"
+        android:layout_width="880px"
+        android:layout_height="684px"
+        android:layout_marginLeft="492px"
+        android:layout_marginTop="79px"
+        android:visibility="gone"
+        android:background="@drawable/mask_copilot" />
+
+    <ImageView
+        android:id="@+id/front_right_massage"
+        android:layout_width="116px"
+        android:layout_height="104px"
+        android:layout_marginLeft="381px"
+        android:layout_marginTop="103px"
+        android:background="@drawable/selector_seat_massage"
+        android:visibility="gone"
+        android:scaleType="center" />
+
+    <ImageView
+        android:id="@+id/front_left_massage"
+        android:layout_width="116px"
+        android:layout_height="104px"
+        android:layout_marginLeft="381px"
+        android:layout_marginTop="519px"
+        android:scaleType="center"
+        android:visibility="gone"
+        android:background="@drawable/selector_seat_massage" />
+
+    <ImageView
+        android:id="@+id/rear_right_massage"
+        android:layout_width="116px"
+        android:layout_height="104px"
+        android:layout_marginLeft="1415px"
+        android:layout_marginTop="103px"
+        android:scaleType="center"
+        android:visibility="gone"
+        android:background="@drawable/selector_seat_massage"/>
+
+    <ImageView
+        android:id="@+id/rear_left_massage"
+        android:layout_width="116px"
+        android:layout_height="104px"
+        android:layout_marginLeft="1415px"
+        android:layout_marginTop="519px"
+        android:scaleType="center"
+        android:visibility="gone"
+        android:background="@drawable/selector_seat_massage" />
+</RelativeLayout>

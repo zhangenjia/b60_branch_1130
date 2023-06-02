@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.VehicleInFragment">
+
+    <!--左前轮-->
+    <ImageView
+        android:id="@+id/iv_wheel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="440px" />
+
+    <!--左前轮轮胎印-->
+    <ImageView
+        android:id="@+id/lfTireMarks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="800px"
+        android:layout_marginTop="570px"
+        android:background="@drawable/wheel_stamp_front_left"/>
+
+
+    <!-- 刻度盘-->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="310px"
+        android:background="@drawable/steering_angle_bg" />
+    <!-- 指针-->
+    <ImageView
+        android:id="@+id/iv_pointer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="285px" />
+    <!-- 右前轮-->
+    <ImageView
+        android:id="@+id/iv_wheel_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="440px" />
+    <!--前轴-->
+    <ImageView
+        android:id="@+id/iv_axle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="440px" />
+    <!--右前轮轮胎印-->
+    <ImageView
+        android:id="@+id/rfTireMarks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="1040px"
+        android:layout_marginTop="570px"
+        android:background="@drawable/wheel_stamp_front_right"/>
+    <!--车骨架-->
+    <ImageView
+        android:id="@+id/iv_carframe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="440px"
+        android:background="@drawable/carframe" />
+    <!--右后轮轮胎印-->
+    <ImageView
+        android:id="@+id/rrTireMarks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="1105px"
+        android:layout_marginTop="850px"
+        android:background="@drawable/wheel_stamp_rear_right"/>
+    <!-- 右后轮-->
+    <ImageView
+        android:id="@+id/iv_wheel_rright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="440px" />
+    <!--左后轮轮胎印-->
+    <ImageView
+        android:id="@+id/lrTireMarks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="700px"
+        android:layout_marginTop="850px"
+        android:background="@drawable/wheel_stamp_rear_left"/>
+    <!--左后轮-->
+    <ImageView
+        android:id="@+id/iv_wheel_rleft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="440px" />
+
+    <!--左前轮标线-->
+    <ImageView
+        android:id="@+id/iv_line_upper_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="550px"
+        android:layout_marginTop="434px"
+        android:background="@drawable/line_upper_left" />
+    <!--右前轮标线-->
+    <ImageView
+        android:id="@+id/iv_line_upper_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1120px"
+        android:layout_marginTop="434px"
+        android:background="@drawable/line_upper_right" />
+    <!--左后轮标线-->
+    <ImageView
+        android:id="@+id/iv_line_lower_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="492px"
+        android:layout_marginTop="738px"
+        android:background="@drawable/line_lower_left" />
+    <!--后后轮标线-->
+    <ImageView
+        android:id="@+id/iv_line_lower_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1180px"
+        android:layout_marginTop="738px"
+        android:background="@drawable/line_lower_right" />
+
+    <!--左前胎压数值-->
+    <TextView
+        android:id="@+id/tv_lf_tirepressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="460px"
+        android:layout_marginRight="1290px"
+        android:textSize="@dimen/text_30_sp" />
+
+    <!--左前胎压单位-->
+    <TextView
+        android:id="@+id/tv_unit1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="650px"
+        android:layout_marginTop="467px"
+        android:text="bar"
+        android:textSize="30px" />
+
+
+    <!--左前胎温数值-->
+    <TextView
+        android:id="@+id/tv_lf_tiretemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="378px"
+        android:layout_marginRight="1290px"
+        android:textSize="@dimen/text_30_sp" />
+
+
+    <!--左前胎温单位-->
+    <TextView
+        android:id="@+id/tv_unit2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_marginLeft="640px"
+        android:layout_marginTop="384px"
+
+
+        android:text=" ℃"
+
+        android:textSize="30px" />
+
+
+    <!--右前胎压数值-->
+    <TextView
+        android:id="@+id/tv_rf_tirepressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="460px"
+        android:layout_marginRight="670px"
+
+        android:textSize="@dimen/text_30_sp" />
+
+    <!--右前胎压单位-->
+    <TextView
+        android:id="@+id/tv_unit3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_marginLeft="1268px"
+        android:layout_marginTop="467px"
+
+
+        android:text="bar"
+
+        android:textSize="30px" />
+
+
+    <!--右前胎温数值-->
+    <TextView
+        android:id="@+id/tv_rf_tiretemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="378px"
+        android:layout_marginRight="670px"
+
+        android:textSize="@dimen/text_30_sp" />
+
+
+    <!--右前胎温单位-->
+    <TextView
+        android:id="@+id/tv_unit4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_marginLeft="1258px"
+        android:layout_marginTop="384px"
+
+
+        android:text=" ℃"
+
+        android:textSize="30px" />
+
+    <!--左后胎压数值-->
+    <TextView
+        android:id="@+id/tv_lr_tirepressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="806px"
+        android:layout_marginRight="1350px"
+
+
+        android:textSize="@dimen/text_30_sp" />
+
+    <!--左后胎压单位-->
+    <TextView
+        android:id="@+id/tv_unit5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="813px"
+        android:layout_marginRight="1270px"
+        android:text="bar"
+
+        android:textSize="30px" />
+
+
+    <!--左后胎温数值-->
+    <TextView
+        android:id="@+id/tv_lr_tiretemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="724px"
+        android:layout_marginRight="1350px"
+
+
+
+        android:textSize="@dimen/text_30_sp" />
+
+
+    <!--左后胎温单位-->
+    <TextView
+        android:id="@+id/tv_unit6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_marginLeft="592px"
+        android:layout_marginTop="730px"
+
+
+        android:text=" ℃"
+
+        android:textSize="30px" />
+
+
+    <!--右后胎压数值-->
+    <TextView
+        android:id="@+id/tv_rr_tirepressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="806px"
+        android:layout_marginRight="620px"
+
+
+
+        android:textSize="@dimen/text_30_sp" />
+
+    <!--右后胎压单位-->
+    <TextView
+        android:id="@+id/tv_unit7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_marginLeft="1325px"
+        android:layout_marginTop="813px"
+
+
+        android:text="bar"
+
+        android:textSize="30px" />
+
+
+    <!--右后胎温数值-->
+    <TextView
+        android:id="@+id/tv_rr_tiretemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="724px"
+        android:layout_marginRight="620px"
+        android:textSize="@dimen/text_30_sp" />
+
+
+    <!--右后胎温单位-->
+    <TextView
+        android:id="@+id/tv_unit8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_marginLeft="1315px"
+        android:layout_marginTop="730px"
+
+
+        android:text=" ℃"
+
+        android:textSize="30px" />
+
+
+    <!--车轮转向角度-->
+    <TextView
+        android:id="@+id/tv_wheelangle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="261px"
+        android:text="--"
+        android:textSize="40px" />
+
+    <TextView
+        android:id="@+id/tv_altitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="261px"
+        android:layout_toEndOf="@id/tv_wheelangle"
+        android:textColor="@color/color_white"
+        android:text="°"
+        android:textSize="@dimen/text_30_sp" />
+
+    <!--分动箱状态-->
+    <ImageView
+        android:id="@+id/iv_transfer_case_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="840px"
+        android:layout_marginTop="570px" />
+
+    <!--  前差速锁-->
+    <ImageView
+        android:id="@+id/iv_f_differential_lock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="410px" />
+
+    <!--  后差速锁-->
+    <ImageView
+        android:id="@+id/iv_r_differential_lock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="790px"
+        android:alpha="0.3" />
+
+
+</RelativeLayout>

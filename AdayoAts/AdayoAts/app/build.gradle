@@ -1,0 +1,54 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion "28.0.0"
+    defaultConfig {
+        applicationId "com.adayo.app.ats"
+        minSdkVersion 26
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    signingConfigs {
+        release {
+            storeFile file('C:\\Users\\ADAYO-02\\Desktop\\sign_6c\\platform.keystore')
+            storePassword 'android'
+            keyAlias 'platform'
+            keyPassword 'android'
+        }
+    }
+    buildTypes {
+        debug {
+            minifyEnabled false
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'com.google.android.material:material:1.0.0'
+
+    implementation files('libs/aaop_hskin_helper.jar')
+    implementation files('libs/aaop_hskin.aar')
+
+
+    implementation files('libs\\confiiguration.jar')
+    implementation 'com.github.mmin18:realtimeblurview:1.2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation files('libs\\car.jar')
+
+}

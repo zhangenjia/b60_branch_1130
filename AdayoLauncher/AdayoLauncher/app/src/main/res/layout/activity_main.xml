@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:clipChildren="false"
+    tools:context=".ui.activity.MainActivity">
+
+    <ImageView
+        android:id="@+id/imgBg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_theme"/>
+
+    <com.adayo.app.launcher.ui.view.CustomViewPager
+        android:id="@+id/vp_launcher"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="104px"
+        android:clipChildren="false" />
+
+    <LinearLayout
+        android:id="@+id/ll_point_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="948px"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_point_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/page_selector" />
+
+        <ImageView
+            android:id="@+id/iv_point_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/page_selector" />
+    </LinearLayout>
+
+
+</RelativeLayout>

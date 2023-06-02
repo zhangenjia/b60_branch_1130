@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@android:id/background">
+        <clip>
+            <inset android:drawable="@drawable/icon_big_progressbar"/>
+        </clip>
+    </item>
+    <item android:id="@android:id/progress">
+        <clip>
+       <inset android:drawable="@drawable/icon_big_progress_sel"/>
+       </clip>
+    </item>
+</layer-list>

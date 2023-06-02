@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">wecarflow</string>
+    <string name="card_name">Func Audio</string>
+    <string name="wifi_name">Network anomaly</string>
+    <string name="wifi_info">Please check network connection</string>
+    <string name="music_null">No play yet</string>
+    <string name="music_name">Unknown</string>
+    <string name="music_lyric">歌词歌词歌词歌词</string>
+</resources>

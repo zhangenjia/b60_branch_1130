@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/left_in00"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/left_in01"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/left_in02"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/left_in03"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/left_in04"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/left_in06"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/left_in07"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/left_in08"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/left_in09"
+        android:duration="33" />
+    <item
+        android:drawable="@drawable/left_in10"
+        android:duration="33" />
+
+</animation-list>

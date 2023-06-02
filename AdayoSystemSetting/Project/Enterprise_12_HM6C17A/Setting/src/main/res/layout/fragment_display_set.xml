@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragment.DisplaySetFragment">
+    <!--显示与亮度-->
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nsv_display"
+        android:layout_width="1894dp"
+        android:layout_height="wrap_content"
+        android:fadeScrollbars="false"
+        android:scrollbarThumbVertical="@drawable/offroad_system_settings_bar_sel"
+        android:scrollbarTrackVertical="@drawable/offroad_system_settings_bar_last"
+        android:scrollbars="vertical"
+        android:verticalScrollbarPosition="right">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipChildren="false">
+            <!-- 亮度 -->
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/cl_lightness"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@id/gl_display_set_left"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/iv_display_set_lightness_bg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/display_set_lightneww_last"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="123dp"
+                    android:src="@drawable/line_860"
+                    app:layout_constraintEnd_toEndOf="@id/iv_display_set_lightness_bg"
+                    app:layout_constraintStart_toStartOf="@id/iv_display_set_lightness_bg"
+                    app:layout_constraintTop_toTopOf="@id/iv_display_set_lightness_bg" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="14dp"
+                    android:src="@drawable/display_set_lightneww_icon"
+                    app:layout_constraintBottom_toBottomOf="@id/tv_display_set_lightness"
+                    app:layout_constraintEnd_toStartOf="@id/tv_display_set_lightness"
+                    app:layout_constraintTop_toTopOf="@id/tv_display_set_lightness" />
+
+                <TextView
+                    android:id="@+id/tv_display_set_lightness"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="74dp"
+                    android:layout_marginTop="44dp"
+                    android:gravity="center"
+                    android:text="@string/display_lightness_title"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/common_tvsize_big2"
+                    app:layout_constraintStart_toStartOf="@id/iv_display_set_lightness_bg"
+                    app:layout_constraintTop_toTopOf="@id/iv_display_set_lightness_bg" />
+
+                <TextView
+                    android:id="@+id/tv_display_set_lightness_auto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginEnd="21dp"
+                    android:gravity="center"
+                    android:text="@string/display_lightness_auto_title"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/common_tvsize_mid"
+                    app:layout_constraintBottom_toBottomOf="@id/tv_display_set_lightness"
+                    app:layout_constraintRight_toLeftOf="@id/tgBtn_display_set_lightness"
+                    app:layout_constraintTop_toTopOf="@id/tv_display_set_lightness" />
+
+                <com.adayo.app.setting.base.SwitchButton
+                    android:id="@+id/tgBtn_display_set_lightness"
+                    android:layout_width="88dp"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="20dp"
+                    app:kswAnimationDuration="200"
+                    app:kswBackDrawable="@drawable/selector_toggle_switch_background"
+                    app:kswFadeBack="true"
+                    app:kswThumbDrawable="@drawable/offroad_system_settings_button_switch_yuan"
+                    app:layout_constraintBottom_toBottomOf="@id/tv_display_set_lightness"
+                    app:layout_constraintEnd_toEndOf="@id/iv_display_set_lightness_bg"
+                    app:layout_constraintTop_toTopOf="@id/tv_display_set_lightness" />
+
+                <ImageView
+                    android:id="@+id/iv_display_set_lightness_ico_L"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="183px"
+                    android:layout_marginLeft="20px"
+                    android:src="@drawable/offroad_system_settings_display_icon_dimming_small_n"
+                    app:layout_constraintStart_toStartOf="@id/iv_display_set_lightness_bg"
+                    app:layout_constraintTop_toTopOf="@id/iv_display_set_lightness_bg" />
+
+                <SeekBar
+                    android:id="@+id/sb_display_set_lightness"
+                    android:layout_width="668px"
+                    android:layout_height="60px"
+                    android:max="10"
+                    android:maxHeight="8px"
+                    android:min="1"
+                    android:minHeight="8px"
+                    android:paddingTop="26px"
+                    android:paddingBottom="26px"
+                    android:progress="5"
+                    android:progressDrawable="@drawable/layer_slide_progress_sb"
+                    android:splitTrack="true"
+                    android:thumb="@drawable/selector_slide_thumb_sb"
+                    android:thumbOffset="0px"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_display_set_lightness_ico_L"
+                    app:layout_constraintStart_toEndOf="@id/iv_display_set_lightness_ico_L"
+                    app:layout_constraintTop_toTopOf="@id/iv_display_set_lightness_ico_L" />
+
+                <ImageView
+                    android:id="@+id/iv_display_set_lightness_ico_R"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="29dp"
+                    android:src="@drawable/offroad_system_settings_display_icon_dimming_big_n"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_display_set_lightness_ico_L"
+                    app:layout_constraintEnd_toEndOf="@id/iv_display_set_lightness_bg"
+                    app:layout_constraintTop_toTopOf="@id/iv_display_set_lightness_ico_L" />
+            </android.support.constraint.ConstraintLayout>
+            <!-- 时间日期 -->
+            <fragment
+                android:name="com.adayo.app.setting.view.fragment.factory.product.Time.TimeFragment"
+                android:id="@+id/fg_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="949dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+               </fragment>
+            <!--主题-->
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/cl_theme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                app:layout_constraintStart_toStartOf="@id/gl_display_set_left"
+                app:layout_constraintTop_toBottomOf="@+id/cl_lightness">
+
+                <ImageView
+                    android:id="@+id/iv_display_set_theme_bg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/theme_last"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/iv_theme_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/theme_icon"
+                    android:layout_marginRight="13dp"
+                    app:layout_constraintBottom_toBottomOf="@id/tv_display_set_theme"
+                    app:layout_constraintEnd_toStartOf="@id/tv_display_set_theme"
+                    app:layout_constraintTop_toTopOf="@id/tv_display_set_theme" />
+
+                <TextView
+                    android:id="@+id/tv_display_set_theme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="73dp"
+                    android:layout_marginTop="44dp"
+                    android:gravity="center"
+                    android:text="@string/display_theme_mode_title"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/common_tvsize_big2"
+                    app:layout_constraintStart_toStartOf="@id/iv_display_set_theme_bg"
+                    app:layout_constraintTop_toTopOf="@id/iv_display_set_theme_bg" />
+
+                <ImageView
+                    android:id="@+id/iv_display_set_theme_mode_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="199dp"
+                    android:layout_marginTop="128dp"
+                    android:src="@drawable/offroad_system_settings_display_picture_ctcy_mode"
+                    app:layout_constraintStart_toStartOf="@id/iv_display_set_theme_bg"
+                    app:layout_constraintTop_toTopOf="@id/iv_display_set_theme_bg" />
+
+                <ImageView
+                    android:id="@+id/iv_display_set_theme_mode_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="246dp"
+                    android:background="@drawable/offroad_system_settings_display_picture_offroad_mode"
+                    app:layout_constraintStart_toEndOf="@id/iv_display_set_theme_mode_1"
+                    app:layout_constraintTop_toTopOf="@id/iv_display_set_theme_mode_1" />
+
+                <com.adayo.app.setting.base.MyRadioGroup
+                    android:id="@+id/rg_display_set_theme_mode_host"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintStart_toStartOf="@id/iv_display_set_theme_mode_1"
+                    app:layout_constraintTop_toTopOf="@id/iv_display_set_theme_mode_1">
+
+                    <RadioButton
+                        android:id="@+id/rb_display_set_theme_mode_1"
+                        android:layout_width="709dp"
+                        android:layout_height="428dp"
+                        android:background="@null"
+                        android:button="@null"
+                        android:drawableStart="@drawable/selector_reply"
+                        android:drawablePadding="20dp"
+                        android:gravity="center_vertical"
+                        android:paddingStart="203dp"
+                        android:paddingTop="386dp"
+                        android:text="@string/display_theme_mode_1_state"
+                        android:textColor="@drawable/selector_display_rb_textcolor"
+                        android:textSize="@dimen/common_tvsize_mid" />
+
+                    <RadioButton
+                        android:id="@+id/rb_display_set_theme_mode_2"
+                        android:layout_width="709dp"
+                        android:layout_height="428dp"
+                        android:background="@null"
+                        android:button="@null"
+                        android:drawableStart="@drawable/selector_reply"
+                        android:drawablePadding="20dp"
+                        android:gravity="center_vertical"
+                        android:paddingStart="326dp"
+                        android:paddingTop="386dp"
+                        android:text="@string/display_theme_mode_2_state"
+                        android:textColor="@drawable/selector_display_rb_textcolor"
+                        android:textSize="@dimen/common_tvsize_mid" />
+
+                </com.adayo.app.setting.base.MyRadioGroup>
+            </android.support.constraint.ConstraintLayout>
+            <!--待机画面-->
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/cl_standby"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@id/cl_theme"
+                app:layout_constraintTop_toBottomOf="@id/cl_theme">
+
+                <ImageView
+                    android:id="@+id/iv_display_set_standby_bg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:src="@drawable/display_set_standby_last"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/iv_display_set_standby_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="13dp"
+                    android:src="@drawable/standby_icon"
+                    app:layout_constraintBottom_toBottomOf="@id/tv_display_set_standby"
+                    app:layout_constraintEnd_toStartOf="@id/tv_display_set_standby"
+                    app:layout_constraintTop_toTopOf="@id/tv_display_set_standby" />
+
+                <TextView
+                    android:id="@+id/tv_display_set_standby"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="73dp"
+                    android:layout_marginTop="44dp"
+                    android:gravity="center"
+                    android:text="@string/display_standby_mode_title"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/common_tvsize_big2"
+                    app:layout_constraintStart_toStartOf="@id/iv_display_set_standby_bg"
+                    app:layout_constraintTop_toTopOf="@id/iv_display_set_standby_bg" />
+
+                <ImageView
+                    android:id="@+id/iv_display_set_standby_mode_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="184dp"
+                    android:layout_marginTop="123dp"
+                    android:background="@drawable/offroad_system_settings_display_picture_clock"
+                    app:layout_constraintStart_toStartOf="@id/iv_display_set_standby_bg"
+                    app:layout_constraintTop_toTopOf="@id/iv_display_set_standby_bg" />
+
+                <ImageView
+                    android:id="@+id/iv_display_set_standby_mode_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="76dp"
+                    android:background="@drawable/offroad_system_settings_display_picture_logo"
+                    app:layout_constraintStart_toEndOf="@id/iv_display_set_standby_mode_1"
+                    app:layout_constraintTop_toTopOf="@id/iv_display_set_standby_mode_1" />
+
+                <ImageView
+                    android:id="@+id/iv_display_set_standby_mode_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="76dp"
+                    android:background="@drawable/offroad_system_settings_display_picture_pure_black"
+                    app:layout_constraintStart_toEndOf="@id/iv_display_set_standby_mode_2"
+                    app:layout_constraintTop_toTopOf="@id/iv_display_set_standby_mode_2" />
+
+                <RadioGroup
+                    android:id="@+id/rg_display_set_standby_mode_host"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintStart_toStartOf="@id/iv_display_set_standby_mode_1"
+                    app:layout_constraintTop_toTopOf="@id/iv_display_set_standby_mode_1">
+
+                    <RadioButton
+                        android:id="@+id/rb_display_set_standby_mode_1"
+                        android:layout_width="470dp"
+                        android:layout_height="341dp"
+                        android:background="@null"
+                        android:button="@null"
+                        android:drawableStart="@drawable/selector_reply"
+                        android:drawablePadding="20dp"
+                        android:gravity="center_vertical"
+                        android:paddingStart="156dp"
+                        android:paddingTop="299dp"
+                        android:text="@string/display_standby_mode_1_state"
+                        android:textColor="@drawable/selector_display_rb_textcolor"
+                        android:textSize="@dimen/common_tvsize_mid" />
+
+                    <RadioButton
+                        android:id="@+id/rb_display_set_standby_mode_2"
+                        android:layout_width="508dp"
+                        android:layout_height="341dp"
+                        android:background="@null"
+                        android:button="@null"
+                        android:drawableStart="@drawable/selector_reply"
+                        android:drawablePadding="20dp"
+                        android:gravity="center_vertical"
+                        android:paddingStart="194dp"
+                        android:paddingTop="299dp"
+                        android:text="@string/display_standby_mode_2_state"
+                        android:textColor="@drawable/selector_display_rb_textcolor"
+                        android:textSize="@dimen/common_tvsize_mid" />
+
+                    <RadioButton
+                        android:id="@+id/rb_display_set_standby_mode_3"
+                        android:layout_width="470dp"
+                        android:layout_height="341dp"
+                        android:background="@null"
+                        android:button="@null"
+                        android:drawableStart="@drawable/selector_reply"
+                        android:drawablePadding="20dp"
+                        android:gravity="center_vertical"
+                        android:paddingStart="194dp"
+                        android:paddingTop="299dp"
+                        android:text="@string/display_standby_mode_3_state"
+                        android:textColor="@drawable/selector_display_rb_textcolor"
+                        android:textSize="@dimen/common_tvsize_mid" />
+                </RadioGroup>
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.Guideline
+                android:id="@+id/gl_display_set_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="52dp" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/gl_display_set_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="46dp" />
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

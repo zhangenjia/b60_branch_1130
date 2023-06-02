@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">HM6C17ALauncherapp</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_base">BaseActivity</string>
+
+    <string name="safety_tips">安全提示</string>
+    <string name="confirm">同意</string>
+    <string name="no_more_alert">不再提醒</string>
+    <string name="high_config_text">1. 请您不要在驾驶车辆的同时操作或注视本软件，务必在确保安全的前提下使用本\n软件，以防发生交通事故或其他危险情况；
+        \n2. 本软件提供的地点查询、路线规划、交通路况、出行导航、AR导航等功能和服务
+    \n仅供您参考，请不要以此作为您出行的唯一依据;
+    \n3. 请您务必以当地实际交通和道路状态为准，并严格遵守交通法律法规和交通规则
+    \n4. 本软件需联网后才可使用，您在使用语音、音乐、小程序、在线导航、路况、数
+    \n据下载等功能时，会根据不同应用服务需求消耗网络流量，因此产生的流量费用
+    \n会由您的电信服务商收取，具体收费标准请向其咨询。</string>
+    <string name="low_config_text">1. 请您不要在驾驶车辆的同时操作或注视本软件，务必在确保安全的前提下使用本软
+件，以防发生交通事故或其他危险情况；\n2.请您严格遵守交通法律法规和当地实际交通规则。</string>
+    <string name="video">视频</string>
+    <string name="tel">电话</string>
+    <string name="picture">图片</string>
+    <string name="settings">系统设置</string>
+    <string name="mycar">我的车</string>
+    <string name="orim">越野信息</string>
+    <string name="apa">自动泊车</string>
+    <string name="avm">全景影像</string>
+    <string name="music">音乐</string>
+    <string name="radio">收音机</string>
+    <string name="yueyequan">悦野圈</string>
+    <string name="tencentway">腾讯随行</string>
+    <string name="dvr">行车记录仪</string>
+    <string name="funcaudio">爱趣听</string>
+    <string name="wechat">微信</string>
+    <string name="navigation">智驾地图</string>
+    <string name="climate">空调</string>
+    <string name="weather">天气</string>
+    <string name="largecardoptional">大卡可选</string>
+    <string name="smallcardoptional">小卡可选</string>
+    <string name="done">完成</string>
+    <string name="easyconnect">手机互联</string>
+    <string name="userguide">用户指南</string>
+</resources>

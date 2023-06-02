@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragment.Sound.SoundFragment">
+
+    <include
+        android:id="@+id/in_fsl"
+        layout="@layout/fragment_sound_loudness"
+        android:layout_width="896dp"
+        android:layout_height="754dp"
+        android:layout_marginStart="52dp" />
+
+    <include
+        android:id="@+id/in_fss"
+        layout="@layout/fragment_sound_switch"
+        android:layout_width="896dp"
+        android:layout_height="370dp"
+        android:layout_marginLeft="972dp" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cl_eq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="972dp"
+        android:layout_marginTop="393dp">
+
+        <Button
+            android:id="@+id/btn_sound_eq"
+            android:layout_width="896dp"
+            android:layout_height="168dp"
+            android:background="@drawable/eq_last"
+            android:drawableRight="@drawable/selector_right_arrow"
+            android:gravity="center_vertical|start"
+            android:paddingLeft="73dp"
+            android:paddingRight="20dp"
+            android:text="@string/sound_eq_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_tvsize_mid"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:src="@drawable/eq_icon"
+            app:layout_constraintBottom_toBottomOf="@id/btn_sound_eq"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/btn_sound_eq" />
+    </android.support.constraint.ConstraintLayout>
+
+    //哈曼环绕声
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/fl_harman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_sound_harman"
+            android:layout_width="896dp"
+            android:layout_height="168dp"
+            android:layout_marginLeft="972dp"
+            android:layout_marginTop="585dp"
+            android:background="@drawable/eq_last"
+            android:drawableRight="@drawable/selector_right_arrow"
+            android:gravity="center_vertical|start"
+            android:paddingLeft="75dp"
+            android:paddingRight="20dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_tvsize_mid"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_sound_harman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:src="@drawable/harman_icon"
+            app:layout_constraintBottom_toBottomOf="@id/btn_sound_harman"
+            app:layout_constraintLeft_toLeftOf="@id/btn_sound_harman"
+            app:layout_constraintTop_toTopOf="@id/btn_sound_harman" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</FrameLayout>

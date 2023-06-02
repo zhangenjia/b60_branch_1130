@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.page.fragment.detail.DetailFragment">
+
+    <FrameLayout
+        android:id="@+id/fl_detail_frameHostBorder"
+        android:layout_width="662dp"
+        android:layout_height="454dp"
+        android:layout_marginTop="122dp"
+        android:background="@drawable/frame_video_last_line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/fl_detail_frameHost"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="1dp"
+        android:background="@drawable/frame_video_last_bg"
+        app:layout_constraintBottom_toBottomOf="@+id/fl_detail_frameHostBorder"
+        app:layout_constraintEnd_toEndOf="@+id/fl_detail_frameHostBorder"
+        app:layout_constraintStart_toStartOf="@+id/fl_detail_frameHostBorder"
+        app:layout_constraintTop_toTopOf="@+id/fl_detail_frameHostBorder">
+
+        <ImageView
+            android:id="@+id/iv_not_playing_ico"
+            android:layout_width="156dp"
+            android:layout_height="156dp"
+            android:layout_gravity="center"
+            android:src="@drawable/icon_no_video" />
+
+        <TextView
+            android:id="@+id/tv_detail_fileName"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="#99000000"
+            android:gravity="start|center_vertical"
+            android:paddingHorizontal="30dp"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="#FFFFFF"
+            android:textSize="36sp"
+            android:visibility="invisible" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_detail_stateHost"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/fl_detail_frameHost"
+        app:layout_constraintEnd_toEndOf="@+id/fl_detail_frameHost"
+        app:layout_constraintStart_toStartOf="@+id/fl_detail_frameHost"
+        app:layout_constraintTop_toTopOf="@+id/fl_detail_frameHost" />
+
+    <include
+        android:id="@+id/in_detail_control"
+        layout="@layout/in_video_detail_control"
+        android:layout_width="707dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fl_detail_frameHostBorder" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

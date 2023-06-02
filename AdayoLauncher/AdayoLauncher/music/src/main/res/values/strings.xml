@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">music</string>
+    <string name="source_lo">USB Music</string>
+    <string name="source_bt">BT Music</string>
+    <string name="no_play">No play yet</string>
+    <string name="unknown">Unknown</string>
+</resources>

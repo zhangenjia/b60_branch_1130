@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:id="@+id/ll_toast"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/offroad_system_settings_popup_background_last">
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:src="@drawable/icon_failure"
+        android:layout_width="wrap_content"
+        android:layout_marginRight="27px"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tv_hint_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        android:text="@string/toast_hint_sound_loudness_min"/>
+</LinearLayout>

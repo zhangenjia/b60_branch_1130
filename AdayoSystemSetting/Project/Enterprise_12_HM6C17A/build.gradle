@@ -1,0 +1,58 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+apply from: 'config.gradle'
+
+buildscript {
+    repositories {
+        maven {
+            url 'http://172.16.110.95:8082/artifactory/virtual_repo_maven_adayo/'
+        }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.0.2'
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        maven {
+            //大连服务器连接相关
+            url 'http://172.16.110.95:8082/artifactory/virtual_repo_maven_adayo/'
+        }
+    }
+    gradle.projectsEvaluated {
+        tasks.withType(JavaCompile) {
+            //显示指定警告的详细信息
+            //options.compilerArgs << "-Xlint:unchecked" << "-Xlint:deprecation"
+            //提高指定绝对路径下的jar包优先级
+            //提高指定绝对路径下的jar包优先级
+            options.compilerArgs << '-Xbootclasspath/p:' +
+                    getGradle().getGradleUserHomeDir() + '\\caches\\modules-2\\files-2.1\\com.adayo.source\\car\\2021.07.09\\14cbe19c18c22ac35412d9c94dc6960454adf76f\\car-2021.07.09.jar;' +
+                    getGradle().getGradleUserHomeDir() + '\\caches\\modules-2\\files-2.1\\com.adayo.source\\framework.6c\\2020.12.16\\8baa2348aa4ff0a64c63f404a73796954ecb580b\\framework.6c-2020.12.16.jar;'
+
+       }
+    }
+    gradle.projectsEvaluated {
+        tasks.withType(JavaCompile){
+            options.compilerArgs.add('-Xbootclasspath/p:D:\\Code\\B60_AdayoSystemSetting\\Project\\Enterprise_12_HM6C17A\\Setting\\libs\\framework.jar')
+        }
+    }
+
+    configurations.all {
+        //resolutionStrategy.cacheDynamicVersionsFor 0, 'seconds'//动态版本
+        //resolutionStrategy.cacheChangingModulesFor 0, 'seconds'//变化模块
+        resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+            def requested = details.requested
+            if (requested.group == 'com.android.support') {
+                if (!requested.name.startsWith("multidex")) {
+                    details.useVersion rootProject.ext.dependencies.supportLib
+                }
+            }
+        }//强制让所有模块都用相同的支持库版本
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

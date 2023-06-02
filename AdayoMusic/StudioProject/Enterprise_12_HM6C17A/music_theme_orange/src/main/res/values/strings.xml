@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Music</string>
+    <string name="main_tab_title_lo_music">USB Music</string>
+    <string name="main_tab_title_bt_music">BT Music</string>
+    <string name="lo_music_browse_info_no_device">Please insert a valid USB device</string>
+    <string name="lo_music_browse_info_no_file">No music files</string>
+    <string name="lo_music_browse_info_loading">Loading…</string>
+    <string name="lo_music_browse_component_tab_title_all">All songs</string>
+    <string name="lo_music_browse_component_tab_title_folder">Files</string>
+    <string name="lo_music_browse_component_tab_title_album">Album</string>
+    <string name="lo_music_browse_component_list_album_unk">Unknown</string>
+    <string name="lo_music_browse_component_tab_title_artist">Artist</string>
+    <string name="lo_music_browse_component_list_artist_unk">Unknown</string>
+    <string name="lo_music_detail_title_unk">Unknown</string>
+    <string name="lo_music_detail_artist_unk">Unknown Artist</string>
+    <string name="lo_music_detail_album_unk">Unknown Album</string>
+    <string name="lo_music_detail_not_support">Error playing the current song</string>
+</resources>

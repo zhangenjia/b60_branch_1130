@@ -1,0 +1,137 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parent_layout">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000"
+        android:orientation="vertical"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_bootWarning_ico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="783px"
+        android:layout_marginTop="104px"
+        android:background="@drawable/warning_icon"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_bootWarning_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="154px"
+        android:paddingLeft="20px"
+        android:text="@string/safety_tips"
+        android:textColor="#ffc300"
+        android:textSize="40px"
+        app:layout_constraintLeft_toRightOf="@+id/iv_bootWarning_ico"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!--    1. 请您不要在驾驶车辆的同时操作或注视本软件，务必在确保安全的前提下使用本\n软件，以防发生交通事故或其他危险情况；-->
+    <!--    \n2. 本软件提供的地点查询、路线规划、交通路况、出行导航、AR导航等功能和服务-->
+    <!--    \n仅供您参考，请不要以此作为您出行的唯一依据;-->
+    <!--    \n3. 请您务必以当地实际交通和道路状态为准，并严格遵守交通法律法规和交通规则-->
+    <!--    \n4. 本软件需联网后才可使用，您在使用语音、音乐、小程序、在线导航、路况、数-->
+    <!--    \n据下载等功能时，会根据不同应用服务需求消耗网络流量，因此产生的流量费用-->
+    <!--    \n会由您的电信服务商收取，具体收费标准请向其咨询。-->
+    <TextView
+        android:id="@+id/rules_heigh"
+        android:layout_width="1383px"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12px"
+        android:layout_marginTop="267px"
+        android:includeFontPadding="false"
+        android:letterSpacing="0.04"
+        android:lineSpacingExtra="30px"
+        android:text="@string/high_config_text"
+        android:textColor="#FFFFFF"
+        android:alpha="0.6"
+        android:textSize="36px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!--    1. 请您不要在驾驶车辆的同时操作或注视本软件，务必在确保安全的前提下使用本软-->
+    <!--    件，以防发生交通事故或其他危险情况；\n2.请您严格遵守交通法律法规和当地实际交通规则。-->
+    <TextView
+        android:id="@+id/rules_low"
+        android:layout_width="1383px"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12px"
+        android:layout_marginTop="396px"
+        android:includeFontPadding="false"
+        android:letterSpacing="0.04"
+        android:lineSpacingExtra="30px"
+        android:alpha="0.6"
+        android:text="@string/low_config_text"
+        android:textColor="#FFFFFF"
+        android:textSize="36px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/ll_bootWarning_confirm"
+        android:layout_width="352px"
+        android:layout_height="80px"
+        android:layout_marginLeft="976px"
+        android:layout_marginTop="844px"
+        android:background="@drawable/warning_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="@string/confirm"
+            android:textAlignment="textEnd"
+            android:textColor="#ffffff"
+            android:textSize="40px"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:id="@+id/tv_bootWarning_countdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:textAlignment="textStart"
+            android:textColor="#ffffff"
+            android:textSize="40px"
+            tools:ignore="RtlCompat" />
+
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/cb_bootWarning_never"
+        style="@style/CustomCheckboxTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="644px"
+        android:layout_marginTop="865px"
+        android:paddingLeft="33px"
+        android:text="@string/no_more_alert"
+        android:textColor="#a4a4a4"
+        android:textSize="40px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </CheckBox>
+    <!--    <androidx.constraintlayout.widget.Guideline-->
+    <!--        android:id="@+id/guideline"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:orientation="horizontal"-->
+    <!--        app:layout_constraintGuide_percent="0.1" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

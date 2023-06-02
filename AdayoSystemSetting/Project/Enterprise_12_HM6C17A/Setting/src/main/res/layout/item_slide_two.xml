@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.Group
+        android:id="@+id/group_voice_short"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="sb_item_slide_twoshort,tv_item_slide_twoshort_first,tv_item_slide_twoshort_two"/>
+    <android.support.constraint.Group
+        android:id="@+id/group_voice_long"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="sb_item_slide_twolong,tv_item_slide_twolong_first,tv_item_slide_twolong_two"/>
+
+    <SeekBar
+        android:id="@+id/sb_item_slide_twoshort"
+        android:layout_width="294dp"
+        android:layout_height="56dp"
+        android:max="1"
+        android:splitTrack="false"
+
+        android:progress="0"
+        android:progressDrawable="@drawable/offroad_system_settings_button_twoword_last"
+        android:thumb="@drawable/offroad_system_settings_button_twoword_sel"
+        android:thumbOffset="-5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <TextView
+        android:id="@+id/tv_item_slide_twoshort_first"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/gl_item_slide_two"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="@id/sb_item_slide_twoshort"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_tvsize_mid"
+        android:text="@string/display_lang_ch_state"
+        android:paddingLeft="20dp"/>
+    <TextView
+        android:id="@+id/tv_item_slide_twoshort_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/sb_item_slide_twoshort"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="@id/gl_item_slide_two"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_tvsize_mid"
+        android:text="@string/display_lang_en_state"
+        android:paddingRight="20dp" />
+
+    <SeekBar
+        android:id="@+id/sb_item_slide_twolong"
+        android:layout_width="434dp"
+        android:layout_height="56dp"
+        android:max="1"
+        android:splitTrack="false"
+
+        android:progress="0"
+        android:progressDrawable="@drawable/offroad_system_settings_display_button_last_time_system"
+        android:thumb="@drawable/selector_slide_thumb_long"
+        android:thumbOffset="-5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <TextView
+        android:id="@+id/tv_item_slide_twolong_first"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/gl_item_slide_two"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="@id/sb_item_slide_twolong"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_tvsize_mid"
+        android:text="@string/display_lang_ch_state"
+        android:paddingLeft="20dp"/>
+    <TextView
+        android:id="@+id/tv_item_slide_twolong_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/sb_item_slide_twolong"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="@id/gl_item_slide_two"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_tvsize_mid"
+        android:text="@string/display_lang_en_state"
+        android:paddingRight="20dp"/>
+    <android.support.constraint.Guideline
+        android:id="@+id/gl_item_slide_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"/>
+</android.support.constraint.ConstraintLayout>

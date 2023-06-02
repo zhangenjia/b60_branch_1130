@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/parent_layout"
+    android:defaultFocusHighlightEnabled="false">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:lottie_imageAssetsFolder="images"
+        android:layout_centerInParent="true"/>
+
+    <ImageView
+        android:id="@+id/ImgFrame"
+        android:layout_width="@dimen/smallcardwith"
+        android:layout_height="@dimen/smallcardheight"
+        android:background="@drawable/bg_smallcard"/>
+    <ImageView
+        android:id="@+id/Img1"
+        android:layout_width="@dimen/smallcardwith"
+        android:layout_height="@dimen/smallcardheight"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+   <!-- 越野模式独有-->
+    <ImageView
+        android:id="@+id/Img2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+    <ImageView
+        android:id="@+id/Img3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/SmallCard_textSize"
+        android:layout_marginTop="37px"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"/>
+
+</RelativeLayout>

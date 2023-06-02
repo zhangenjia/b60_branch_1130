@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="skinText">#7bb368</color>
+
+    <string name="m">m</string>
+    <string name="km">km</string>
+    <string name="enter">Enter</string>
+    <string name="h">h</string>
+    <string name="minute">minute</string>
+    <string name="endnavi">endnavi</string>
+</resources>

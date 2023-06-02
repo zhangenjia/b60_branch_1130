@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.adayo.app.launcher.ui.view.CustomItemViewLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_layout"
+    android:layout_width="254px"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="254px"
+        android:layout_height="387px" />
+
+    <ImageView
+        android:layout_width="254px"
+        android:layout_height="387px" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20px"
+        android:textColor="#fff"
+        android:textSize="30px" />
+
+    <TextView
+        android:id="@+id/crossLeftText"
+        android:layout_width="77px"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="312px"
+        android:gravity="center"
+        android:text="@string/tab1"
+        android:textSize="15px" />
+
+    <TextView
+        android:id="@+id/crossRightText"
+        android:layout_width="77px"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="127px"
+        android:layout_marginTop="312px"
+        android:gravity="center"
+        android:text="@string/tab2"
+        android:textColor="#fff"
+        android:textSize="15px" />
+
+
+    <TextView
+        android:id="@+id/aqiText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="180px"
+
+        android:layout_marginTop="157px"
+        android:text="@string/airquality"
+        android:textColor="#fff"
+        android:textSize="15px" />
+
+</com.adayo.app.launcher.ui.view.CustomItemViewLayout>

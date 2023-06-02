@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="SmallCard_textSize">36px</dimen>
+    <dimen name="BigCard_textSize">40px</dimen>
+
+</resources>

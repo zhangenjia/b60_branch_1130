@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.WadingFragment">
+
+    <RelativeLayout
+        android:id="@+id/rl_car"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="247px">
+        <!-- 车 -->
+        <ImageView
+            android:id="@+id/iv_car"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_car" />
+
+        <!-- 车外红色动效-->
+        <ImageView
+            android:id="@+id/iv_car_red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_car_red_1"
+            android:visibility="invisible" />
+
+        <!-- 灰色车 -->
+        <ImageView
+            android:id="@+id/iv_car_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_car_dis"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <!-- 三角警告 -->
+    <ImageView
+        android:id="@+id/iv_triangle_warning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50.5px"
+        android:layout_marginTop="240px"
+        android:background="@drawable/icon_warn"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tv_waringtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="192px"
+        android:layout_marginTop="267px"
+        android:textColor="#fff"
+        android:textSize="36px"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tv_max"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="67px"
+        android:layout_marginTop="650px"
+        android:text="@string/max"
+        android:textColor="#fff"
+        android:textSize="35sp" />
+
+    <ImageView
+        android:id="@+id/iv_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="341px"
+        android:layout_marginTop="669px"
+        android:background="@drawable/line_max" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="958px">
+        <!-- 水 -->
+        <ImageView
+            android:id="@+id/iv_water"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="-140px"
+            android:background="@drawable/water_max"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_bg1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_bg1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="729px"
+            android:background="@drawable/bg_horizon"
+            android:paddingLeft="50px"
+            android:paddingRight="50px" />
+
+        <ImageView
+            android:id="@+id/iv_bg2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="729px"
+            android:background="@drawable/bg_horizon_dis"
+            android:paddingLeft="50px"
+            android:paddingRight="50px" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="298px"
+        android:layout_marginTop="666px"
+        android:background="@drawable/mask_underlying" />
+
+    <!--    android:background="@drawable/mask_underlying"-->
+</RelativeLayout>

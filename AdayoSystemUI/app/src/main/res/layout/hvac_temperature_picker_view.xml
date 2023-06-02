@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/increment_button"
+        android:layout_width="128px"
+        android:layout_height="97px"
+        android:scaleType="center"
+        android:src="@drawable/icon_temperature_regulation_warm"/>
+
+    <com.adayo.app.systemui.bases.NumberPicker
+        android:id="@+id/number_picker"
+        android:layout_width="128px"
+        android:layout_height="316px"
+        android:descendantFocusability="blocksDescendants"/>
+
+    <ImageView
+        android:id="@+id/decrement_button"
+        android:layout_width="128px"
+        android:layout_height="97px"
+        android:scaleType="center"
+        android:src="@drawable/icon_temperature_regulation_cold"/>
+</LinearLayout>

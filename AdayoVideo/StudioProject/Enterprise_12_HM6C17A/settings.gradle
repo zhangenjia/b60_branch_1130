@@ -1,0 +1,9 @@
+include ':video'
+rootProject.name = "Enterprise_12_HM6C17A"
+include ':music'
+include ':music_bt'
+include ':video_theme_orange'
+include ':music_theme_orange'
+include ':music_bt_theme_orange'
+include ':music-common-res'
+include ':music-common-res_theme_orange'

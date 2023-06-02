@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_layout"
+    android:layout_width="564px"
+    android:layout_height="860px">
+    <!--模糊-->
+    <com.adayo.app.launcher.communicationbase.BlurTransitionView
+        android:id="@+id/navi_blur"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/iv_navi_big_frame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_bigcard" />
+
+    <RelativeLayout
+        android:id="@+id/rl_inprogress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="564px"
+            android:layout_height="860px"
+            android:alpha="0.25"
+            android:background="@drawable/module_navi_bg" />
+
+        <ImageView
+            android:layout_width="564px"
+            android:layout_height="860px"
+            android:background="@drawable/icon_big_nigation_bg_1" />
+
+        <TextView
+            android:id="@+id/tv_naviname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="122px"
+            android:layout_marginTop="57px"
+            android:text="@string/navigation"
+            android:textColor="#fff"
+            android:textSize="40px" />
+        <!--    转向箭头标志-->
+        <ImageView
+            android:id="@+id/iv_turnarrow"
+            android:layout_width="180px"
+            android:layout_height="180px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="172px" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+            <!--距离下一路口距离-->
+            <TextView
+                android:id="@+id/tv_distancenextroad"
+                android:layout_width="wrap_content"
+                android:layout_height="120px"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="357.5px"
+                android:gravity="center"
+                android:text="100"
+                android:textColor="#fff"
+                android:textSize="80px" />
+            <!--距离下一路口距离单位-->
+            <TextView
+                android:id="@+id/tv_distancenextroadunit"
+                android:layout_width="wrap_content"
+                android:layout_height="100px"
+                android:layout_marginLeft="8px"
+                android:layout_marginTop="379.5px"
+                android:layout_toRightOf="@+id/tv_distancenextroad"
+                android:alpha="0.67"
+                android:gravity="center"
+                android:text="公里"
+                android:textColor="#fff"
+                android:textSize="36px" />
+            <!--        提示转向方向-->
+            <TextView
+                android:id="@+id/tv_enter"
+                android:layout_width="wrap_content"
+                android:layout_height="100px"
+                android:layout_marginLeft="32px"
+                android:layout_marginTop="380px"
+                android:layout_toRightOf="@+id/tv_distancenextroadunit"
+                android:gravity="center"
+                android:text="@string/enter"
+                android:textColor="#fff"
+                android:textSize="36px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="534px"
+            android:layout_centerHorizontal="true">
+
+            <!--剩余里程-->
+            <TextView
+                android:id="@+id/tv_dTD"
+                android:layout_width="wrap_content"
+                android:layout_height="80px"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:text="2741公里"
+                android:textColor="#fff"
+                android:textSize="30px" />
+            <!--剩余时间-->
+            <TextView
+                android:id="@+id/tv_eTA"
+                android:layout_width="wrap_content"
+                android:layout_height="80px"
+                android:layout_marginLeft="56px"
+                android:layout_toRightOf="@+id/tv_dTD"
+                android:gravity="center"
+                android:text="12小时25分钟"
+                android:textColor="#fff"
+                android:textSize="30px" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+            <!--下一路名-->
+            <TextView
+                android:id="@+id/tv_nextRoadname_3"
+                android:layout_width="wrap_content"
+                android:layout_height="100px"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="16px"
+                android:layout_marginTop="442.5px"
+                android:gravity="center"
+                android:text="观海路"
+                android:textColor="@color/skinText"
+                android:textSize="36px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="214px"
+            android:layout_height="72px"
+            android:layout_marginLeft="173px"
+            android:layout_marginTop="684px">
+
+            <Button
+                android:id="@+id/tv_terminateNavigation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/item_finish_selector"
+                android:gravity="center"
+                android:text="@string/endnavi"
+                android:textColor="#000"
+                android:textSize="31sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_uninprogress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="564px"
+            android:layout_height="860px"
+            android:background="@drawable/module_navi_bg" />
+
+        <ImageView
+            android:layout_width="564px"
+            android:layout_height="860px"
+            android:background="@drawable/icon_big_navigation_mack" />
+
+        <TextView
+            android:id="@+id/tv_bigcardname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="122px"
+            android:layout_marginTop="57px"
+            android:text="@string/navigation"
+            android:textColor="#fff"
+            android:textSize="40px" />
+
+        <TextView
+            android:id="@+id/tv_currentlocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="120px"
+            android:layout_marginTop="570px"
+            android:textColor="#000"
+            android:textSize="30px" />
+
+
+        <RelativeLayout
+            android:layout_width="457px"
+            android:layout_height="85px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="676px">
+
+            <ImageView
+                android:id="@+id/iv_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/item_search_selector" />
+
+            <ImageView
+                android:id="@+id/iv_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/item_home_selector" />
+
+            <ImageView
+                android:id="@+id/iv_company"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/item_company_selector" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

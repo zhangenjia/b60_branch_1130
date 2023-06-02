@@ -1,0 +1,81 @@
+plugins {
+    id 'com.android.library'
+}
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion "28"
+
+
+    defaultConfig {
+        minSdkVersion 28
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+
+        consumerProguardFiles 'consumer-rules.pro'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    buildFeatures {
+        viewBinding = true
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+task makeJar(type: Copy) {
+    delete 'build/libs/demo.jar'
+    from('build/intermediates/aar_main_jar/debug/')
+    into('build/libs/')
+    include('classes.jar')
+    rename('classes.jar', 'lib_music.jar')
+}
+
+dependencies {
+
+    /**
+     * Module Lib
+     */
+    compileOnly files('..\\extras\\nforebtbase.jar')
+    /**
+     * Project Lib
+     */
+    compileOnly files('..\\extras\\adayo.car.jar')
+    compileOnly project(':communicationbase')
+    compileOnly project(':resources')
+    /**
+     * Android Lib
+     */
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+
+
+
+
+    /**
+     * Third Party Lib
+     */
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+
+    implementation files('..\\extras\\fastjson-1.2.78.jar')
+    implementation 'com.github.zuilintan:lt-base:1.5.2'
+    implementation 'com.github.wseemann:FFmpegMediaMetadataRetriever-core:1.0.16'
+    implementation 'com.github.wseemann:FFmpegMediaMetadataRetriever-native-arm64-v8a:1.0.16'
+
+    /**
+     * skin
+     */
+    compileOnly files('..\\extras\\aaop_hskin.aar')
+    compileOnly files('..\\extras\\aaop_hskin_helper.jar')
+    implementation 'com.airbnb.android:lottie:3.7.0'
+}

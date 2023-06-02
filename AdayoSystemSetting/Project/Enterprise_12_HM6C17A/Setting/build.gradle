@@ -1,0 +1,133 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    lintOptions {
+        abortOnError false
+    }
+    compileSdkVersion 28
+
+    defaultConfig {
+        applicationId "com.adayo.app.setting"
+        minSdkVersion rootProject.ext.android.minSdk
+        targetSdkVersion rootProject.ext.android.targetSdk
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    signingConfigs {
+        release {
+            storeFile file(rootProject.ext.android.storeFile6C)
+            storePassword rootProject.ext.android.storePassword
+            keyAlias rootProject.ext.android.keyAlias
+            keyPassword rootProject.ext.android.keyPassword
+        }
+    }
+    buildTypes {
+        debug {
+            minifyEnabled false
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+    buildFeatures {
+        viewBinding = true
+    }
+    android.applicationVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = "AdayoSystemSetting.apk"
+        }
+    }//配置生成产物的文件名
+}
+allprojects {
+    repositories {
+        jcenter()
+        // 私有仓库地址
+        maven { url "http://lib.gcssloop.com:8081/repository/gcssloop-central/" }
+    }
+}
+dependencies {
+    /**
+     * Module Lib
+     */
+    implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
+
+    /**
+     * Project Lib
+     */
+    //compileOnly files('../extras/xxx')
+
+    /**
+     * Android Lib
+     */
+
+    implementation 'com.android.support:appcompat-v7:' + rootProject.ext.dependencies.supportLib
+    implementation 'com.android.support:support-v4:' + rootProject.ext.dependencies.supportLib
+    implementation 'com.android.support:design:' + rootProject.ext.dependencies.supportLib
+    implementation 'com.android.support.constraint:constraint-layout:latest.release'
+    implementation 'android.arch.lifecycle:extensions:latest.release'
+    implementation files('libs\\settings-constants.01.13.190730.jar')
+    implementation files('libs\\SettingsBPresenter.jar')
+    implementation files('libs\\SettingsFPresenter.jar')
+    implementation files('libs\\VRSettingsDepend.01.13.190814.jar')
+    implementation 'android.arch.lifecycle:livedata:1.1.1'
+    implementation 'android.arch.lifecycle:viewmodel:1.1.1'
+    compileOnly files('libs/framework.jar')
+    // implementation files('libs\\skinPlugin-1.0.2.jar')
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:support-v4:28.0.0'
+    implementation 'org.jetbrains:annotations:15.0'
+    androidTestImplementation 'com.android.support.test:runner:latest.release'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:latest.release'
+//    debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.1'//监测内存泄漏
+    /**
+     * CPY Maven Lib
+     */
+    compileOnly 'com.adayo.source:car:latest.release'
+    compileOnly 'com.adayo.source:framework.6c:latest.release'
+    implementation 'com.adayo.proxy:service:latest.release'
+    implementation 'com.adayo.proxy:serviceCenter:latest.release'
+    implementation 'com.adayo.proxy:upgrade.6c14:latest.release'
+
+
+    /**
+     * Third Party Lib
+     */
+    implementation 'com.github.zuilintan:lt-base:1.4.5'
+    implementation 'com.tencent:mmkv:1.0.19'
+    implementation 'com.kyleduo.switchbutton:library:2.1.0'
+    implementation 'com.github.lowzj:java-retrying:1.2'
+    implementation project(path: ':btsetting')
+    implementation project(path: ':base')
+    implementation project(':FlycoTabLayout_Lib')
+    implementation 'com.gcssloop.widget:rclayout:1.8.1'
+//    implementation 'com.alibaba:fastjson:latest.release'
+}
+
+preBuild {
+    doLast {
+        String imlPath = "${rootDir}\\.idea\\modules\\${project.name}\\${rootProject.name}.${project.name}.iml"
+        def imlFile = file(imlPath)
+        println 'Change ' + rootProject.name + "." + project.name + '.iml order'
+        try {
+            def parsedXml = (new XmlParser()).parse(imlFile)
+            def jdkNode = parsedXml.component[1].orderEntry.find { it.'@type' == 'jdk' }
+            parsedXml.component[1].remove(jdkNode)
+            def sdkString = "Android API " + android.compileSdkVersion.substring("android-".length()) + " Platform"
+            new groovy.util.Node(parsedXml.component[1], 'orderEntry', ['type': 'jdk', 'jdkName': sdkString, 'jdkType': 'Android SDK'])
+            groovy.xml.XmlUtil.serialize(parsedXml, new FileOutputStream(imlFile))
+        } catch (FileNotFoundException e) {
+            e.printStackTrace()
+        }
+    }
+}//解决系统API标红的问题

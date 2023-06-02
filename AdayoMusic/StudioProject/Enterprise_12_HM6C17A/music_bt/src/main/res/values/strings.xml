@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">LocalMedia</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="bluetooth_not_connected">蓝牙未连接</string>
+    <string name="go_to_btsetting">请前往系统设置-蓝牙界面，进行设置</string>
+    <string name="go_to">前往</string>
+    <string name="media_audio_is_not_connected">蓝牙媒体音频未连接</string>
+    <string name="turn_on_media">请打开手机端-已连接设备的“媒体音频”开关</string>
+</resources>

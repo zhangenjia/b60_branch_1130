@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+    <ImageView
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:layout_marginTop="153px"
+        android:src="@drawable/com_icon_big_no_file">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/no_number_list_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32px"
+        android:text="@string/no_number_list"
+        android:textSize="40px"
+        android:textColor="@color/colorWhite" />
+
+    <TextView
+        android:id="@+id/sync_failed_tv"
+        android:layout_width="258px"
+        android:layout_height="82px"
+        android:layout_marginTop="52px"
+        android:text="@string/sync"
+        android:textColor="@color/colorBlack"
+        android:textSize="36px"
+        android:gravity="center"
+        android:background="@drawable/button_big_1_n">
+    </TextView>
+
+</LinearLayout>
+

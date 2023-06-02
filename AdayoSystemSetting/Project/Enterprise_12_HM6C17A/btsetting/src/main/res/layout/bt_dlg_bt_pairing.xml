@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_container"
+    android:layout_width="838px"
+    android:layout_height="188px"
+    android:background="@drawable/popup_background_small_btsetting">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_pairing"
+                android:layout_width="48px"
+                android:layout_height="48px"
+                android:src="@drawable/anim_loading" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginStart="23px"
+                android:text="@string/conn_bt_toast_hint_bt_pairing"
+                android:textColor="@color/bt_dlg_msg"
+                android:textSize="40px" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/conn_bt_toast_hint_bt_pair_code"
+            android:textColor="@color/bt_dlg_msg"
+            android:textSize="40px" />
+
+    </LinearLayout>
+
+</RelativeLayout>

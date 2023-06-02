@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.MainActivity"
+    android:background="@drawable/com_offroad_bg">
+
+    <LinearLayout
+        android:id="@+id/bt_not_connect_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="172px"
+            android:layout_height="172px"
+            android:background="@drawable/bluetooth_is_not_connected"
+            android:layout_marginTop="298px" />
+
+        <TextView
+            android:id="@+id/bt_not_connect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="46px"
+            android:text="@string/bt_not_connect"
+            android:textSize="40px"
+            android:textColor="@color/colorWhite"
+            />
+
+        <TextView
+            android:id="@+id/to_setting_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="52px"
+            android:text="@string/to_setting_page"
+            android:textSize="30px"
+            android:textColor="@color/colorWhite"
+            android:alpha="0.6"
+            />
+
+        <TextView
+            android:id="@+id/to_setting_tv"
+            android:layout_width="273px"
+            android:layout_height="87px"
+            android:layout_marginTop="70px"
+            android:gravity="center_horizontal"
+            android:paddingTop="18px"
+            android:paddingLeft="1px"
+            android:paddingRight="11px"
+            android:text="@string/go"
+            android:textSize="40px"
+            android:textColor="@color/colorBlack"
+            android:background="@drawable/button_big_1_n"/>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/bt_connect_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="104px"
+        android:paddingLeft="51px"
+        android:visibility="gone">
+
+        <!-- 联系人，通话记录TAB，当前设备：-->
+        <LinearLayout
+            android:id="@+id/title"
+            android:layout_width="1208px"
+            android:layout_height="72px"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_width="348px"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_last_1"
+                android:padding="5px">
+                <TextView
+                    android:id="@+id/contacts_tv"
+                    android:layout_width="169px"
+                    android:layout_height="match_parent"
+                    android:text="@string/contact"
+                    android:textColor="@drawable/selector_tab_textcolor"
+                    android:textSize="30px"
+                    android:gravity="center"
+                    android:background="@drawable/selector_tab_linkman"/>
+                <TextView
+                    android:id="@+id/calllog_tv"
+                    android:layout_height="match_parent"
+                    android:layout_width="169px"
+                    android:text="@string/calllog"
+                    android:textColor="@drawable/selector_tab_textcolor"
+                    android:textSize="30px"
+                    android:gravity="center"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/selector_tab_calllog"/>
+                <ImageView
+                    android:id="@+id/top_line"
+                    android:layout_width="2px"
+                    android:layout_height="62px"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/button_top_line"
+                    android:visibility="gone">
+
+                </ImageView>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/device_name_rl"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/current_device"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/middle_tv"
+                    android:layout_alignParentBottom="true"
+                    android:text="@string/current_device"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="30px"
+                    android:alpha="0.5">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/middle_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/device_name_tv"
+                    android:layout_alignParentBottom="true"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="30px"
+                    android:alpha="0.5"
+                    android:text=": "/>
+
+                <TextView
+                    android:id="@+id/device_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="30px"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:maxWidth="400px"
+                    android:alpha="0.5">
+                </TextView>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/call_info_rl"
+            android:layout_width="1208px"
+            android:layout_height="match_parent"
+            android:layout_below="@id/title">
+            <!--联系人，通话记录详细的fragment-->
+            <FrameLayout
+                android:id="@+id/fragment_container_fl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </FrameLayout>
+            <!--蓝牙电话未连接-->
+            <LinearLayout
+                android:id="@+id/bt_phone_not_connect_ll"
+                android:layout_width="1300px"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+                <ImageView
+                    android:layout_width="172px"
+                    android:layout_height="172px"
+                    android:layout_marginTop="167px"
+                    android:background="@drawable/bluetooth_is_not_connected"/>
+                <TextView
+                    android:id="@+id/bt_phone_not_connect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="46px"
+                    android:text="@string/bt_phone_not_connect"
+                    android:textSize="42px"
+                    android:textColor="#fefefe"/>
+                <TextView
+                    android:id="@+id/open_phone_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="51px"
+                    android:text="@string/open_phone_switch"
+                    android:textSize="30px"
+                    android:textColor="@color/colorWhite"
+                    android:alpha="0.6"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <!--拨号键盘-->
+        <FrameLayout
+            android:id="@+id/fragment_keyBoard_fl"
+            android:layout_width="564px"
+            android:layout_height="860px"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="51px" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

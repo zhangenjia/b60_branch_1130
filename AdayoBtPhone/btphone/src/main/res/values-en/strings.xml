@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">BtPhone</string>
+    <string name="bt_not_connect">BT not connected</string>
+    <string name="to_setting_page">Please go to the system settings-BT interface to set</string>
+    <string name="go">Go to</string>
+    <string name="contact">Contacts</string>
+    <string name="calllog">Records</string>
+    <string name="current_device">Current device</string>
+    <string name="bt_phone_not_connect">BT phone not connected</string>
+    <string name="open_phone_switch">Please turn on the "Call" switch of the connected device on the mobile phone</string>
+    <string name="search">Search</string>
+    <string name="sync">Sync</string>
+    <string name="syncing">Syncing</string>
+    <string name="cancel">Cancel</string>
+    <string name="no_number_list">No phone number</string>
+    <string name="sync_failed">Sync Failed,plz authorize
+        \non your phone and try again</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="dialing">Dialing</string>
+    <string name="end_call">End</string>
+    <string name="incomming">Incoming</string>
+    <string name="wechat">WeChat call</string>
+
+</resources>

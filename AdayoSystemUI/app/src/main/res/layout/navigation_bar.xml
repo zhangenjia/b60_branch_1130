@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:source="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="116px">
+
+    <LinearLayout
+        android:id="@+id/front_hvac"
+        android:layout_width="match_parent"
+        android:layout_height="116px"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="11px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <com.adayo.app.systemui.bases.BaseHvacSwitch
+            android:layout_width="96px"
+            android:layout_height="96px"
+            android:layout_marginLeft="199px"
+            android:background="@drawable/selector_home_hvac_auto"
+            source:area="area_seat_front"
+            source:onlyShow="true"
+            source:receiveOffset="1"
+            source:receiveVehicleIndex="hvac_auto_on" />
+
+        <com.adayo.app.systemui.bases.BaseHvacSwitch
+            android:layout_width="96px"
+            android:layout_height="96px"
+            android:layout_marginLeft="70px"
+            android:background="@drawable/selector_home_hvac_ac"
+            source:area="area_seat_all"
+            source:onlyShow="true"
+            source:receiveOffset="1"
+            source:receiveVehicleIndex="hvac_ac_on" />
+
+        <com.adayo.app.systemui.windows.views.HomeBlowingModeView
+            android:layout_width="96px"
+            android:layout_height="96px"
+            android:layout_marginLeft="70px"
+            source:area="area_seat_front"
+            source:onlyShow="true"
+            source:receiveVehicleIndex="hvac_fan_direction" />
+
+        <com.adayo.app.systemui.windows.views.NavigationTempView
+            android:layout_width="285px"
+            android:layout_height="96px"
+            android:gravity="center"
+            android:orientation="horizontal"
+            source:area="area_seat_driver"
+            source:needSetValue="true"
+            source:onlyShow="true"
+            source:receiveVehicleIndex="hvac_temperature_set"/>
+
+        <com.adayo.app.systemui.windows.views.NavigationTempView
+            android:layout_width="285px"
+            android:layout_height="96px"
+            android:layout_marginLeft="96px"
+            android:gravity="center"
+            android:orientation="horizontal"
+            source:area="area_seat_passenger"
+            source:needSetValue="true"
+            source:onlyShow="true"
+            source:receiveVehicleIndex="hvac_temperature_set"/>
+
+        <com.adayo.app.systemui.bases.BaseHvacSwitch
+            android:layout_width="96px"
+            android:layout_height="96px"
+            android:background="@drawable/selector_home_hvac_sync"
+            source:area="area_seat_all"
+            source:onlyShow="true"
+            source:receiveVehicleIndex="hvac_dual_mode_status" />
+
+        <com.adayo.app.systemui.bases.BaseHvacSwitch
+            android:layout_width="117px"
+            android:layout_height="96px"
+            android:layout_marginLeft="70px"
+            android:drawableLeft="@drawable/com_icon_air_volume"
+            android:gravity="center_vertical"
+            android:paddingLeft="10px"
+            android:textColor="@color/white"
+            android:textSize="25px"
+            source:area="area_seat_front"
+            source:needSetValue="true"
+            source:onlyShow="true"
+            source:receiveVehicleIndex="hvac_fan_speed" />
+
+        <com.adayo.app.systemui.windows.views.HvacCycleModeView
+            android:layout_width="96px"
+            android:layout_height="96px"
+            android:layout_marginLeft="50px"
+            source:area="area_seat_all"
+            source:onlyShow="true"
+            source:receiveOffset="1"
+            source:receiveVehicleIndex="hvac_recirc_on" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rear_hvac"
+        android:layout_width="match_parent"
+        android:layout_height="116px"
+        android:paddingTop="11px"
+        android:visibility="gone"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.adayo.app.systemui.bases.BaseHvacSwitch
+            android:layout_width="96px"
+            android:layout_height="96px"
+            android:layout_marginLeft="325px"
+            android:background="@drawable/selector_home_hvac_auto"
+            source:area="area_seat_rear"
+            source:onlyShow="true"
+            source:receiveVehicleIndex="hvac_auto_on" />
+
+        <com.adayo.app.systemui.windows.views.NavigationTempView
+            android:layout_width="285px"
+            android:layout_height="96px"
+            android:layout_marginLeft="101px"
+            android:gravity="center"
+            android:orientation="horizontal"
+            source:area="area_seat_rear_left"
+            source:needSetValue="true"
+            source:onlyShow="true"
+            source:receiveVehicleIndex="hvac_temperature_set"/>
+
+        <com.adayo.app.systemui.windows.views.HomeBlowingModeView
+            android:layout_width="96px"
+            android:layout_height="96px"
+            android:layout_marginLeft="395px"
+            android:background="@drawable/com_icon_blowing_face"
+            source:area="area_seat_rear"
+            source:onlyShow="true"
+            source:receiveVehicleIndex="hvac_fan_direction" />
+
+        <com.adayo.app.systemui.bases.BaseHvacSwitch
+            android:layout_width="117px"
+            android:layout_height="96px"
+            android:layout_marginLeft="198px"
+            android:drawableLeft="@drawable/com_icon_air_volume"
+            android:gravity="center_vertical"
+            android:paddingLeft="10px"
+            android:textColor="@color/white"
+            android:textSize="25px"
+            source:area="area_seat_rear"
+            source:needSetValue="true"
+            source:onlyShow="true"
+            source:receiveVehicleIndex="hvac_fan_speed" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="105px"
+        android:layout_marginTop="11px">
+
+        <com.adayo.app.systemui.windows.views.SourceButton
+            android:id="@+id/all_app_view"
+            android:layout_width="96px"
+            android:layout_height="96px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="33px"
+            android:background="@drawable/selector_home_apps"
+            android:visibility="visible"
+            source:loop="false"
+            source:parameter="APPS"
+            source:sourceType="source_home" />
+
+        <com.adayo.app.systemui.windows.views.SourceButton
+            android:layout_width="96px"
+            android:layout_height="96px"
+            android:layout_centerInParent="true"
+            android:background="@drawable/selector_home_bg"
+            source:loop="false"
+            source:parameter="CART"
+            source:sourceType="source_home" />
+
+        <com.adayo.app.systemui.windows.views.SourceButton
+            android:layout_width="96px"
+            android:layout_height="96px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="33px"
+            android:background="@drawable/selector_car_setting_bg"
+            source:loop="true"
+            source:sourceType="source_car_setting" />
+    </RelativeLayout>
+</RelativeLayout>

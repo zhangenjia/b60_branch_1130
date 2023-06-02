@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">LocalMedia</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="bluetooth_not_connected">BT not connected</string>
+    <string name="go_to_btsetting">Please go to the system settings-BT interface to set</string>
+    <string name="go_to">Go to</string>
+    <string name="media_audio_is_not_connected">Bluetooth media audio is not connected</string>
+    <string name="turn_on_media">Please turn on the "Media audio" switch of the connected device on the mobile phone</string>
+</resources>

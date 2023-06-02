@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:id="@+id/fl_drive"
+    android:layout_height="wrap_content">
+    <!-- 允许行车观看视频 -->
+    <ImageView
+        android:id="@+id/iv_display_set_bgdrive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/drive_last_low" />
+    <ImageView
+        android:id="@+id/iv_language_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|left"
+        android:layout_marginLeft="12dp"
+        android:background="@drawable/conn_drive_icon"
+        />
+    <TextView
+        android:id="@+id/tv_display_set_driving"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|left"
+        android:text="@string/display_video_with_driving_title"
+        android:textColor="@color/white"
+        android:layout_marginStart="73dp"
+        android:textSize="@dimen/common_tvsize_big2" />
+
+    <com.adayo.app.setting.base.SwitchButton
+        android:id="@+id/tgBtn_display_set_driving"
+        android:layout_width="88dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="21dp"
+        android:layout_gravity="center_vertical|right"
+        app:kswBackDrawable="@drawable/selector_toggle_switch_background"
+        app:kswFadeBack="true"
+        app:kswAnimationDuration="200"
+        app:kswThumbDrawable="@drawable/offroad_system_settings_button_switch_yuan"
+        />
+
+
+</FrameLayout>

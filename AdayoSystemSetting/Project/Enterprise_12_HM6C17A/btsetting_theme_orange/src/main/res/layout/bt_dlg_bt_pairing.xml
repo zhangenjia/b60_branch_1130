@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_container"
+    android:layout_width="830px"
+    android:layout_height="180px"
+    android:background="@drawable/popup_background_small_btsetting">
+
+    <ImageView
+        android:id="@+id/iv_pairing"
+        android:layout_width="48px"
+        android:layout_height="48px"
+        android:layout_marginStart="22px"
+        android:layout_marginTop="27px"
+        android:background="@drawable/icon_loading_small" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="92px"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/conn_bt_toast_hint_bt_pairing"
+            android:textColor="@color/bt_dlg_msg"
+            android:textSize="40px" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/conn_bt_toast_hint_bt_pair_code"
+            android:textColor="@color/bt_dlg_msg"
+            android:textSize="40px" />
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/com_bg"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.MediaActivity">
+
+    <FrameLayout
+        android:id="@+id/frame_layout_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="56px"
+        android:layout_marginTop="237px"
+        android:layout_marginEnd="26px"
+        android:visibility="gone"
+        android:layout_marginBottom="111px"
+       />
+
+    <FrameLayout
+        android:id="@+id/error_msg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_marginStart="860px"
+                android:layout_marginTop="387px"
+                android:id="@+id/error_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/com_icon_big_no_file" />
+
+            <TextView
+                android:id="@+id/error_tv"
+                android:layout_width="match_parent"
+                android:layout_below="@id/error_iv"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26px"
+                android:textColor="@android:color/white"
+                android:textSize="40px" />
+
+        </RelativeLayout>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/loading_linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="880px"
+        android:layout_marginTop="407px"
+        android:visibility="gone">
+
+        <ImageView
+            tools:ignore="MissingPrefix"
+            app:skinEnable="false"
+            android:id="@+id/loading_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/anim_loading"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_below="@id/loading_iv"
+            android:id="@+id/loading_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="46px"
+            android:text="@string/music_loading"
+            android:textColor="@color/white"
+            android:textSize="40px"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/loading_iv" />
+
+
+    </RelativeLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/tab_linear"
+        android:layout_marginTop="119px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:id="@+id/picture_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/picture"
+            android:textColor="@color/white"
+            android:textSize="40px" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <FrameLayout
+        android:layout_marginTop="104px"
+        android:id="@+id/frame_layout_play"
+        android:layout_width="match_parent"
+        android:background="@drawable/com_bg"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+</FrameLayout>

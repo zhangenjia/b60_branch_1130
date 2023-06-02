@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.CallLogFragment">
+
+    <!--搜索-->
+    <include
+        android:id="@+id/search_rl"
+        layout="@layout/include_edit_search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="82px"
+        android:layout_marginTop="45px"/>
+
+    <RelativeLayout
+        android:id="@+id/recyclerview_rl"
+        android:layout_width="1208px"
+        android:layout_height="670px"
+        android:layout_below="@id/search_rl"
+        android:layout_marginTop="-10px">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="1208px"
+            android:layout_height="602px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="22px"
+            android:scrollbarThumbVertical="@drawable/top_bar"
+            android:scrollbarTrackVertical="@drawable/bg_dropdownbar"
+            android:scrollbars="vertical"
+            android:overScrollMode="always"
+            android:fadeScrollbars="false"/>
+
+        <ImageView
+            android:layout_width="1208px"
+            android:layout_height="278px"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/list_mask"/>
+    </RelativeLayout>
+
+    <!--正在同步-->
+   <include
+       android:id="@+id/sync_ing_rl"
+       layout="@layout/include_sync_layout"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:visibility="gone">
+   </include>
+
+    <!--当前无号码列表-->
+    <include
+        android:id="@+id/sync_failed_ll"
+        layout="@layout/include_sync_failed_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+    </include>
+
+</RelativeLayout>

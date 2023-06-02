@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+    <string name="app_name">radio</string>
+    <string name="radio_text">收音机</string>
+    <string name="tv_mhz">MHz</string>
+    <string name="tv_khz">kHz</string>
+</resources>

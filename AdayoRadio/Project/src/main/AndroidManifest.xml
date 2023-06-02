@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.adayo.app.radio"
+    android:sharedUserId="android.uid.system">
+
+   <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"
+       tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:name=".ui.app.RadioApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/RadioTheme">
+
+        <activity
+            android:name=".ui.activity.RadioActivity"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="locale|layoutDirection|keyboard"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <!-- <category android:name="android.intent.category.HOME" /> -->
+                <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.adayo.intent.action.fm" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.adayo.intent.action.rds" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="adayoAction"
+                android:value="com.adayo.intent.action.fm" />
+        </activity>
+
+        <meta-data
+            android:name="adayo_App"
+            android:value="true" />
+
+    </application>
+
+</manifest>
